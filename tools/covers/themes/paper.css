@@ -1,0 +1,6 @@
+/* SPDX-License-Identifier: MIT. Copyright (c) 2026 not-a-blogger contributors. */
+/* Тема обложки paper: светлый бумажный скрим, графитовый текст, сине-зелёный акцент. Под светлый арт. */
+:root{
+  --ink:#22262b; --sub:#585d63; --accent:#1d6b78; --eyebrow:#1d6b78;
+  --scrim:#f3eee4; --bg:#f3eee4; --panel:#fbf8f2; --accent2:#7b4a7a; --line:rgba(34,38,43,0.12);
+}

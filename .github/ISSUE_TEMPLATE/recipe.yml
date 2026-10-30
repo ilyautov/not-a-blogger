@@ -1,0 +1,52 @@
+name: Recipe / Приём
+description: Bring a technique for video, voice, camera, text, carousels or slides / Принести приём
+labels: [recipe]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Technique in one imperative line / Приём одной фразой
+      placeholder: "Make the first word of a TTS line sacrificial"
+    validations: {required: true}
+  - type: dropdown
+    id: section
+    attributes:
+      label: Section / Раздел
+      options: [idea, hooks, voice, image, camera, transitions, sound, captions, assembly, qa, vertical, face, brand, cta, analytics, publishing, text, carousels, slides, agent, template, tool]
+    validations: {required: true}
+  - type: input
+    id: lang
+    attributes:
+      label: Language / Язык
+      description: "any, or a language code if the technique only applies to one language (ru, en, de...)"
+      placeholder: any
+    validations: {required: true}
+  - type: textarea
+    id: problem
+    attributes:
+      label: What breaks without it / Что ломается без приёма
+    validations: {required: true}
+  - type: textarea
+    id: howto
+    attributes:
+      label: How to do it / Как делать
+      description: Steps, parameters, command or code
+    validations: {required: true}
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Numbers or before/after / Цифры или до/после
+      description: Measurement, A/B test, link to a video with metrics. No numbers? Say so, we accept hypotheses.
+    validations: {required: true}
+  - type: textarea
+    id: diff
+    attributes:
+      label: How it differs from existing recipes / Чем отличается от существующих
+      description: Search recipes/ and name the closest one
+    validations: {required: true}
+  - type: checkboxes
+    id: pr
+    attributes:
+      label: Ready to open a PR / Готов оформить PR
+      options:
+        - label: I'll write the recipe from templates/recipe.md

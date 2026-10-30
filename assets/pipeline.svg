@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="250" viewBox="0 0 1280 250" font-family="Onest, -apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+<rect width="1280" height="250" rx="16" fill="#f6f6f1"/>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1a2023"/></marker></defs>
+<text x="27" y="50" font-size="17" font-weight="700" fill="#5a6062">Собирает агент</text>
+<line x1="27" y1="60" x2="1042" y2="60" stroke="#c9cbc2" stroke-width="2"/>
+<text x="1067" y="50" font-size="17" font-weight="700" fill="#425319">Решает человек</text>
+<rect x="27" y="80" width="186" height="120" rx="12" fill="#ffffff" stroke="#d4d6cc" stroke-width="1.5"/>
+<text x="43" y="120" font-size="20" font-weight="800" fill="#1a2023">Сценарий</text>
+<text x="43" y="152" font-size="15" fill="#3a4245">реплики,</text>
+<text x="43" y="174" font-size="15" fill="#3a4245">их одобряешь ты</text>
+<line x1="216" y1="140.0" x2="232" y2="140.0" stroke="#1a2023" stroke-width="2" marker-end="url(#a)"/>
+<rect x="235" y="80" width="186" height="120" rx="12" fill="#ffffff" stroke="#d4d6cc" stroke-width="1.5"/>
+<text x="251" y="120" font-size="20" font-weight="800" fill="#1a2023">Голос</text>
+<text x="251" y="152" font-size="15" fill="#3a4245">синтез или</text>
+<text x="251" y="174" font-size="15" fill="#3a4245">своя начитка</text>
+<line x1="424" y1="140.0" x2="440" y2="140.0" stroke="#1a2023" stroke-width="2" marker-end="url(#a)"/>
+<rect x="443" y="80" width="186" height="120" rx="12" fill="#ffffff" stroke="#d4d6cc" stroke-width="1.5"/>
+<text x="459" y="120" font-size="18" font-weight="800" fill="#1a2023">Проверка дублей</text>
+<text x="459" y="152" font-size="15" fill="#3a4245">распознавание</text>
+<text x="459" y="174" font-size="15" fill="#3a4245">против сценария</text>
+<line x1="632" y1="140.0" x2="648" y2="140.0" stroke="#1a2023" stroke-width="2" marker-end="url(#a)"/>
+<rect x="651" y="80" width="186" height="120" rx="12" fill="#ffffff" stroke="#d4d6cc" stroke-width="1.5"/>
+<text x="667" y="120" font-size="20" font-weight="800" fill="#1a2023">Рендер</text>
+<text x="667" y="152" font-size="15" fill="#3a4245">сцены, камера,</text>
+<text x="667" y="174" font-size="15" fill="#3a4245">звук, субтитры</text>
+<line x1="840" y1="140.0" x2="856" y2="140.0" stroke="#1a2023" stroke-width="2" marker-end="url(#a)"/>
+<rect x="859" y="80" width="186" height="120" rx="12" fill="#ffffff" stroke="#d4d6cc" stroke-width="1.5"/>
+<text x="875" y="120" font-size="20" font-weight="800" fill="#1a2023">Отчёт QA</text>
+<text x="875" y="152" font-size="15" fill="#3a4245">контактный лист,</text>
+<text x="875" y="174" font-size="15" fill="#3a4245">цифры, SHA256</text>
+<line x1="1048" y1="140.0" x2="1064" y2="140.0" stroke="#1a2023" stroke-width="2" marker-end="url(#a)"/>
+<rect x="1067" y="80" width="186" height="120" rx="12" fill="#d6ff43" stroke="#1a2023" stroke-width="2"/>
+<text x="1083" y="120" font-size="20" font-weight="800" fill="#1a2023">«Выпускай»</text>
+<text x="1083" y="152" font-size="15" fill="#3a4245">это говорит</text>
+<text x="1083" y="174" font-size="15" fill="#3a4245">только человек</text>
+<text x="27" y="236" font-size="15" fill="#5a6062">↺ дубль, не прошедший проверку, переозвучивается, а не идёт дальше</text>
+</svg>

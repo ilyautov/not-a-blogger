@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Russian humanizer false positive / Ложное срабатывание хуманайзера
+    url: https://github.com/ilyautov/humanizer-ru/issues/new/choose
+    about: The humanizer lives in its own repo with a dedicated form / Хуманайзер живёт в отдельном репозитории

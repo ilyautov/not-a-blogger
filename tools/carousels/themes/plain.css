@@ -1,0 +1,11 @@
+/* SPDX-License-Identifier: MIT. Copyright (c) 2026 not-a-blogger contributors. */
+/* Тема plain: светло-серый фон, белые панели, кобальтовый акцент. Самая сдержанная. */
+:root{
+  --font-sans:'Inter','Noto Sans',sans-serif;
+  --font-head:'Inter','Noto Sans',sans-serif;
+  --bg:#f5f6f8; --ink:#1b1e24; --sub:#555b66; --eyebrow:#3550c8; --accent:#3550c8; --accent2:#1b1e24;
+  --panel-bg:#ffffff; --panel-br:#e3e6ec; --panel-shadow:0 14px 36px rgba(20,30,60,0.07);
+  --chip-bg:rgba(53,80,200,0.07); --chip-br:rgba(53,80,200,0.25);
+  --footline:rgba(27,30,36,0.10); --bad:#c0362c; --good:#2e7d4a;
+}
+.blob, .blob2 { display:none; }

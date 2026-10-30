@@ -1,0 +1,12 @@
+{
+  "_comment": "Edit for your video. lines: 'say:<text>' (spoken by macOS say) or a sound file next to focus_nag.py. work_url opens on strike 3.",
+  "interval_s": 1.5,
+  "reset_after_s": 600,
+  "nag_every_s": 20,
+  "blocklist": ["youtube.com", "youtu.be", "tiktok.com", "instagram.com", "twitch.tv", "reddit.com", "x.com"],
+  "lines": ["say:Again? The deadline is Friday.", "say:I can see you.", "say:That's it. Back to work."],
+  "voice": "",
+  "work_url": "https://example.com/",
+  "close_tab": true,
+  "browsers": {"Safari": "safari", "Google Chrome": "chrome"}
+}

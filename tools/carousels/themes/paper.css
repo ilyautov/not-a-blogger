@@ -1,0 +1,12 @@
+/* SPDX-License-Identifier: MIT. Copyright (c) 2026 not-a-blogger contributors. */
+/* Тема paper: тёплая бумага, глубокий сине-зелёный акцент, сливовый второй акцент.
+   Шрифты по имени (OFL): Inter или Noto Sans для текста, PT Serif или Noto Serif для заголовков. */
+:root{
+  --font-sans:'Inter','Noto Sans',sans-serif;
+  --font-head:'PT Serif','Noto Serif',serif;
+  --bg:#f3eee4; --ink:#22262b; --sub:#585d63; --eyebrow:#1d6b78; --accent:#1d6b78; --accent2:#7b4a7a;
+  --panel-bg:#fbf8f2; --panel-br:#e2dacb; --panel-shadow:0 14px 34px rgba(60,48,30,0.08);
+  --chip-bg:rgba(29,107,120,0.08); --chip-br:rgba(29,107,120,0.28);
+  --footline:rgba(34,38,43,0.12); --bad:#b8322e; --good:#2f7d4f;
+}
+.blob, .blob2 { display:none; }

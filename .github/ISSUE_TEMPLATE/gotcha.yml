@@ -1,0 +1,28 @@
+name: Pitfall / Грабли
+description: A bug or quirk of TTS, ASR, rendering or a platform / Баг или странность TTS, ASR, рендера, площадки
+labels: [gotcha]
+body:
+  - type: input
+    id: tool
+    attributes: {label: Tool and version / Инструмент и версия, placeholder: "F5-TTS Russian fine-tune, seed 42"}
+    validations: {required: true}
+  - type: input
+    id: lang
+    attributes: {label: Language / Язык, placeholder: "ru, en, de... or any"}
+    validations: {required: true}
+  - type: textarea
+    id: input
+    attributes:
+      label: Minimal input / Минимальный вход
+      description: The line of text, command, settings
+    validations: {required: true}
+  - type: textarea
+    id: got
+    attributes: {label: What you got vs expected / Что получил и что ожидал}
+    validations: {required: true}
+  - type: textarea
+    id: numbers
+    attributes: {label: How often / Как часто, description: "e.g. in 34 of 246 takes"}
+  - type: textarea
+    id: workaround
+    attributes: {label: Workaround if found / Обходной путь}

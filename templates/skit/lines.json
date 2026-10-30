@@ -1,0 +1,18 @@
+{
+  "_comment": "Placeholder dialogue. 'shot' per line: two | dude | bot | phone. 'events' anchor things to a word of the line: a cut to the phone insert, a chat message on the phone, a stamp, a sound. 'word' matches the start of a word (case-insensitive). 'voice' is an optional WAV take; without it build_audio.py makes placeholder babble with exact word timings.",
+  "fps": 30,
+  "lead": 0.15,
+  "tail": 1.6,
+  "music": {"file": null, "gain": 0.3, "credit": ""},
+  "lines": [
+    {"id": "l1", "who": "dude", "shot": "dude", "text": "Placeholder hook: say the result first."},
+    {"id": "l2", "who": "bot", "shot": "bot", "text": "Bot replies and shows the phone.",
+     "events": [{"name": "phone", "word": "phone", "cut": "phone", "sfx": "pop", "msg": {"from": "bot", "text": "Placeholder message"}}]},
+    {"id": "l3", "who": "dude", "shot": "dude", "text": "Dude reacts: you did what?!",
+     "events": [{"name": "shock", "word": "what", "stamp": "WHAT?!", "sfx": "thud", "react": "shock"}]},
+    {"id": "l4", "who": "bot", "shot": "bot", "text": "Bot explains, proud of itself.",
+     "events": [{"name": "proud", "word": "proud", "sfx": "ding", "react": "smug"}]},
+    {"id": "l5", "who": "dude", "shot": "two", "gap": 0.6, "text": "Punchline after a silent beat.",
+     "events": [{"name": "beat", "word": "punchline", "sfx": "cricket", "react": "slump"}]}
+  ]
+}

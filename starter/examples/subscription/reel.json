@@ -1,0 +1,11 @@
+{
+ "title":"Учебная история: подписка за 200 рублей",
+ "max_duration":30,
+ "music":{"file":null,"offset":0,"gain":0.22,"credit":"Синтезированный пэд из стартового набора"},
+ "sound_events":[
+  {"event":"cost","kind":"thud","gain":0.4},
+  {"event":"cancel","kind":"click","gain":0.4},
+  {"event":"zero","kind":"pop","gain":0.32},
+  {"event":"receipt","kind":"chord","gain":0.2}
+ ]
+}

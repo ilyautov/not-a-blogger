@@ -1,0 +1,14 @@
+{
+  "_comment": "Placeholder script. Replace text with your own lines. 'shot' is a framing preset (dude, dude_tight, bot, bot_tight, wide). 'react' adds reactions in seconds relative to the line start (negative = before). 'voice' is an optional path to your recorded or synthesized take; without it build_timeline.py makes a placeholder babble so the scene, mouth and cuts can be checked before any TTS.",
+  "fps": 30,
+  "gap": 0.2,
+  "lead": 0.25,
+  "tail_shot": {"shot": "wide", "seconds": 1.4, "react": [{"who": "dude", "kind": "facepalm", "a": 0.1, "b": 1.4}, {"who": "bot", "kind": "happy", "a": 0.2, "b": 1.4}]},
+  "lines": [
+    {"who": "dude", "text": "Line one: the setup, said by Dude.", "shot": "dude"},
+    {"who": "bot", "text": "Line two: Bot answers.", "shot": "bot"},
+    {"who": "dude", "text": "Line three: wait, what?!", "shot": "dude_tight", "react": [{"who": "dude", "kind": "shock", "a": 0.0, "b": 1.2}]},
+    {"who": "bot", "text": "Line four: the twist, calm and proud.", "shot": "bot_tight", "react": [{"who": "bot", "kind": "smug", "a": 0.3, "b": 2.0}, {"who": "bot", "kind": "sweat", "a": 1.0, "b": 2.4}]},
+    {"who": "dude", "text": "Line five: the punchline.", "shot": "wide", "react": [{"who": "dude", "kind": "slump", "a": 0.2, "b": 9}]}
+  ]
+}

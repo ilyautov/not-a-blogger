@@ -1,0 +1,29 @@
+name: Outdated recipe / Рецепт устарел
+description: A recipe stopped working after a model, platform or engine changed / Рецепт перестал работать после смены модели, площадки или движка
+labels: [outdated]
+body:
+  - type: input
+    id: recipe
+    attributes: {label: Recipe file / Файл рецепта, placeholder: "recipes/voice/voice-f5-sacrificial-first-word.md"}
+    validations: {required: true}
+  - type: dropdown
+    id: changed
+    attributes:
+      label: What changed / Что изменилось
+      options: [model version / версия модели, platform rules or UI / правила или интерфейс площадки, engine or library version / версия движка или библиотеки, other / другое]
+    validations: {required: true}
+  - type: input
+    id: versions
+    attributes:
+      label: Old and new version / Старая и новая версия
+      placeholder: "GSAP 3.12 → 3.13; YouTube Studio upload flow of 2026-11"
+    validations: {required: true}
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence / Доказательство
+      description: The command and its output, a screenshot, a changelog link, or a count ("in 0 of 10 takes now")
+    validations: {required: true}
+  - type: textarea
+    id: fix
+    attributes: {label: What works now, if you found it / Что работает сейчас, если нашёл}

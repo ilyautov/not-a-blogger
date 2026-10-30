@@ -1,0 +1,19 @@
+*.mp4
+*.mov
+*.wav
+*.mp3
+*.safetensors
+*.pt
+*.ckpt
+*.onnx
+models/
+.venv/
+__pycache__/
+.pytest_cache/
+node_modules/
+output/
+.DS_Store
+# template outputs: measurements carry personal folder names
+templates/data-reel/real-numbers.json
+templates/**/output/
+dist/

@@ -1,0 +1,265 @@
+{
+  "version": "2026.10.30-r1",
+  "files": [
+    {
+      "path": ".agents/skills/camera-moves/SKILL.md",
+      "bytes": 82380,
+      "sha256": "b89f8424158a40d1d1dce462f449fed90438c9071f08c15c3a035ea3c0e05cbf"
+    },
+    {
+      "path": ".agents/skills/camera-moves/camera-kit.js",
+      "bytes": 11542,
+      "sha256": "91b2bea1925cc861bd2317acf148f9eda0fe29b118abe34026a63cd57f5ca7f8"
+    },
+    {
+      "path": ".agents/skills/reel-starter/SKILL.md",
+      "bytes": 2936,
+      "sha256": "80b3776a1ed13722b726d51f4205bf9f6e3835d25d12447f392d9e99dcc2ba9f"
+    },
+    {
+      "path": ".agents/skills/reels-direction/SKILL.md",
+      "bytes": 16715,
+      "sha256": "c47bdaae09a1a3909c647a5e86e2d6e399f78985b27f175278ea8ae59295a134"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 571,
+      "sha256": "264f007c94c3d68598639464a49d4285f1b6873a2715dd9b5de2626564061ee5"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 3761,
+      "sha256": "d5081760840e596b97b1222732fd9756f0112246f6470e8830986af65d221079"
+    },
+    {
+      "path": "BRIEF.md",
+      "bytes": 1676,
+      "sha256": "74bebd9853983f35fefbf91318143acbbb8998afa19a2cc4ed80d08dbbc9b1c7"
+    },
+    {
+      "path": "CLAUDE.md",
+      "bytes": 976,
+      "sha256": "a322ca6261cd9de373984b1cb4eb0ff10bde5e2000fed9ab6c4327b12d014a7d"
+    },
+    {
+      "path": "DELIVERY.md",
+      "bytes": 6331,
+      "sha256": "da80305026575a275bac16d8a3016c319d898bd93ecfe8235cef95a66def990d"
+    },
+    {
+      "path": "DIAGNOSTICS.md",
+      "bytes": 12170,
+      "sha256": "42ac79d3ac26a4314bccb2618e33ff7317c6528a31cb1f7cdddd36945c41b3bc"
+    },
+    {
+      "path": "FIRST-TASK.md",
+      "bytes": 12206,
+      "sha256": "2d3d15856930b7a5ba89e897f7f11224c8ebfe233beae5464d4f473761efa035"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1066,
+      "sha256": "df96cb93e068e585693075a44606d98ddb3df5e92c42eb3fdf4881945a2a9f75"
+    },
+    {
+      "path": "README.en.md",
+      "bytes": 13768,
+      "sha256": "368635b64447cdd6a70b158ffdbfb66a5ef41317749f5fca28204fc4104ae1b3"
+    },
+    {
+      "path": "README.md",
+      "bytes": 20125,
+      "sha256": "0ba3b61ab2c24dcfc49421fd74eea19e58ab065b7d14c105921672608fb948c9"
+    },
+    {
+      "path": "RESOURCES.md",
+      "bytes": 4952,
+      "sha256": "f614c84a18f7d5217287ff3af03543aa2ed9a9d8fdcdc94a830c0f9315ac7cab"
+    },
+    {
+      "path": "SECOND-REEL.md",
+      "bytes": 4536,
+      "sha256": "6a85ee7dcd23abb022397042bf26efbb0140c1204e3a9c53c2124ab6d6281144"
+    },
+    {
+      "path": "THIRD-PARTY.md",
+      "bytes": 1670,
+      "sha256": "f0d23748f0b25ac7f80496e3e9671cea44834bd380a7d7c849f51478371cc1b1"
+    },
+    {
+      "path": "analytics.csv",
+      "bytes": 236,
+      "sha256": "562bb323085a92590197fbea84e42e5e245c82433bfa42f0d7706cc28e5909ba"
+    },
+    {
+      "path": "assets/audio/.keep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "assets/fonts/.keep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "examples/subscription/BRIEF.md",
+      "bytes": 5979,
+      "sha256": "8e74d1c8f4bdb992500114d2965a4e240cdd04fa76b5db2ce552185fb69a52ec"
+    },
+    {
+      "path": "examples/subscription/reel.json",
+      "bytes": 448,
+      "sha256": "f84a07dde11734e3867e921fe1bcc33066fce3490ca0879890d0320ba596f952"
+    },
+    {
+      "path": "examples/subscription/scene.ts",
+      "bytes": 28403,
+      "sha256": "35de45f462a5d750726bc17c9609e68d759c100d5a8ebd837371268f450f72ee"
+    },
+    {
+      "path": "examples/subscription/voice/chunks.json",
+      "bytes": 366,
+      "sha256": "1fc6f41fc860f34850916643a7ad5216b603078228918313b9dc83f3638d2a8d"
+    },
+    {
+      "path": "examples/subscription/voice/gen_design.py",
+      "bytes": 3224,
+      "sha256": "0487abb537747dfb86b2caf40935bd2dccda4ed8fd786b85a0e5311da0dcf006"
+    },
+    {
+      "path": "examples/subscription/voice/lines.json",
+      "bytes": 261,
+      "sha256": "7e3b7ed2c15f8c99836a8193dcff7a108eebffbeed98893a7bc18a467b73a604"
+    },
+    {
+      "path": "examples/subscription/voice/snap_onsets.py",
+      "bytes": 2608,
+      "sha256": "245bd8d5210a7d8ed568de5dc544a4ab0f195b971756e9973249c5fc7c4d384f"
+    },
+    {
+      "path": "index.html",
+      "bytes": 1207,
+      "sha256": "3a773be311c1817d53309a7be1d8edaa68b042a9b59a59b6c281700c167f3462"
+    },
+    {
+      "path": "locked.py",
+      "bytes": 1803,
+      "sha256": "d371c63bd993157f4f6c491d631642ab25b5208cd874b8f98a6eb3be0cc9d8ce"
+    },
+    {
+      "path": "make.sh",
+      "bytes": 3094,
+      "sha256": "a02e9301799fb0c37bf652533ce902a687a4a8275ec098d91332af8319ebcd96"
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 659,
+      "sha256": "50f9fd243c1d7bfff754d791cc8f505142c4d234731a4f35af6852d3f2aaac21"
+    },
+    {
+      "path": "package.json",
+      "bytes": 205,
+      "sha256": "e50f6d49be3516b5eac76d32410d321fec9a05980324ba0a03fa892ebd252f02"
+    },
+    {
+      "path": "reel.json",
+      "bytes": 391,
+      "sha256": "07b983596d7b086b16b4a1acc15e788144a7c2a775c1f0ad411978b3193ac759"
+    },
+    {
+      "path": "requirements-lock-macos-arm64.txt",
+      "bytes": 594,
+      "sha256": "0842481fc3a4cbec47a450ee41bb822166f09f3afe29cb661bada1792eb327b6"
+    },
+    {
+      "path": "requirements-omni-lock-macos-arm64.txt",
+      "bytes": 1690,
+      "sha256": "9ac1b3c09ef98aa959b68f48a82829f8d2f78ae9df620c57785ab4d39650c4bd"
+    },
+    {
+      "path": "requirements-omni.txt",
+      "bytes": 193,
+      "sha256": "6e8eda4adbf90df62c3397b1327776ee147d73c2e74168df6ca51164f79f12a7"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 199,
+      "sha256": "24abb5c86c27c97df9c0cd886b64a330e23849d8ce1227605137b0d38b3d0af6"
+    },
+    {
+      "path": "scene/scene.ts",
+      "bytes": 17407,
+      "sha256": "40e5a1fcebf588101c03cf6c7872301650abef5f3ddcf78c4e47a6d5a96dec17"
+    },
+    {
+      "path": "scene/tsconfig.json",
+      "bytes": 191,
+      "sha256": "92eb070ad33cec42d508fbca0fc7148f5b3475b863f8efa25e0efd2dccb1fab9"
+    },
+    {
+      "path": "tools/checkpoint.py",
+      "bytes": 14101,
+      "sha256": "18dc359258bc11c27765a0e30b44a993f2b30ca08a3fbda740644d26e5118efc"
+    },
+    {
+      "path": "tools/doctor.py",
+      "bytes": 4197,
+      "sha256": "226b7197d62a3faafbd711134965952a3105174303c22cd144e28edad7e97efb"
+    },
+    {
+      "path": "tools/finish.py",
+      "bytes": 12960,
+      "sha256": "aabbd82e1f7203934d8d489f2b9c5bca739807d2bdaa62756feaa3161df59f0d"
+    },
+    {
+      "path": "tools/fonts.sh",
+      "bytes": 854,
+      "sha256": "59573d24b4cc719ad48aca60053d15eeb068ff82aabe1e3f568a6591c3054641"
+    },
+    {
+      "path": "tools/render.py",
+      "bytes": 7942,
+      "sha256": "335a73d6bd4b21293096e2556e924a03f23b4244026f45bb39e383f6f16938ec"
+    },
+    {
+      "path": "tools/sound.py",
+      "bytes": 9582,
+      "sha256": "202bf0bf7c6ae9576c22cd49182c1c1b91f84f5b715c850cd9048a4dcd0af66d"
+    },
+    {
+      "path": "voice/chunks.json",
+      "bytes": 567,
+      "sha256": "0ef61246fb0d6f5156d17fdbd8b44e8d713b2600ea9ae1bbdb71429b26ee3815"
+    },
+    {
+      "path": "voice/fake_track.py",
+      "bytes": 2533,
+      "sha256": "c228123283e52e9c38702334729fb7ee7eb6b149dc8824cc542a454efd232d1d"
+    },
+    {
+      "path": "voice/gen_omni.py",
+      "bytes": 5158,
+      "sha256": "3be89071a89b77d9479ba513093333b4b6ba5e9f7764902735a60b1e3941f451"
+    },
+    {
+      "path": "voice/import_live.py",
+      "bytes": 2638,
+      "sha256": "b3fff2f8ea2589195c2e461d62e52bfe2c5eddc69b17ae5e746596119a253a96"
+    },
+    {
+      "path": "voice/lines.json",
+      "bytes": 274,
+      "sha256": "0f66891117dc9f4ec00f2ce3b24c20f97d1eb6f84f51760fbed6398a1df4f7d7"
+    },
+    {
+      "path": "voice/passport.py",
+      "bytes": 1889,
+      "sha256": "6367c02704ba0e0e7ba537f964d5106a22114bfdf6128e8cd28d52deb535ff2c"
+    },
+    {
+      "path": "voice/trim.py",
+      "bytes": 15773,
+      "sha256": "e47f3f37909bc30dd499cdef62fa335c14d29512ff50d93b2764171b9f46e6a8"
+    }
+  ]
+}

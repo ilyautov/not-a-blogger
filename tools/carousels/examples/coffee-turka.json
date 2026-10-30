@@ -1,0 +1,43 @@
+{
+  "theme": "paper",
+  "footer": "Кофейные заметки",
+  "swipe": "листай →",
+  "ban_words": ["лайфхак"],
+  "cards": [
+    {
+      "name": "card-01-cover",
+      "label": "Кофе дома",
+      "num": "1 / 5",
+      "body": "<div class=\"giant\">3</div><div class=\"gianttag\">минуты на огне</div><div class=\"h1\">Кофе в турке<br><span class=\"accent\">без пенки-катастрофы</span></div><div class=\"lead\">Четыре шага, после которых кофе не убегает на плиту.</div>",
+      "last": false
+    },
+    {
+      "name": "card-02-ratio",
+      "label": "Пропорции",
+      "num": "2 / 5",
+      "body": "<div class=\"h1\">Сколько класть</div><div class=\"bignum-grid\"><div class=\"bignum\"><div class=\"n\">10 г</div><div class=\"cap\">молотого кофе</div></div><div class=\"bignum\"><div class=\"n\">100 мл</div><div class=\"cap\">холодной воды</div></div><div class=\"bignum\"><div class=\"n\">1:10</div><div class=\"cap\">кофе к воде</div></div><div class=\"bignum\"><div class=\"n\">пыль</div><div class=\"cap\">помол мельче эспрессо</div></div></div>",
+      "last": false
+    },
+    {
+      "name": "card-03-steps",
+      "label": "Как варить",
+      "num": "3 / 5",
+      "body": "<div class=\"h1\">Порядок</div><div class=\"check\"><div class=\"item\">Кофе и холодная вода в турку, сахар сразу, если нужен</div><div class=\"item\">Самый слабый огонь</div><div class=\"item\">Не мешать после того, как корка поднялась</div><div class=\"item\">Снять, когда пена дошла до горлышка</div></div>",
+      "last": false
+    },
+    {
+      "name": "card-04-mistake",
+      "label": "Частая ошибка",
+      "num": "4 / 5",
+      "body": "<div class=\"h1\">Довести <span class=\"accent2\">до кипения</span></div><div class=\"panel bad\"><div class=\"lead\" style=\"margin-top:0\">Закипел: горечь и пустой вкус.</div></div><div class=\"panel good\"><div class=\"lead\" style=\"margin-top:0\">Поднялся до края: снимай с огня.</div></div>",
+      "last": false
+    },
+    {
+      "name": "card-05-final",
+      "label": "Запомни",
+      "num": "5 / 5",
+      "body": "<div class=\"phrase\">Медленно<br><span class=\"accent\">и холодно</span></div><div class=\"lead\">Холодная вода и слабый огонь дают время, чтобы кофе успел отдать вкус.</div><div><span class=\"chip\">10 г на 100 мл</span></div>",
+      "last": true
+    }
+  ]
+}

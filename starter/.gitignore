@@ -1,0 +1,28 @@
+# всё, что собирается или качается, в git не кладём
+build/
+output/
+qa/
+story.json
+voice-track.json
+assets/fonts/*
+!assets/fonts/.keep
+assets/audio/*
+!assets/audio/.keep
+voice/*.wav
+voice/asr-*.json
+voice/raw-*.json
+voice/list.txt
+node_modules/
+.venv/
+.runtime/
+voice/my-*.wav
+voice/my-*.txt
+voice/*.m4a
+voice/*.mp3
+voice/*.flac
+voice/*.aac
+voice/*.ogg
+voice/*.txt
+__pycache__/
+# Приватные контрольные копии содержат собственные записи и референсы голоса.
+.checkpoints/

@@ -1,0 +1,2258 @@
+[
+  {
+    "id": "idea-answer-comment-video",
+    "title": "Turn a funny question from the comments into the next video",
+    "section": "idea",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "viewer-feedback",
+    "tools": [],
+    "path": "recipes/idea/idea-answer-comment-video.md",
+    "added": "2026-10-28",
+    "updated": "2026-10-28",
+    "when": "A video took off and its comments are full of the same kind of question (\"does this work on my brand of TV?\", \"and on the phone?\") or a running joke about the video itself (a sound viewers mock)."
+  },
+  {
+    "id": "idea-breakdown-reference-before-remake",
+    "title": "Break the reference down per second and compare it with the remake before judging the remake",
+    "section": "idea",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "measurement",
+    "tools": [
+      "ffmpeg",
+      "Python",
+      "numpy",
+      "librosa"
+    ],
+    "path": "recipes/idea/idea-breakdown-reference-before-remake.md",
+    "added": "2026-10-27",
+    "updated": "2026-10-27",
+    "when": "You remake a hit second by second, keep its cut points and length, and the result still feels flat next to the original. You suspect you need more cuts."
+  },
+  {
+    "id": "idea-everyday-absurd",
+    "title": "Build the video around an everyday situation or genre parody, not around the tool",
+    "section": "idea",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "video-metric",
+    "tools": [
+      "yt-dlp"
+    ],
+    "path": "recipes/idea/idea-everyday-absurd.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "The topic is a tool and the draft is a dev tutorial (\"how to install X\") or a clip cut from a long video."
+  },
+  {
+    "id": "idea-factcheck-file",
+    "title": "Keep a fact-check file and a list of dropped claims for every video",
+    "section": "idea",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "measurement",
+    "tools": [
+      "strings",
+      "grep"
+    ],
+    "path": "recipes/idea/idea-factcheck-file.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-27",
+    "when": "The script contains commands, CLI flags, or numbers, in speech or on screen."
+  },
+  {
+    "id": "idea-find-hits-by-median",
+    "title": "Take ideas from niche hits selected by the author's median",
+    "section": "idea",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "video-metric",
+    "tools": [
+      "yt-dlp",
+      "faster-whisper",
+      "ffmpeg"
+    ],
+    "path": "recipes/idea/idea-find-hits-by-median.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "Choosing the next idea. The candidate comes from your head or from news with no proven format."
+  },
+  {
+    "id": "idea-five-beat-skeleton",
+    "title": "Lay the script out in five timed beats, with a timestamped hero as a device",
+    "section": "idea",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "measurement",
+    "tools": [],
+    "path": "recipes/idea/idea-five-beat-skeleton.md",
+    "added": "2026-10-26",
+    "updated": "2026-10-26",
+    "when": "A script for a short skit or explainer is a list of lines with no shape: the hook, the reveal and the call to action land wherever the dialogue happens to put them."
+  },
+  {
+    "id": "idea-format-lifecycle-week",
+    "title": "Treat a borrowed format as perishable, take it within days and keep only the structure",
+    "section": "idea",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "video-metric",
+    "tools": [
+      "yt-dlp"
+    ],
+    "path": "recipes/idea/idea-format-lifecycle-week.md",
+    "added": "2026-10-28",
+    "updated": "2026-10-28",
+    "when": "You picked someone else's hit as a reference and plan to make your version \"next week\", or you want to copy its exact storyline."
+  },
+  {
+    "id": "idea-guess-over-howto",
+    "title": "Frame the topic as a guessing game or exposé, leave the how-to as the tail",
+    "section": "idea",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "measurement",
+    "tools": [
+      "yt-dlp"
+    ],
+    "path": "recipes/idea/idea-guess-over-howto.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "The video is about a tool (voice clone, text humanizer) and the draft is an install guide."
+  },
+  {
+    "id": "idea-history-riddle",
+    "title": "Open with an archival photo and a riddle question about the history of a technology",
+    "section": "idea",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "video-metric",
+    "tools": [],
+    "path": "recipes/idea/idea-history-riddle.md",
+    "added": "2026-10-28",
+    "updated": "2026-10-28",
+    "when": "You need a timeless topic that works outside the AI news cycle, or the channel's AI videos sit at the median."
+  },
+  {
+    "id": "idea-no-repeat-own-hit",
+    "title": "Don't make a sequel to a successful video on the same template",
+    "section": "idea",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "video-metric",
+    "tools": [],
+    "path": "recipes/idea/idea-no-repeat-own-hit.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "A video worked and the next one reuses its background, card, character bubble, and line formulas."
+  },
+  {
+    "id": "idea-one-example-short-reel",
+    "title": "Keep a reel under 40 s, one example, punchline before methodology",
+    "section": "idea",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "viewer-feedback",
+    "tools": [
+      "ffprobe"
+    ],
+    "path": "recipes/idea/idea-one-example-short-reel.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-27",
+    "when": "The draft reel packs a whole experiment: methodology, accuracy tables, several blocks of numbers with caveats. An honest breakdown wants to be told in full (how you tested, how many tasks, error margin); in a reel this becomes a lecture, and strong gags drown between tables."
+  },
+  {
+    "id": "idea-remake-rhythm-not-words",
+    "title": "Remake a fresh proven hit second by second, rebuilt with your own means",
+    "section": "idea",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "video-metric",
+    "tools": [
+      "yt-dlp",
+      "ffmpeg",
+      "faster-whisper",
+      "ebur128",
+      "python"
+    ],
+    "path": "recipes/idea/idea-remake-rhythm-not-words.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-29",
+    "when": "Choosing what to build next, or you already have a hit you want to copy. Own-topic ideas have no proven format; a loose \"inspired by\" retelling loses the rhythm; re-uploading someone else's media gets flagged as non-original."
+  },
+  {
+    "id": "idea-script-before-build",
+    "title": "Show a 3–5 line script and the viewer-knowledge chain before building; don't reuse a hit's skeleton",
+    "section": "idea",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "measurement",
+    "tools": [
+      "text editor"
+    ],
+    "path": "recipes/idea/idea-script-before-build.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-27",
+    "when": "Before voice synthesis or rendering of any new video. Two failure modes: a script first seen in the edited video costs a full rebuild to change; and a successful video tempts you to clone it (same background, card, block order, new topic), so by episode three viewers see the assembly line."
+  },
+  {
+    "id": "idea-topic-wider-than-niche",
+    "title": "Pick a topic a person outside your niche cares about, and let AI be the twist",
+    "section": "idea",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "video-metric",
+    "tools": [],
+    "path": "recipes/idea/idea-topic-wider-than-niche.md",
+    "added": "2026-10-28",
+    "updated": "2026-10-28",
+    "when": "Choosing a topic for a niche channel (AI tools, coding agents) and every candidate is \"news about model X\" or \"feature Y of tool Z\"."
+  },
+  {
+    "id": "hooks-foreign-thesis-refrain",
+    "title": "Open with someone else's confident claim and close with your own refrain",
+    "section": "hooks",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "measurement",
+    "tools": [],
+    "path": "recipes/hooks/hooks-foreign-thesis-refrain.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "A faceless video sounds like an anonymous narrator: nothing to argue about in comments, no recognisable signature."
+  },
+  {
+    "id": "hooks-open-loop-payoff",
+    "title": "Hold one open loop and close it in the ending",
+    "section": "hooks",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "measurement",
+    "tools": [],
+    "path": "recipes/hooks/hooks-open-loop-payoff.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "The script explains the cause right away (no question left by second 6), or the hook promises one thing and the ending delivers a moral instead of an answer."
+  },
+  {
+    "id": "hooks-result-in-first-second",
+    "title": "Start with a result, scandal, or intrigue at 0.0 s",
+    "section": "hooks",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "measurement",
+    "tools": [
+      "ffmpeg",
+      "faster-whisper"
+    ],
+    "path": "recipes/hooks/hooks-result-in-first-second.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-27",
+    "when": "The draft opens with an intro or explanation: \"soon…\", \"people on TikTok advise…\", \"I asked the AI to…\". That is a lecture; viewers swipe before the point."
+  },
+  {
+    "id": "hooks-voice-by-045",
+    "title": "Show the background from frame 0 and start the voice by 0.45 s",
+    "section": "hooks",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "viewer-feedback",
+    "tools": [
+      "GSAP",
+      "ffmpeg"
+    ],
+    "path": "recipes/hooks/hooks-voice-by-045.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "The video opens on an empty frame or silence: background fades in, voice starts after a second."
+  },
+  {
+    "id": "voice-blind-tts-bakeoff",
+    "title": "Choose the TTS engine by a blind test with a numbered key",
+    "section": "voice",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "ab-test",
+    "tools": [
+      "F5-TTS",
+      "OmniVoice",
+      "VoxCPM2",
+      "Qwen3-TTS",
+      "CosyVoice3",
+      "Chatterbox",
+      "faster-whisper"
+    ],
+    "path": "recipes/voice/voice-blind-tts-bakeoff.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "Picking or replacing a TTS engine. Don't decide from vendor demos or names; ASR barely separates engines and does not hear stress at all."
+  },
+  {
+    "id": "voice-f5-pauses",
+    "title": "Make F5 pauses with a full stop or a hard marker, not a dash",
+    "section": "voice",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "measurement",
+    "tools": [
+      "F5-TTS",
+      "ffmpeg"
+    ],
+    "path": "recipes/voice/voice-f5-pauses.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "The script uses dashes, ellipses, or colons for pauses, and F5-TTS reads the line without air. Worst with \"meme\" references, which hold no pauses."
+  },
+  {
+    "id": "voice-f5-sacrificial-first-word",
+    "title": "Make the first word of a line sacrificial and consonant-initial",
+    "section": "voice",
+    "lang": "ru",
+    "status": "proven",
+    "evidence": "measurement",
+    "tools": [
+      "F5-TTS",
+      "WhisperX"
+    ],
+    "path": "recipes/voice/voice-f5-sacrificial-first-word.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "The F5-TTS cloning wrapper prepends a lead token (Russian «Так,», \"So,\") and cuts it by ASR timestamps. The cut is imprecise: a vowel-initial line keeps a stray \"k\" («Отличие от файла», \"The difference from the file\", becomes «К отличии…»); a consonant-initial line loses its whole first word («Дальше про два дома», \"Next, about two houses\", becomes «Про два дома»); a line starting with the token word itself («Так что…», \"So…\") loses a real word."
+  },
+  {
+    "id": "voice-f5-tail-sacrificial-word",
+    "title": "Rescue the line ending with a sacrificial tail word and an alignment cut",
+    "section": "voice",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "measurement",
+    "tools": [
+      "F5-TTS",
+      "WhisperX",
+      "ffmpeg"
+    ],
+    "path": "recipes/voice/voice-f5-tail-sacrificial-word.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "F5-TTS clips the last sound of a line; mix ASR shows truncated words. The defect is in generation (the model did not finish), not at the segment boundary."
+  },
+  {
+    "id": "voice-gaps-between-lines",
+    "title": "Take gaps between lines from the script, short and uneven, and fit the scene mechanics to speech",
+    "section": "voice",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "measurement",
+    "tools": [
+      "ffmpeg",
+      "ebur128"
+    ],
+    "path": "recipes/voice/voice-gaps-between-lines.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-28",
+    "when": "The timeline is laid out for the animation and gaps of 1.3–3.8 s appear between short lines. Or the opposite: every gap is the same constant, and the voice ticks like a metronome."
+  },
+  {
+    "id": "voice-live-for-character",
+    "title": "Give the lead role to a live voice, keep synthesis for secondary characters",
+    "section": "voice",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "viewer-feedback",
+    "tools": [
+      "OmniVoice",
+      "Chatterbox",
+      "F5-TTS"
+    ],
+    "path": "recipes/voice/voice-live-for-character.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "A character with personality (boss, skit hero) needs a voice, and synthesis by description or a clone gives flat, \"sad\" prosody."
+  },
+  {
+    "id": "voice-lock-reference",
+    "title": "Don't change the clone's reference audio without a blind A/B by the voice owner; watch median pitch",
+    "section": "voice",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "measurement",
+    "tools": [
+      "librosa",
+      "ffmpeg"
+    ],
+    "path": "recipes/voice/voice-lock-reference.md",
+    "added": "2026-10-28",
+    "updated": "2026-10-28",
+    "when": "Someone (often an agent in another session) swaps the reference clip of a voice clone for a \"cleaner\" or \"fresher\" recording, or changes the speed or engine setting. Nobody asks the owner; a few videos later the voice \"is not mine anymore\"."
+  },
+  {
+    "id": "voice-loudness-per-take",
+    "title": "Normalise every take to −16 LUFS before mixing",
+    "section": "voice",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "measurement",
+    "tools": [
+      "ffmpeg"
+    ],
+    "path": "recipes/voice/voice-loudness-per-take.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "Takes differ in loudness (a calm reference synthesizes much quieter than an emotional one); the voice drowns under music and ASR errs."
+  },
+  {
+    "id": "voice-no-speedup-clone",
+    "title": "Don't speed up the clone; get tempo from short phrases",
+    "section": "voice",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "ab-test",
+    "tools": [
+      "F5-TTS",
+      "ffmpeg"
+    ],
+    "path": "recipes/voice/voice-no-speedup-clone.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "The clone sounds too slow for a reel and you are tempted to raise the model `speed` (e.g. to 1.15)."
+  },
+  {
+    "id": "voice-record-reference-clean",
+    "title": "Record the voice on a phone and remove mouth clicks before cloning",
+    "section": "voice",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "measurement",
+    "tools": [
+      "ffmpeg",
+      "F5-TTS",
+      "OmniVoice"
+    ],
+    "path": "recipes/voice/voice-record-reference-clean.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "Preparing a clone reference or a live voice-over. The clone copies everything in the reference, including clicks."
+  },
+  {
+    "id": "voice-seed-fix-by-text",
+    "title": "Fix a deterministic synthesis defect by editing text, not regenerating",
+    "section": "voice",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "measurement",
+    "tools": [
+      "F5-TTS"
+    ],
+    "path": "recipes/voice/voice-seed-fix-by-text.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "A take has a clipped or garbled word and you are regenerating it repeatedly with a fixed seed."
+  },
+  {
+    "id": "voice-stress-by-rewording",
+    "title": "Fix wrong stress by replacing the word, not with marks; synthesize in chunks",
+    "section": "voice",
+    "lang": "ru",
+    "status": "proven",
+    "evidence": "ab-test",
+    "tools": [
+      "F5-TTS",
+      "WhisperX"
+    ],
+    "path": "recipes/voice/voice-stress-by-rewording.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-28",
+    "when": "The Russian TTS model puts stress on the wrong syllable or hardens a consonant («модэль» for «модель», \"model\"; «флАгман», \"flagship\") or swallows an abbreviation. Stress marks `+`, doubled vowels, and hyphens work inconsistently. Per-sentence synthesis with even pauses flattens intonation."
+  },
+  {
+    "id": "voice-stretch-word",
+    "title": "Stretch a word with formant-preserving rubberband, not by spelling",
+    "section": "voice",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "ab-test",
+    "tools": [
+      "rubberband",
+      "ffmpeg",
+      "WhisperX"
+    ],
+    "path": "recipes/voice/voice-stretch-word.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "You need a long, juicy shout and the TTS won't stretch the word. Caps and repeated letters barely help; `atempo 0.5` sounds distorted."
+  },
+  {
+    "id": "voice-tail-rescue-check",
+    "title": "Check every take's tail and rescue uncut ones by energy",
+    "section": "voice",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "measurement",
+    "tools": [
+      "faster-whisper",
+      "WhisperX",
+      "numpy",
+      "ffmpeg"
+    ],
+    "path": "recipes/voice/voice-tail-rescue-check.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "After cutting at the sacrificial tail word, some takes still contain it (the aligner swallowed the final interjection and the script logged \"word not found, take left as is\"). Or an engine clips the ending and the mix hides it."
+  },
+  {
+    "id": "image-ai-insert-between-frames",
+    "title": "Insert 2–3 s of generative video between two still frames of your own scene",
+    "section": "image",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "experience",
+    "tools": [
+      "LTX-2",
+      "ltx-2-mlx",
+      "ffmpeg"
+    ],
+    "path": "recipes/image/image-ai-insert-between-frames.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "The video needs \"live\" shots, but an all-generative video drifts (faces change, hands break, dozens of takes)."
+  },
+  {
+    "id": "image-archive-footage-prelinger",
+    "title": "Take period footage and music from archive.org collections, checking licenseurl per item",
+    "section": "image",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "experience",
+    "tools": [
+      "archive.org API",
+      "ffmpeg"
+    ],
+    "path": "recipes/image/image-archive-footage-prelinger.md",
+    "added": "2026-10-28",
+    "updated": "2026-10-28",
+    "when": "A video is styled as an era (a 1950s educational film, a 1930s cartoon, a wartime newsreel) and generated \"old footage\" looks synthetic. You need real period footage and period music without paying for stock."
+  },
+  {
+    "id": "image-chapter-backgrounds-parallel",
+    "title": "Give each chapter its own photo background and generate them in parallel",
+    "section": "image",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "measurement",
+    "tools": [
+      "codex-cli",
+      "Python"
+    ],
+    "path": "recipes/image/image-chapter-backgrounds-parallel.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-28",
+    "when": "The whole video runs on one flat fill with captions; the frame-fill measurement shows it three-quarters empty."
+  },
+  {
+    "id": "image-depth-parallax-layers",
+    "title": "Split an image into layers by depth map and move them at different speeds",
+    "section": "image",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "experience",
+    "tools": [
+      "Depth-Anything-V2-Small",
+      "OpenCV",
+      "GSAP",
+      "tools/image/depth_layers.py"
+    ],
+    "path": "recipes/image/image-depth-parallax-layers.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-29",
+    "when": "A slow push-in on a flat image (Ken Burns) reads as static, and two-copy pseudo-parallax fails (`clip-path` seams, gradient masks double edges)."
+  },
+  {
+    "id": "image-map-flyover",
+    "title": "Render a 3D map flyover frame by frame in a headless browser",
+    "section": "image",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "measurement",
+    "tools": [
+      "MapLibre GL JS",
+      "AWS Terrain Tiles",
+      "headless Chrome"
+    ],
+    "path": "recipes/image/image-map-flyover.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "A place-based topic (geolocation, city, route) needs a live flyover over terrain; screen recording stutters and tiles load mid-frame."
+  },
+  {
+    "id": "image-real-object-real-photo",
+    "title": "Show a real object with a real photo, not a drawn primitive",
+    "section": "image",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "viewer-feedback",
+    "tools": [
+      "Wikimedia Commons"
+    ],
+    "path": "recipes/image/image-real-object-real-photo.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "The scene needs a real car, gadget, or building and the draft draws it as an SVG silhouette."
+  },
+  {
+    "id": "image-seamless-loop-bg",
+    "title": "Loop a background clip by blending its tail into its head, and measure the seam",
+    "section": "image",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "measurement",
+    "tools": [
+      "ffmpeg",
+      "tools/qa/seam.py"
+    ],
+    "path": "recipes/image/image-seamless-loop-bg.md",
+    "added": "2026-10-28",
+    "updated": "2026-10-28",
+    "when": "A short format plays on repeat (a text card over b-roll, a 7–8 s loop): viewers see the jump where the clip restarts. Generated or archive clips don't end where they began."
+  },
+  {
+    "id": "camera-accent-density",
+    "title": "Put camera accents on at most a third of the shots and never three push-ins in a row",
+    "section": "camera",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "experience",
+    "tools": [
+      "storyboard"
+    ],
+    "path": "recipes/camera/camera-accent-density.md",
+    "added": "2026-10-27",
+    "updated": "2026-10-27",
+    "when": "Every shot opens with a push-in, a kick or a punch-in on a word. Each shot is fine alone; together the video pulses like one gesture repeated forty times, and the eye stops noticing the accents."
+  },
+  {
+    "id": "camera-follow-ink",
+    "title": "Frame the camera on the actual text ink, not on the block's bounding box",
+    "section": "camera",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "measurement",
+    "tools": [
+      "GSAP",
+      "Playwright",
+      "ffmpeg"
+    ],
+    "path": "recipes/camera/camera-follow-ink.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "Scene elements arrive one by one while the camera holds the full 1920×1080 canvas: the first seconds of each scene show one line in empty space. Block bounding boxes lie (a 1280-wide card may hold a 600-wide line)."
+  },
+  {
+    "id": "camera-handheld-sines",
+    "title": "Build handheld camera as a sum of sines on a separate layer",
+    "section": "camera",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "experience",
+    "tools": [
+      "GSAP",
+      "Canvas 2D",
+      "Three.js"
+    ],
+    "path": "recipes/camera/camera-handheld-sines.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "A static camera makes the frame dead; per-frame random offsets look like digital jitter; relative (`+=`) micro-hits on the same container as the camera shot conflict with it."
+  },
+  {
+    "id": "camera-keep-in-frame",
+    "title": "Compute the camera shot with the screen formula so the hero never leaves the frame",
+    "section": "camera",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "experience",
+    "tools": [
+      "GSAP"
+    ],
+    "path": "recipes/camera/camera-keep-in-frame.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-27",
+    "when": "A 1.35–1.5 push-in on a 1580-wide card pushes its edges off screen; a shot center right of 960 sends the left column off screen. After moving to vertical, push-ins that were safe at 1920 cut edge nodes in half, a diagram's outcome overflows the right edge. Half-cut cards at the edge read as a bug."
+  },
+  {
+    "id": "camera-no-ken-burns",
+    "title": "Don't mask a static frame with a slow push-in",
+    "section": "camera",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "measurement",
+    "tools": [
+      "GSAP"
+    ],
+    "path": "recipes/camera/camera-no-ken-burns.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "A card hangs in frame with nothing happening inside, and a slow push-in over the whole scene is added. The frame technically moves; the viewer sees a slide. Stillness metrics are fooled too."
+  },
+  {
+    "id": "camera-parallax-formula",
+    "title": "Move 2D layers by the depth formula dx = camX / z",
+    "section": "camera",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "experience",
+    "tools": [
+      "Canvas 2D",
+      "GSAP"
+    ],
+    "path": "recipes/camera/camera-parallax-formula.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "In a 2D scene all layers shift equally and camera motion looks like sliding a flat picture."
+  },
+  {
+    "id": "camera-scale-change-not-zoom",
+    "title": "Change shot scale with a cut per line instead of a six-percent zoom",
+    "section": "camera",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "viewer-feedback",
+    "tools": [
+      "GSAP"
+    ],
+    "path": "recipes/camera/camera-scale-change-not-zoom.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "One shot scale for the whole video with a smooth zoom inside it; each new line looks like a new slide."
+  },
+  {
+    "id": "transitions-hard-cut-default",
+    "title": "Cut hard by default; keep showy transitions for 2–3 places",
+    "section": "transitions",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "experience",
+    "tools": [
+      "GSAP",
+      "ffmpeg"
+    ],
+    "path": "recipes/transitions/transitions-hard-cut-default.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "Every scene change gets a transition (crossfade, wipe, whip); pace drags and the video looks like slides with effects."
+  },
+  {
+    "id": "transitions-j-l-cut",
+    "title": "Bridge scenes with sound — J-cut before the picture, L-cut after",
+    "section": "transitions",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "experience",
+    "tools": [
+      "ffmpeg"
+    ],
+    "path": "recipes/transitions/transitions-j-l-cut.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "Sound and picture are cut at the same point; every cut feels like a break."
+  },
+  {
+    "id": "transitions-one-zone-no-chrome",
+    "title": "Keep one zone in frame, no titles and no chrome",
+    "section": "transitions",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "viewer-feedback",
+    "tools": [
+      "HTML",
+      "GSAP"
+    ],
+    "path": "recipes/transitions/transitions-one-zone-no-chrome.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "The video feels like a presentation no matter how much animation it has. Layout gives the slide away: a title on top repeating the voice, a diagram in the middle, a bar/footer/name at the bottom, a new composition per line with a crossfade, picture in one zone and diagrams in another."
+  },
+  {
+    "id": "transitions-scene-swap-order",
+    "title": "Swap scenes in order — text out, background changes, new text in",
+    "section": "transitions",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "experience",
+    "tools": [
+      "GSAP"
+    ],
+    "path": "recipes/transitions/transitions-scene-swap-order.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-27",
+    "when": "The next scene's background switches on while the previous text is still visible (light text over light background). A chapter sting fights the camera for the same `x`."
+  },
+  {
+    "id": "transitions-skit-cut-rhythm",
+    "title": "Cut a skit every 1.5–2.5 s and show reactions in close-up",
+    "section": "transitions",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "measurement",
+    "tools": [
+      "ffmpeg",
+      "three.js"
+    ],
+    "path": "recipes/transitions/transitions-skit-cut-rhythm.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "A character skit is one static shot: dialogue runs, the frame stands, reactions are invisible."
+  },
+  {
+    "id": "transitions-smash-cut",
+    "title": "Open with a smash cut from silence to impact",
+    "section": "transitions",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "experience",
+    "tools": [
+      "GSAP",
+      "ffmpeg"
+    ],
+    "path": "recipes/transitions/transitions-smash-cut.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "The hook starts smoothly; the first second doesn't grab."
+  },
+  {
+    "id": "transitions-whip-pan",
+    "title": "Hide a cut inside a whip pan with motion blur",
+    "section": "transitions",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "experience",
+    "tools": [
+      "GSAP",
+      "Canvas 2D"
+    ],
+    "path": "recipes/transitions/transitions-whip-pan.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "Switching items or places by a plain cut looks limp; visible camera travel between shots looks like a jerk."
+  },
+  {
+    "id": "sound-keep-noise-whooshes",
+    "title": "Keep noise whooshes on cuts even if viewers hear them as sniffing",
+    "section": "sound",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "video-metric",
+    "tools": [
+      "numpy",
+      "ffmpeg"
+    ],
+    "path": "recipes/sound/sound-keep-noise-whooshes.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "Band-passed noise whooshes on cuts get described as \"a vacuum cleaner\" or \"someone sniffing\", and you want to remove them for clean sound."
+  },
+  {
+    "id": "sound-loudness-like-hits",
+    "title": "Master the final to −15 LUFS ±1 with dense music and no dips",
+    "section": "sound",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "measurement",
+    "tools": [
+      "ffmpeg",
+      "ebur128"
+    ],
+    "path": "recipes/sound/sound-loudness-like-hits.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-28",
+    "when": "The video is quieter than neighbours in the feed, music drops out or covers the voice, silent gaps between lines."
+  },
+  {
+    "id": "sound-music-rotation",
+    "title": "Declare the track in music.json and never reuse it within two videos",
+    "section": "sound",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "experience",
+    "tools": [
+      "ffmpeg",
+      "Python"
+    ],
+    "path": "recipes/sound/sound-music-rotation.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-27",
+    "when": "The build script is copied between projects with a hardcoded track line; every video gets the same music and the channel sounds like one video."
+  },
+  {
+    "id": "sound-no-soft-clip-master",
+    "title": "Master the voice mix linearly with loudnorm and a −2 dBFS limiter, never through tanh or a soft clip",
+    "section": "sound",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "measurement",
+    "tools": [
+      "ffmpeg",
+      "ebur128"
+    ],
+    "path": "recipes/sound/sound-no-soft-clip-master.md",
+    "added": "2026-10-28",
+    "updated": "2026-10-29",
+    "when": "A mix script (yours or an engine's) has a line like `mix = tanh(mix * 1.15) / 1.15` \"to avoid clipping\", or a limiter with a low ceiling. The video hits −14 LUFS, but the voice sounds flat and pressed, and true peak sits far below the ceiling."
+  },
+  {
+    "id": "sound-sfx-by-meaning",
+    "title": "Assign SFX by event meaning and tune tonal SFX to the track's tonic",
+    "section": "sound",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "viewer-feedback",
+    "tools": [
+      "Python",
+      "numpy",
+      "ffmpeg"
+    ],
+    "path": "recipes/sound/sound-sfx-by-meaning.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-28",
+    "when": "The SFX synth has fourteen kinds but videos use the same three; tonal effects clash with the music key."
+  },
+  {
+    "id": "captions-blink-color-not-opacity",
+    "title": "Blink the accent word with color, not opacity",
+    "section": "captions",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "experience",
+    "tools": [
+      "GSAP"
+    ],
+    "path": "recipes/captions/captions-blink-color-not-opacity.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-27",
+    "when": "The last word of a line blinks via an `opacity` tween with `repeat`/`yoyo`. The tween ends after the line fade-out and brings the word back: it hangs until the end of the video. Automated QA is green."
+  },
+  {
+    "id": "captions-cache-key-text",
+    "title": "Key the karaoke cache by take hash plus line text",
+    "section": "captions",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "measurement",
+    "tools": [
+      "WhisperX",
+      "Python"
+    ],
+    "path": "recipes/captions/captions-cache-key-text.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-27",
+    "when": "A line was rewritten and re-synthesised, but captions show the old wording: the alignment cache checked only the file hash. ASR QA of the final video doesn't look at karaoke."
+  },
+  {
+    "id": "captions-colors-contrast",
+    "title": "Dim inactive caption words and check contrast on every theme",
+    "section": "captions",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "measurement",
+    "tools": [
+      "CSS"
+    ],
+    "path": "recipes/captions/captions-colors-contrast.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "Karaoke colors were picked on a dark theme and the video moved to a light one: grey inactive words give 1.9–2.6:1 contrast and are unreadable; accent-colored text on light also gets lost."
+  },
+  {
+    "id": "captions-font-and-burn",
+    "title": "Check font glyphs and burn captions as PNG frames without libass",
+    "section": "captions",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "experience",
+    "tools": [
+      "ffmpeg",
+      "Pillow"
+    ],
+    "path": "recipes/captions/captions-font-and-burn.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-27",
+    "when": "The ffmpeg build lacks libass; the `subtitles` filter is unavailable.; A web-font subset (e.g. Cyrillic) lacks \"-\" and \"?\"; a display font's \"%\" at large size renders as a fallback-font stub.; Ink of a narrow display font overflows its line box; a caption under a big number slides under it."
+  },
+  {
+    "id": "captions-grow-upward",
+    "title": "Anchor karaoke to the strip bottom so wrapping grows upward",
+    "section": "captions",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "experience",
+    "tools": [
+      "CSS"
+    ],
+    "path": "recipes/captions/captions-grow-upward.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-28",
+    "when": "A long line wraps to a second caption row and covers UI elements or bottom rows of cards."
+  },
+  {
+    "id": "assembly-60fps-motion",
+    "title": "Render motion-heavy reels at 60 fps, set in one place for every stage",
+    "section": "assembly",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "experience",
+    "tools": [
+      "ffprobe",
+      "ffmpeg"
+    ],
+    "path": "recipes/assembly/assembly-60fps-motion.md",
+    "added": "2026-10-28",
+    "updated": "2026-10-28",
+    "when": "The video relies on motion: kinetic type, a moving camera, trajectories, particles. At 30 fps with no post-processing it reads as cards, and viewers say \"there's no motion design\"."
+  },
+  {
+    "id": "assembly-content-proportion",
+    "title": "Lay out blocks to the frame's proportion instead of relying on camera zoom",
+    "section": "assembly",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "measurement",
+    "tools": [
+      "CSS",
+      "GSAP"
+    ],
+    "path": "recipes/assembly/assembly-content-proportion.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "A two-line quote (1440×170 block) or a chain of four pills in a row (1300×90) is \"wide\" while three quarters of the 16:9 frame stay empty. No zoom fits such a strip."
+  },
+  {
+    "id": "assembly-deterministic-timeline",
+    "title": "Make every frame a pure function of time — no Date.now, no unseeded random",
+    "section": "assembly",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "experience",
+    "tools": [
+      "GSAP",
+      "JavaScript"
+    ],
+    "path": "recipes/assembly/assembly-deterministic-timeline.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "Preview and render diverge: particles elsewhere, different shake, elements appear in wrong places on seek. Frame-by-frame rendering seeks the timeline; randomness and wall-clock time break it."
+  },
+  {
+    "id": "assembly-gsap-tween-lifetime",
+    "title": "Never let a tween outlive its scene",
+    "section": "assembly",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "measurement",
+    "tools": [
+      "GSAP"
+    ],
+    "path": "recipes/assembly/assembly-gsap-tween-lifetime.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-28",
+    "when": "A finished GSAP tween holds its end value. If an element's exit is scheduled before its entrance ends, it stays on top of later scenes. Same family: `tl.set` does not survive a neighbour's finished tween; a container with CSS `opacity:0` won't appear from animating its children; inline `transform: scale()` conflicts with a `scale` tween."
+  },
+  {
+    "id": "assembly-motion-timing",
+    "title": "Set durations, easing and stagger from a table, not one value",
+    "section": "assembly",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "experience",
+    "tools": [
+      "GSAP"
+    ],
+    "path": "recipes/assembly/assembly-motion-timing.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "Every element moves with one ease, on one axis, in the same 0.55 s. Viewers call it \"angular and primitive\"."
+  },
+  {
+    "id": "assembly-no-empty-scene-start",
+    "title": "Bring the scene block in at the cut and light up rows on their words",
+    "section": "assembly",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "measurement",
+    "tools": [
+      "GSAP",
+      "ffmpeg"
+    ],
+    "path": "recipes/assembly/assembly-no-empty-scene-start.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "A list, menu or big number is anchored to the word that names it. The line starts with a lead-in, the word arrives at second 4–5, and until then the frame is empty background with captions. Audio and timing checks are green."
+  },
+  {
+    "id": "assembly-serialize-heavy-jobs",
+    "title": "Run synthesis, alignment and render one at a time behind a lock",
+    "section": "assembly",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "experience",
+    "tools": [
+      "Python",
+      "flock"
+    ],
+    "path": "recipes/assembly/assembly-serialize-heavy-jobs.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "Several agents build videos in parallel, each launching TTS, ASR and a headless browser. The OS kills processes for memory; the render captures black tiles."
+  },
+  {
+    "id": "assembly-terminal-typing",
+    "title": "Type terminal commands with a stepped clip-path mask",
+    "section": "assembly",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "measurement",
+    "tools": [
+      "GSAP",
+      "CSS"
+    ],
+    "path": "recipes/assembly/assembly-terminal-typing.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "A code block appears whole and hangs; nothing happens inside the frame; it reads as a slide."
+  },
+  {
+    "id": "assembly-word-anchored-animation",
+    "title": "Anchor animation to aligned word times, not timers",
+    "section": "assembly",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "experience",
+    "tools": [
+      "WhisperX",
+      "GSAP",
+      "Python"
+    ],
+    "path": "recipes/assembly/assembly-word-anchored-animation.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "Scene events are timed by offset (\"2.3 s after line start\"). Any voice edit shifts everything; elements land on the wrong word."
+  },
+  {
+    "id": "qa-asr-per-take",
+    "title": "Run ASR on every take with a topic vocabulary, never with the line text",
+    "section": "qa",
+    "lang": "ru",
+    "status": "proven",
+    "evidence": "measurement",
+    "tools": [
+      "faster-whisper",
+      "WhisperX"
+    ],
+    "path": "recipes/qa/qa-asr-per-take.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-28",
+    "when": "ASR of the final mix hides a lost first word and clipped tails. Per-line ASR raises false alarms: the recognizer's language model substitutes a familiar Russian word for a rare term."
+  },
+  {
+    "id": "qa-contact-sheet-final",
+    "title": "Review the final mp4 contact sheet yourself before showing it, even when the agent's QA is green",
+    "section": "qa",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "measurement",
+    "tools": [
+      "ffmpeg",
+      "Claude Code"
+    ],
+    "path": "recipes/qa/qa-contact-sheet-final.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-27",
+    "when": "Half of the defects show only in the finished file: a stuck element, blinking, a shape covering a caption, empty scene starts, slide-like layouts. The agent's checks (loudness, ASR, contract tests) measure sound and structure, not the picture, so it says \"done\" with green QA and misses them."
+  },
+  {
+    "id": "qa-dry-frame-review",
+    "title": "Review the middle frame of every scene before render",
+    "section": "qa",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "measurement",
+    "tools": [
+      "Playwright",
+      "ffmpeg"
+    ],
+    "path": "recipes/qa/qa-dry-frame-review.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-28",
+    "when": "Rendering a long video takes hours, and a layout defect is baked into the mp4 afterwards. Automated checks don't look at layout at all."
+  },
+  {
+    "id": "qa-frame-fill-mp4",
+    "title": "Measure frame fill on the rendered mp4, not in the DOM",
+    "section": "qa",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "measurement",
+    "tools": [
+      "ffmpeg",
+      "Python",
+      "Pillow",
+      "numpy"
+    ],
+    "path": "recipes/qa/qa-frame-fill-mp4.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "Technical checks are green, the stillness lint is silent (captions change every half second so the frame looks \"alive\"), yet a large share of the video is empty background with captions. DOM measurement lies: a 1300×90 pill chain counts as \"wide\"."
+  },
+  {
+    "id": "qa-green-is-not-approval",
+    "title": "Don't treat green automated QA as approval of the video",
+    "section": "qa",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "measurement",
+    "tools": [],
+    "path": "recipes/qa/qa-green-is-not-approval.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-29",
+    "when": "The agent builds a video, all checks (audio, ASR, timing, scene contract, motion lint) are green, and it reports \"done\". The viewer or client sees slop, a presentation, or empty frames."
+  },
+  {
+    "id": "qa-motion-metric-is-a-hint",
+    "title": "Treat the motion metric as a hint with one alarm, not as a quality gate",
+    "section": "qa",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "measurement",
+    "tools": [
+      "ffmpeg",
+      "Python",
+      "numpy",
+      "OpenCV"
+    ],
+    "path": "recipes/qa/qa-motion-metric-is-a-hint.md",
+    "added": "2026-10-27",
+    "updated": "2026-10-27",
+    "when": "You are tempted to gate publishing on a motion number: \"fast_ratio below X = slop, above X = fine\". A viewer said a video \"has no motion design\", and the metric looks like the obvious automatic check."
+  },
+  {
+    "id": "qa-preflight-ffmpeg",
+    "title": "Run the final through blackdetect, freezedetect, scene detection and ebur128",
+    "section": "qa",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "experience",
+    "tools": [
+      "ffmpeg",
+      "PySceneDetect"
+    ],
+    "path": "recipes/qa/qa-preflight-ffmpeg.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "Black frames, frozen stretches and off-target loudness are spotted by eye after publishing. A free-prompt VLM judge gives false positives."
+  },
+  {
+    "id": "qa-still-lint",
+    "title": "Catch frame stillness from the timeline with the camera off",
+    "section": "qa",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "measurement",
+    "tools": [
+      "Playwright",
+      "GSAP",
+      "Python"
+    ],
+    "path": "recipes/qa/qa-still-lint.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "The motion lint (easing, durations) checks animation code, not the result. A frame can stay unchanged for 6 s and nobody sees it before the viewer."
+  },
+  {
+    "id": "qa-voice-gate",
+    "title": "Gate the voice before showing the video: peaks, loudness range, gap spread, rate, pitch",
+    "section": "qa",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "measurement",
+    "tools": [
+      "ffmpeg",
+      "ebur128",
+      "librosa"
+    ],
+    "path": "recipes/qa/qa-voice-gate.md",
+    "added": "2026-10-28",
+    "updated": "2026-10-29",
+    "when": "Before showing a finished video to the person. Every other check is green, ASR matches the script, but over a series the voice \"got worse\" and nobody can say why. Usual causes: a soft-clip master, a metronome of gaps, shortest-take picking, a quietly swapped clone reference."
+  },
+  {
+    "id": "qa-word-sync-check",
+    "title": "Check overlays against word timestamps: ±0.3 s per named noun, a cut every 3 s, a free caption zone",
+    "section": "qa",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "measurement",
+    "tools": [
+      "Python",
+      "ffmpeg",
+      "pymorphy3"
+    ],
+    "path": "recipes/qa/qa-word-sync-check.md",
+    "added": "2026-10-26",
+    "updated": "2026-10-26",
+    "when": "The build has word-level timestamps (from TTS alignment or ASR) and a timeline of overlays (plates, phone mock-ups, windows, captions), and nobody checks whether a plate shows up when its word is spoken, whether a shot lasts too long, or whether a plate covers the captions. Frame review catches these only by luck."
+  },
+  {
+    "id": "vertical-relayout-not-crop",
+    "title": "Make a short from a long video by re-layout, not crop",
+    "section": "vertical",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "measurement",
+    "tools": [
+      "ffmpeg",
+      "GSAP"
+    ],
+    "path": "recipes/vertical/vertical-relayout-not-crop.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "Shorts are cut from a horizontal long video: the frame is letterboxed inside a vertical canvas or center-cropped. Text on a phone ends up smaller than in the long video, and a video strip with a title above and caption below is a second zone, i.e. a slide."
+  },
+  {
+    "id": "vertical-split-face-screen",
+    "title": "For screen-based top-N formats put the host on top and the screen below",
+    "section": "vertical",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "ab-test",
+    "tools": [
+      "GSAP",
+      "ffmpeg"
+    ],
+    "path": "recipes/vertical/vertical-split-face-screen.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "The \"one zone in frame\" rule is applied mechanically to videos about shortcuts, commands and tools. A full-screen version with cuts \"key → terminal → character\" comes out worse than a plain split."
+  },
+  {
+    "id": "vertical-titles-on-joint",
+    "title": "Put vertical titles on the scene joint and space lines at least 0.75 s apart",
+    "section": "vertical",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "measurement",
+    "tools": [
+      "GSAP",
+      "Python"
+    ],
+    "path": "recipes/vertical/vertical-titles-on-joint.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "In a short built from a long video, scene number and title appear on the narrator's word; every scene change shows empty background. The long video's pauses are too short for a joint."
+  },
+  {
+    "id": "face-3d-envelope-smoothing",
+    "title": "Smooth the speech envelope before animating a 3D character's mouth",
+    "section": "face",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "measurement",
+    "tools": [
+      "three.js",
+      "numpy"
+    ],
+    "path": "recipes/face/face-3d-envelope-smoothing.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "Low-poly three.js characters open their mouths by speech loudness and jitter (\"the models twitch\")."
+  },
+  {
+    "id": "face-ltx-a2v-local",
+    "title": "Make a talking character locally with LTX audio-to-video",
+    "section": "face",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "measurement",
+    "tools": [
+      "LTX-2",
+      "ltx-2-mlx",
+      "ffmpeg"
+    ],
+    "path": "recipes/face/face-ltx-a2v-local.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "You need a talking person or mascot in frame; photo lip-sync looks jittery and cloud services cost money."
+  },
+  {
+    "id": "face-musetalk-real-video",
+    "title": "Replace only the mouth over real video instead of animating a photo",
+    "section": "face",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "measurement",
+    "tools": [
+      "MuseTalk",
+      "ffmpeg"
+    ],
+    "path": "recipes/face/face-musetalk-real-video.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "A talking head from one photo (SadTalker and similar) looks jittery, and your own on-camera video lacks usable audio."
+  },
+  {
+    "id": "face-no-real-person",
+    "title": "Don't generate real people; use an archetype, not an actor's face",
+    "section": "face",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "experience",
+    "tools": [],
+    "path": "recipes/face/face-no-real-person.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "A story about a real news event tempts you to generate its participants (a person from the news, a famous character)."
+  },
+  {
+    "id": "text-claude-md-plain-russian",
+    "title": "Put a measurable plain-language rule for Russian into CLAUDE.md and measure it before and after",
+    "section": "text",
+    "lang": "ru",
+    "status": "hypothesis",
+    "evidence": "measurement",
+    "tools": [
+      "Claude Code",
+      "humanizer scanner"
+    ],
+    "path": "recipes/text/text-claude-md-plain-russian.md",
+    "added": "2026-10-28",
+    "updated": "2026-10-28",
+    "when": "The agent answers in Russian with long intros, summaries, chained clauses and em dashes. Simplified Technical English rules don't transfer to Russian, and \"write simply\" in a prompt changes nothing measurable."
+  },
+  {
+    "id": "text-fact-lock-before-after",
+    "title": "Diff the edited text against the source on numbers, dates and names",
+    "section": "text",
+    "lang": "ru",
+    "status": "hypothesis",
+    "evidence": "experience",
+    "tools": [
+      "humanizer-ru",
+      "ru-humanizer",
+      "MCP"
+    ],
+    "path": "recipes/text/text-fact-lock-before-after.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "After any model edit of a Russian script or post. Model edits silently shift meaning: \"often more important\" becomes \"more important\", \"we are executing the plan\" becomes \"we executed the plan\", an explanation the author never gave appears. In a video this ends up voiced and on screen."
+  },
+  {
+    "id": "text-humanize-script-before-tts",
+    "title": "Run the script through the humanizer before voice synthesis",
+    "section": "text",
+    "lang": "ru",
+    "status": "proven",
+    "evidence": "measurement",
+    "tools": [
+      "humanizer-ru",
+      "ru-humanizer"
+    ],
+    "path": "recipes/text/text-humanize-script-before-tts.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "A model-written Russian script sounds like an announcer: \"not X but Y\" every other sentence, comma triplets, \"a new stage\", em dashes. Caught after synthesis, it costs re-voicing takes and re-timing."
+  },
+  {
+    "id": "text-local-edit-not-rewrite",
+    "title": "Edit text locally instead of rewriting paragraphs \"to make it livelier",
+    "section": "text",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "ab-test",
+    "tools": [
+      "humanizer-ru"
+    ],
+    "path": "recipes/text/text-local-edit-not-rewrite.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "\"Make it livelier\" makes the model add emotions, particles, images and conclusions the author never had. The text gets punchy but foreign, with claims the author doesn't stand behind."
+  },
+  {
+    "id": "text-modern-chatgpt-tells",
+    "title": "Grep fresh model text for em dashes, triplets and \"a new stage\", not old clichés",
+    "section": "text",
+    "lang": "ru",
+    "status": "proven",
+    "evidence": "measurement",
+    "tools": [
+      "ru-humanizer",
+      "grep"
+    ],
+    "path": "recipes/text/text-modern-chatgpt-tells.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "Lists of AI-text tells go stale. A fresh model barely writes «стоит отметить» (\"it is worth noting\") or «в современном мире» (\"in today's world\"), so Russian text looks clean, yet viewers still recognize it."
+  },
+  {
+    "id": "text-scanner-genre-flag",
+    "title": "Pass the text genre to the scanner so legitimate register isn't penalized",
+    "section": "text",
+    "lang": "ru",
+    "status": "proven",
+    "evidence": "measurement",
+    "tools": [
+      "ru-humanizer"
+    ],
+    "path": "recipes/text/text-scanner-genre-flag.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "The Russian scanner defaults to marketing. Reference, legal or news text legitimately uses em dashes and officialese and gets penalized for its own genre norms."
+  },
+  {
+    "id": "text-scanner-misses-form-slop",
+    "title": "Don't read a scanner's \"clean\" as proof of a living script",
+    "section": "text",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "measurement",
+    "tools": [
+      "humanizer-ru"
+    ],
+    "path": "recipes/text/text-scanner-misses-form-slop.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-27",
+    "when": "Text scanners catch words and constructions (clichés, officialese, dashes, triplets), not form slop: a \"top 3\" template on a topic that isn't a list, a characterless announcer persona, the third video in a row on one skeleton. They pass as \"clean\"; viewers spot the assembly line in seconds."
+  },
+  {
+    "id": "carousels-content-theme-split",
+    "title": "Keep card content in data and the look in a separate theme CSS file",
+    "section": "carousels",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "experience",
+    "tools": [
+      "python",
+      "weasyprint",
+      "pdftoppm"
+    ],
+    "path": "recipes/carousels/carousels-content-theme-split.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "Card text and styles live in one script, so a new theme (dark, light, brand) means copying the whole script. A month later there are five copies and a bug fixed in one survives in four."
+  },
+  {
+    "id": "carousels-cover-ai-background-only",
+    "title": "Generate only the cover background with AI; set the title in code on top",
+    "section": "carousels",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "experience",
+    "tools": [
+      "image generator",
+      "HTML/CSS",
+      "weasyprint"
+    ],
+    "path": "recipes/carousels/carousels-cover-ai-background-only.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "An image generator asked for \"a cover with title X\" mangles letters: garbage glyphs, stray strokes, mixed-up non-Latin scripts. You can only regenerate, and the text is not editable afterwards."
+  },
+  {
+    "id": "carousels-local-full-fonts",
+    "title": "Load fonts as local full woff2 via @font-face, no Google Fonts, no subsets",
+    "section": "carousels",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "experience",
+    "tools": [
+      "weasyprint",
+      "fontTools"
+    ],
+    "path": "recipes/carousels/carousels-local-full-fonts.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-29",
+    "when": "`@import` of Google Fonts in weasyprint is slow or fails offline, and rendering falls back to a system font. \"latin\" or \"cyrillic\" subsets give tofu boxes on digits and Latin inside non-Latin text."
+  },
+  {
+    "id": "carousels-longread-to-carousel",
+    "title": "Build an A4 PDF and a 1080×1350 carousel from one article by slicing pages",
+    "section": "carousels",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "video-metric",
+    "tools": [
+      "weasyprint",
+      "pdftoppm",
+      "Pillow",
+      "pdftotext"
+    ],
+    "path": "recipes/carousels/carousels-longread-to-carousel.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "A longread is needed as a PDF document (LinkedIn, download) and a swipe carousel (Telegram, Threads, Instagram). Laying out two versions by hand doubles work and numbers drift apart."
+  },
+  {
+    "id": "carousels-pdfinfo-page-size",
+    "title": "Check page size with pdfinfo after every weasyprint render",
+    "section": "carousels",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "measurement",
+    "tools": [
+      "weasyprint",
+      "pdfinfo"
+    ],
+    "path": "recipes/carousels/carousels-pdfinfo-page-size.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "weasyprint silently drops an `@page` rule if junk precedes it in the CSS. The page falls back to A4, a 1080 px layout is cut on the right, no console error. Typical junk source: CSS gluing where `.replace()` hit the wrong string."
+  },
+  {
+    "id": "carousels-pdftoppm-96dpi",
+    "title": "Rasterize weasyprint px pages with pdftoppm -r 96, not 72",
+    "section": "carousels",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "measurement",
+    "tools": [
+      "weasyprint",
+      "pdftoppm",
+      "sips"
+    ],
+    "path": "recipes/carousels/carousels-pdftoppm-96dpi.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "A card laid out at 1080×1350 px comes out as an 810×1013 PNG; the platform upscales it and text blurs. Cause: weasyprint writes 1 CSS px as 0.75 pt, and `pdftoppm -r 72` draws 1 pt as 1 pixel."
+  },
+  {
+    "id": "carousels-prerender-gate",
+    "title": "Gate card text before rendering and the finished PDF with pdftotext after",
+    "section": "carousels",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "experience",
+    "tools": [
+      "python",
+      "pdftotext"
+    ],
+    "path": "recipes/carousels/carousels-prerender-gate.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "Carousel errors show up only on published slides: \"3 / 7\" on card six, an em dash in a diagram label, boxes instead of a glyph, \"17/30\" on the cover read as a fraction though it's a date."
+  },
+  {
+    "id": "carousels-stickers-text-by-code",
+    "title": "Render sticker text in code with font size auto-fit to width",
+    "section": "carousels",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "experience",
+    "tools": [
+      "Playwright",
+      "SVG",
+      "cwebp"
+    ],
+    "path": "recipes/carousels/carousels-stickers-text-by-code.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "Generated stickers arrive with typos and foreign logos; each new caption means a new generation. A long line in fixed size overflows the plate."
+  },
+  {
+    "id": "slides-check-pdf",
+    "title": "Check a deck PDF by page count and a contact sheet, not by scrolling",
+    "section": "slides",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "experience",
+    "tools": [
+      "pdfinfo",
+      "pdftoppm",
+      "ffmpeg"
+    ],
+    "path": "recipes/slides/slides-check-pdf.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "The agent reports \"PDF ready\", yet a slide is missing, one was captured mid-transition, text overflows on another. No time to scroll 40 pages before the talk, and the eye glazes over."
+  },
+  {
+    "id": "slides-html-deck-with-pdf-backup",
+    "title": "Present the HTML deck in a browser; build the PDF backup from slide screenshots",
+    "section": "slides",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "experience",
+    "tools": [
+      "HTML/CSS",
+      "Playwright",
+      "Pillow",
+      "pdfinfo"
+    ],
+    "path": "recipes/slides/slides-html-deck-with-pdf-backup.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "An agent-built HTML deck beats pptx (animations, own font, live blocks), but the venue may lack the right browser or network, and print-to-PDF breaks JS-switched slides."
+  },
+  {
+    "id": "slides-print-css",
+    "title": "Add @media print to an HTML deck so printing gives one page per slide",
+    "section": "slides",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "experience",
+    "tools": [
+      "HTML/CSS",
+      "Chrome headless",
+      "pdfinfo"
+    ],
+    "path": "recipes/slides/slides-print-css.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "In an interactive deck all slides are stacked (`position:absolute; display:none`) and one is shown. Print-to-PDF gives one page or a mess; a long scrolling slide gets cut."
+  },
+  {
+    "id": "agent-clean-run-setting-sources",
+    "title": "Run a clean agent check with --setting-sources \"\" and --plugin-dir",
+    "section": "agent",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "experience",
+    "tools": [
+      "Claude Code"
+    ],
+    "path": "recipes/agent/agent-clean-run-setting-sources.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-28",
+    "when": "You record \"how this skill or plugin works out of the box\", but the agent picks up your personal copy of the same skill, your CLAUDE.md and settings. The screen won't match what a viewer gets."
+  },
+  {
+    "id": "agent-deny-edit-tests",
+    "title": "Protect tests from the agent with deny Edit(./tests/**), not Write",
+    "section": "agent",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "measurement",
+    "tools": [
+      "Claude Code"
+    ],
+    "path": "recipes/agent/agent-deny-edit-tests.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-28",
+    "when": "Told \"make the test pass\", the agent fixes the test, not the code. Same in an editing pipeline: quality checks (`tests/`, scene contract tests) get rewritten to fit a broken result, and green means nothing."
+  },
+  {
+    "id": "agent-evidence-log-wording",
+    "title": "Ask the agent for an evidence log, not for its reasoning",
+    "section": "agent",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "experience",
+    "tools": [
+      "Claude Code",
+      "API"
+    ],
+    "path": "recipes/agent/agent-evidence-log-wording.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "The video needs the agent's line of thought (how it located a place from a photo, why it picked this product). A prompt like \"your reasoning will be in the video\" triggers the API's reasoning-extraction safeguard; the answer is cut, agents fail."
+  },
+  {
+    "id": "agent-feedback-name-the-frame",
+    "title": "Give the agent feedback that names the second, the defect and the action",
+    "section": "agent",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "experience",
+    "tools": [
+      "Claude Code",
+      "Codex"
+    ],
+    "path": "recipes/agent/agent-feedback-name-the-frame.md",
+    "added": "2026-10-27",
+    "updated": "2026-10-29",
+    "when": "You watched the draft and something is off, and the first words that come are \"make it nicer\", \"this part is boring\", \"more dynamic\". The agent cannot act on that: it will change something random, re-render, and you will be back at the same frame."
+  },
+  {
+    "id": "agent-stdin-dev-null",
+    "title": "Give claude -p and codex exec </dev/null inside a while-read loop",
+    "section": "agent",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "measurement",
+    "tools": [
+      "Claude Code",
+      "Codex CLI",
+      "bash"
+    ],
+    "path": "recipes/agent/agent-stdin-dev-null.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "Batch processing (`while read file; do claude -p ...; done < list.txt`) handles only the first line and exits quietly. The agent CLI reads stdin and eats the rest of the list."
+  },
+  {
+    "id": "agent-unambiguous-csv-columns",
+    "title": "Name data columns for the agent so they can't be read two ways",
+    "section": "agent",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "measurement",
+    "tools": [
+      "Claude Code",
+      "CSV"
+    ],
+    "path": "recipes/agent/agent-unambiguous-csv-columns.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "The agent computes from a CSV and writes its own code. A column like `sold_qty` reads as both \"ordered\" and \"bought out\". The agent picks the wrong one, subtracts returns twice, and a wrong number goes on screen in large type."
+  },
+  {
+    "id": "agent-verify-cli-in-binary",
+    "title": "Verify CLI commands and flags in the script against the live CLI, not model memory",
+    "section": "agent",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "measurement",
+    "tools": [
+      "Claude Code",
+      "strings",
+      "grep"
+    ],
+    "path": "recipes/agent/agent-verify-cli-in-binary.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-27",
+    "when": "A model writes a script about a tool and confidently names commands that don't exist or a wrong number of modes. In a video that debunks others' mistakes, your own invented command hurts trust most."
+  },
+  {
+    "id": "agent-work-on-copies",
+    "title": "Give the agent copies and a closed network; keep originals outside its folder",
+    "section": "agent",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "experience",
+    "tools": [
+      "Claude Code",
+      "sips",
+      "bash"
+    ],
+    "path": "recipes/agent/agent-work-on-copies.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "An agent that wants a \"closer look\" crops in place: `sips -c 600 800 photo.jpg` without `--out` overwrites the original. For a blind test the original is gone and the experiment can't be repeated. An agent hitting the network sandbox starts looking for a bypass."
+  },
+  {
+    "id": "publishing-failed-click-is-draft",
+    "title": "Find a stuck Short as a draft in the Shorts tab instead of re-uploading",
+    "section": "publishing",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "experience",
+    "tools": [
+      "YouTube Studio"
+    ],
+    "path": "recipes/publishing/publishing-failed-click-is-draft.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-28",
+    "when": "\"Publish\" did nothing and it seems nothing was uploaded. Studio keeps the button inactive while it shows \"Processing will begin shortly\": the click goes nowhere, but the file already sits as a draft. Re-uploading creates a duplicate. Second trap: vertical videos live in the \"Shorts\" tab, not \"Videos\"; searching Videos by a similar title opens an already published long video instead."
+  },
+  {
+    "id": "publishing-first-three-slots",
+    "title": "Spread uploads over days, strongest first: on one small channel only the first ~3 YouTube and ~5 TikTok uploads of a day got views",
+    "section": "publishing",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "video-metric",
+    "tools": [
+      "YouTube Studio",
+      "TikTok Studio",
+      "yt-dlp"
+    ],
+    "path": "recipes/publishing/publishing-first-three-slots.md",
+    "added": "2026-10-28",
+    "updated": "2026-10-29",
+    "when": "A batch day: several finished shorts, a backlog of remakes or a series. Everything uploads fine, but most of the batch gets single-digit views, and the next day you conclude \"this style doesn't work\"."
+  },
+  {
+    "id": "publishing-instagram-ai-label",
+    "title": "Set the Instagram AI label manually and repeat the disclosure in the caption",
+    "section": "publishing",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "experience",
+    "tools": [
+      "Instagram"
+    ],
+    "path": "recipes/publishing/publishing-instagram-ai-label.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "The Reels wizard changes: for a ready 9:16 vertical the crop screen no longer appears, and the \"Add AI label\" toggle hides and isn't always found. A video with synthesized voice or generated imagery goes out unlabeled."
+  },
+  {
+    "id": "publishing-long-before-shorts",
+    "title": "Publish Shorts only after the long video they link to is actually live",
+    "section": "publishing",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "experience",
+    "tools": [
+      "YouTube Studio",
+      "TikTok Studio",
+      "yt-dlp"
+    ],
+    "path": "recipes/publishing/publishing-long-before-shorts.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-29",
+    "when": "Shorts cut from a long video must link to it. Uploaded before the long video is public (or before a stuck long video is re-uploaded), their descriptions carry an empty or dead link and must be rewritten one by one on every platform."
+  },
+  {
+    "id": "publishing-no-twin-versions",
+    "title": "Don't upload two versions of the same video back to back",
+    "section": "publishing",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "video-metric",
+    "tools": [
+      "YouTube",
+      "TikTok"
+    ],
+    "path": "recipes/publishing/publishing-no-twin-versions.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-29",
+    "when": "A new version came out better (different background, codeword ending) and you want to post it right away. On our channel such a second version got almost no views; why is not established (a platform duplicate filter is one guess, the first version was never taken down and there was no control)."
+  },
+  {
+    "id": "publishing-tiktok-only-me",
+    "title": "Don't re-upload to TikTok while the video shows \"Only me",
+    "section": "publishing",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "measurement",
+    "tools": [
+      "TikTok Studio"
+    ],
+    "path": "recipes/publishing/publishing-tiktok-only-me.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-27",
+    "when": "Right after publishing TikTok shows \"Content under review\" and privacy \"Only me\". It looks like an error, you re-upload, and the account gets two copies."
+  },
+  {
+    "id": "publishing-wait-upload-100",
+    "title": "Keep the YouTube Studio tab open until a large file reaches 100 %",
+    "section": "publishing",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "experience",
+    "tools": [
+      "YouTube Studio"
+    ],
+    "path": "recipes/publishing/publishing-wait-upload-100.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-27",
+    "when": "For a long video (over 100 MB) a processing dialog appears after file selection and it seems YouTube will finish on its own. Close the tab and the upload hangs; Studio may never offer \"Resume upload\"."
+  },
+  {
+    "id": "publishing-youtube-daily-upload-cap",
+    "title": "Treat about 10 YouTube uploads a day as a hard block, not as a plan",
+    "section": "publishing",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "measurement",
+    "tools": [
+      "YouTube Studio"
+    ],
+    "path": "recipes/publishing/publishing-youtube-daily-upload-cap.md",
+    "added": "2026-10-27",
+    "updated": "2026-10-29",
+    "when": "A batch day: a long video plus Shorts, or a backlog of remakes. Around the eleventh upload of the day YouTube answers \"upload unavailable, try again in 24 hours\" and asks the channel to pass verification. No draft is created; the file is simply not accepted."
+  },
+  {
+    "id": "publishing-youtube-kids-flag",
+    "title": "After every YouTube upload check the \"made for kids\" flag",
+    "section": "publishing",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "measurement",
+    "tools": [
+      "YouTube Studio"
+    ],
+    "path": "recipes/publishing/publishing-youtube-kids-flag.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "The video went out with audience \"Made for kids\". YouTube then disables comments and notifications. A \"comment the word\" CTA fails, and from outside it looks like a normal video."
+  },
+  {
+    "id": "cta-codeword-in-comments",
+    "title": "End a reel with a question and a codeword viewers type in the comments",
+    "section": "cta",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "measurement",
+    "tools": [
+      "Instagram",
+      "official messaging API"
+    ],
+    "path": "recipes/cta/cta-codeword-in-comments.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-29",
+    "when": "\"Subscribe\" and \"like\" endings get skipped. Few comments, while comments drive reach and show who cares about the topic."
+  },
+  {
+    "id": "cta-deliver-before-asking",
+    "title": "Prepare the promised material and the path to it before publishing the CTA",
+    "section": "cta",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "video-metric",
+    "tools": [
+      "text editor"
+    ],
+    "path": "recipes/cta/cta-deliver-before-asking.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-29",
+    "when": "The CTA worked, people write \"send it\", but the material doesn't exist or nobody knows where to get it. Demand comes and goes, and the next CTA earns less trust."
+  },
+  {
+    "id": "cta-page-per-codeword",
+    "title": "Give every codeword its own static page and reply with its link",
+    "section": "cta",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "experience",
+    "tools": [
+      "GitHub Pages",
+      "HTML"
+    ],
+    "path": "recipes/cta/cta-page-per-codeword.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-29",
+    "when": "Codeword material is sent differently each time: file in DM, channel post, plain text. Links get lost, material can't be updated, and on YouTube it can't be sent at all."
+  },
+  {
+    "id": "cta-promise-free-tool",
+    "title": "Promise a free tool with a guide for the codeword, not an abstract lesson",
+    "section": "cta",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "measurement",
+    "tools": [
+      "GitHub",
+      "guide"
+    ],
+    "path": "recipes/cta/cta-promise-free-tool.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "A codeword alone doesn't work: if behind it is \"a set of tips\" or \"useful material\", viewers have no reason to comment."
+  },
+  {
+    "id": "cta-youtube-link-in-description",
+    "title": "On YouTube Shorts point to the profile link or a Related Video, not a codeword or a description URL",
+    "section": "cta",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "experience",
+    "tools": [
+      "YouTube Studio"
+    ],
+    "path": "recipes/cta/cta-youtube-link-in-description.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-29",
+    "when": "\"Comment the word, I'll DM you\" lives on Instagram. YouTube has no DMs, so the same video with the same ending leaves viewers without the material. A URL pasted into a Shorts description or comment does not help either: YouTube makes ordinary links in Shorts descriptions and comments unclickable ([YouTube Help](https://support.google.com/youtube/answer/13748639?hl=en))."
+  },
+  {
+    "id": "analytics-author-watchlist",
+    "title": "Keep a tiered watchlist of niche authors and scan it once a day for reels above baseline",
+    "section": "analytics",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "experience",
+    "tools": [
+      "curl",
+      "python"
+    ],
+    "path": "recipes/analytics/analytics-author-watchlist.md",
+    "added": "2026-10-27",
+    "updated": "2026-10-27",
+    "when": "Ideas come from your head or from news, and by the time a niche hit is noticed it is two weeks old. You want fresh hits of your niche on the day they take off, from a known set of authors."
+  },
+  {
+    "id": "analytics-clicks-not-impressions",
+    "title": "Track the funnel down to link clicks, not just impressions",
+    "section": "analytics",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "measurement",
+    "tools": [
+      "LinkedIn analytics",
+      "spreadsheet"
+    ],
+    "path": "recipes/analytics/analytics-clicks-not-impressions.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "A post got tens of thousands of impressions and is logged as a success. If nobody clicked the link or subscribed, the reach brought nothing."
+  },
+  {
+    "id": "analytics-compare-in-equal-slots",
+    "title": "Compare styles and topics only between videos in the same upload slots, at the same age after publishing",
+    "section": "analytics",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "video-metric",
+    "tools": [
+      "yt-dlp"
+    ],
+    "path": "recipes/analytics/analytics-compare-in-equal-slots.md",
+    "added": "2026-10-28",
+    "updated": "2026-10-29",
+    "when": "You want to say \"style A doesn't work\" or \"topic B wins\" from your own view counts, and the videos went out on different days, in different upload positions or at different ages."
+  },
+  {
+    "id": "analytics-instagram-embed-read-only",
+    "title": "Read public Instagram counters through the embed page with an honest user agent",
+    "section": "analytics",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "experience",
+    "tools": [
+      "curl",
+      "python"
+    ],
+    "path": "recipes/analytics/analytics-instagram-embed-read-only.md",
+    "added": "2026-10-27",
+    "updated": "2026-10-27",
+    "when": "You need view and like counts of other authors' reels for a watchlist or a hit scan, without logging in, without an API key and without pretending to be a browser or a crawler."
+  },
+  {
+    "id": "analytics-no-cross-platform-transfer",
+    "title": "Don't transfer a \"format works\" conclusion from one platform to another",
+    "section": "analytics",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "video-metric",
+    "tools": [
+      "spreadsheet"
+    ],
+    "path": "recipes/analytics/analytics-no-cross-platform-transfer.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "A video took off on one platform and the format is declared working everywhere. Or it flopped on YouTube and the topic is buried, though it might have hit on Instagram."
+  },
+  {
+    "id": "analytics-telegram-reactions-36h",
+    "title": "Measure Telegram posts by reactions per 1000 views, within 36 hours only",
+    "section": "analytics",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "measurement",
+    "tools": [
+      "Telegram",
+      "spreadsheet"
+    ],
+    "path": "recipes/analytics/analytics-telegram-reactions-36h.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "In Telegram reach is nearly equal across a channel's posts (subscribers see everything), so comparing genres by views shows nothing. Reactions come only in the first day to day and a half; afterwards views grow, reactions stall, and the ratio falls on its own."
+  },
+  {
+    "id": "analytics-unique-external-authors",
+    "title": "Compare posts by unique external commenters per 1000 impressions, not the comment counter",
+    "section": "analytics",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "measurement",
+    "tools": [
+      "spreadsheet"
+    ],
+    "path": "recipes/analytics/analytics-unique-external-authors.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "The comment counter includes the author's own replies and repeat comments from the same people. A post where the author replied a lot looks \"engaging\" though it has as many outside voices as its neighbour."
+  },
+  {
+    "id": "analytics-yt-dlp-views",
+    "title": "Pull public views of all your videos with one yt-dlp command and compare with the niche median",
+    "section": "analytics",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "measurement",
+    "tools": [
+      "yt-dlp"
+    ],
+    "path": "recipes/analytics/analytics-yt-dlp-views.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "Views are checked one by one in Studio, by eye, after each video. A month later there is no table showing which formats pull and which are dead, nor whether your numbers are bad or normal for the niche."
+  },
+  {
+    "id": "brand-3d-mascot-alpha-clips",
+    "title": "Make a 3D mascot read as its species from the silhouette, then render reusable alpha clips per emotion",
+    "section": "brand",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "viewer-feedback",
+    "tools": [
+      "Blender",
+      "ffmpeg"
+    ],
+    "path": "recipes/brand/brand-3d-mascot-alpha-clips.md",
+    "added": "2026-10-28",
+    "updated": "2026-10-29",
+    "when": "A channel mascot moves from a flat picture to 3D (code primitives, a sculpt, a toy-like render). Viewers say it looks like a different animal, it shows one face for the whole video, and every new video re-renders it from scratch."
+  },
+  {
+    "id": "brand-accent-fill-only",
+    "title": "Use a bright brand color only as fill; add a dark shade for accent text",
+    "section": "brand",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "measurement",
+    "tools": [
+      "CSS"
+    ],
+    "path": "recipes/brand/brand-accent-fill-only.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "An acid brand color (lime, yellow, mint) works as a patch and fails as letters. An accent word in it on a light background is nearly unreadable in a frame or card, especially on a phone."
+  },
+  {
+    "id": "brand-mascot-once-logo-last",
+    "title": "Show the mascot once per episode on a fitting word, the logo only at the end",
+    "section": "brand",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "measurement",
+    "tools": [
+      "GSAP"
+    ],
+    "path": "recipes/brand/brand-mascot-once-logo-last.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "A mascot sits in a corner the whole video, the logo stays as a watermark. That is slide chrome: viewers stop noticing, the frame reads as a presentation. Technical risk: a mascot anchored to a word can get stuck over later scenes."
+  },
+  {
+    "id": "brand-palette-in-root",
+    "title": "Keep the palette in :root of one CSS file and read it from the timeline via getComputedStyle",
+    "section": "brand",
+    "lang": "any",
+    "status": "proven",
+    "evidence": "measurement",
+    "tools": [
+      "CSS",
+      "GSAP"
+    ],
+    "path": "recipes/brand/brand-palette-in-root.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "Colors are scattered as literals across scenes, animation scripts and generators. Nobody chose the palette: it came from the first video and gets copied into every next one. Rebranding means touching every file."
+  },
+  {
+    "id": "brand-stickers-outside-camera",
+    "title": "Put stickers and the mascot in a layer outside the camera with a white four-shadow outline",
+    "section": "brand",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "experience",
+    "tools": [
+      "CSS",
+      "GSAP"
+    ],
+    "path": "recipes/brand/brand-stickers-outside-camera.md",
+    "added": "2026-10-23",
+    "updated": "2026-10-23",
+    "when": "Brand stickers (mascot, badges, stamps) placed in the scene move with the camera: a push-in enlarges them, a pan takes them off screen. A cut-out PNG without an outline looks pasted on, not like a sticker."
+  }
+]

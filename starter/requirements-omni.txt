@@ -1,0 +1,6 @@
+# Отдельное окружение TTS, проверяемый профиль для Apple Silicon.
+omnivoice==0.2.1
+torch==2.8.0
+torchaudio==2.8.0
+transformers==5.20.2
+accelerate==1.15.0

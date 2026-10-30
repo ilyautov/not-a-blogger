@@ -1,0 +1,9 @@
+/* SPDX-License-Identifier: MIT. Copyright (c) 2026 not-a-blogger contributors. */
+/* Тема дека paper (как в deck.html по умолчанию): тёплая бумага, сине-зелёный акцент. */
+:root{
+  --bg:#f3eee4; --ink:#22262b; --mut:#626870; --accent:#1d6b78; --accent2:#7b4a7a;
+  --card:#fbf8f2; --bd:#e2dacb;
+  --font-sans:'Inter','Noto Sans',system-ui,sans-serif;
+  --font-head:'PT Serif','Noto Serif',Georgia,serif;
+  --font-mono:'JetBrains Mono','Noto Sans Mono',ui-monospace,monospace;
+}

@@ -1,0 +1,62 @@
+name: ci
+on: [pull_request, push]
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 0}
+      - uses: gitleaks/gitleaks-action@v2
+        env: {GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"}
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.11"}
+      - uses: actions/setup-node@v4
+        with: {node-version: "22", cache: npm, cache-dependency-path: starter/package-lock.json}
+      - run: sudo apt-get update && sudo apt-get install -y ffmpeg poppler-utils libpango-1.0-0 libpangoft2-1.0-0 libcairo2 fonts-inter fonts-noto-core fonts-noto-mono fonts-jetbrains-mono
+      - run: pip install -r requirements.txt -r tools/carousels/requirements.txt -r tools/covers/requirements.txt -r tools/slides/requirements.txt pytest
+      - run: python -m playwright install --with-deps chromium
+      - run: npm ci
+        working-directory: starter
+      - run: echo "TSC=$GITHUB_WORKSPACE/starter/node_modules/.bin/tsc" >> "$GITHUB_ENV"
+      - run: bash scripts/privacy_check.sh
+      - run: python3 scripts/lint_recipes.py
+      - run: python3 scripts/build_index.py --check
+      - run: python3 scripts/starter_manifest.py --check
+      - run: python3 -m pytest tests/ -q
+      - name: учебник в PDF
+        run: python3 scripts/build_textbook_pdf.py --out dist
+      - uses: actions/upload-artifact@v4
+        with: {name: textbook-pdf, path: dist/*.pdf, retention-days: 14}
+
+  # Путь новичка целиком: чистый клон -> mp4 в обоих стартерах, команды как в README.
+  newbie-path:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.11"}
+      - uses: actions/setup-node@v4
+        with: {node-version: "22", cache: npm, cache-dependency-path: starter/package-lock.json}
+      - run: sudo apt-get update && sudo apt-get install -y ffmpeg
+      - name: starter-lite (README, шаги 4–5)
+        working-directory: starter-lite
+        run: |
+          npm run check
+          npm run render
+          d=$(ffprobe -v error -show_entries format=duration -of csv=p=0 output/first-video.mp4)
+          echo "duration=$d"; python3 -c "import sys; d=float('$d'); sys.exit(0 if 14.5 < d < 15.5 else 1)"
+      - name: starter (README, разделы 1–2, без TTS и ASR)
+        working-directory: starter
+        run: |
+          npm ci
+          python -m venv .venv
+          .venv/bin/python -m pip install -r requirements.txt
+          .venv/bin/python -m playwright install --with-deps chromium
+          export PY="$PWD/.venv/bin/python"
+          ./make.sh fonts
+          ./make.sh fake
+          ./make.sh frames
+          FINISH_ARGS=--no-asr ./make.sh all
+          python3 -c "import json,sys; r=json.load(open('qa/final-result.json')); print(r['status'], r['checks']); sys.exit(0 if r['status']=='preview_partial' else 1)"

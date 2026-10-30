@@ -1,0 +1,9 @@
+# video scenario for the dry run: app<TAB>active tab URL
+Safari	https://docs.example.com/report
+Safari	https://www.youtube.com/watch?v=example
+Safari	https://www.youtube.com/watch?v=example
+Safari	https://docs.example.com/report
+Safari	https://m.youtube.com/
+Safari	https://docs.example.com/report
+Google Chrome	https://www.reddit.com/
+Safari	https://example.com/

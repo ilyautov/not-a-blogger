@@ -1,0 +1,6 @@
+/* SPDX-License-Identifier: MIT. Copyright (c) 2026 not-a-blogger contributors. */
+/* Тема обложки dark: тёмный скрим, светлый текст, янтарный акцент. Под насыщенный или тёмный арт. */
+:root{
+  --ink:#f4f1ea; --sub:#c9c4b8; --accent:#f0b23a; --eyebrow:#f0b23a;
+  --scrim:#121316; --bg:#15171b; --panel:#1d2026; --accent2:#6cc7a4; --line:rgba(255,255,255,0.12);
+}

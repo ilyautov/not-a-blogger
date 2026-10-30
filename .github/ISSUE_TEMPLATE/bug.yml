@@ -1,0 +1,47 @@
+name: Bug in a tool / Ошибка утилиты
+description: A script in tools/, starter/ or starter-lite/ fails or gives a wrong result / Скрипт из tools/ или starter/ падает или врёт
+labels: [bug]
+body:
+  - type: input
+    id: script
+    attributes: {label: Script or tool / Скрипт или утилита, placeholder: "tools/qa/still_lint.py or starter/make.sh"}
+    validations: {required: true}
+  - type: textarea
+    id: command
+    attributes:
+      label: Command you ran / Команда
+      description: The exact command, from the repo root
+      render: bash
+    validations: {required: true}
+  - type: textarea
+    id: output
+    attributes:
+      label: Output / Вывод
+      description: Full error or the wrong result; cut personal paths
+      render: text
+    validations: {required: true}
+  - type: textarea
+    id: expected
+    attributes: {label: What you expected / Что ожидал}
+    validations: {required: true}
+  - type: input
+    id: os
+    attributes: {label: OS and version / ОС и версия, placeholder: "macOS 15.4, Ubuntu 24.04, Windows 11 + WSL"}
+    validations: {required: true}
+  - type: input
+    id: runtime
+    attributes:
+      label: Python and Node versions / Версии Python и Node
+      description: "Output of python3.11 --version and node --version"
+      placeholder: "Python 3.11.9, Node 22.4.0"
+    validations: {required: true}
+  - type: input
+    id: commit
+    attributes: {label: Kit commit / Коммит набора, description: "git rev-parse --short HEAD"}
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy / Приватность
+      options:
+        - label: No keys, tokens or home-folder paths in the output above / В выводе нет ключей, токенов и путей к домашней папке
+          required: true

@@ -1,0 +1,15 @@
+# Утилиты tools/ и тесты tests/. Нужен ещё ffmpeg/ffprobe в PATH (или переменные FFMPEG/FFPROBE).
+# Стартер starter/ ставится по своему starter/requirements.txt.
+numpy>=1.26
+scipy>=1.11
+soundfile>=0.12
+pillow>=10.0
+opencv-python-headless>=4.8   # image/depth_layers.py, qa/motion_gate.py (компенсация камеры при поиске склеек)
+num2words>=0.5.13             # voice/pick_take.py (сравнение текста)
+playwright>=1.45              # lint/still_lint.py; браузер: python -m playwright install chromium
+
+# Необязательные, тяжёлые (ставьте по нужде; тесты без них пропускаются):
+#   voice/pick_take.py:  pip install faster-whisper librosa     (модель whisper качается при первом запуске)
+#   qa/breakdown.py:     pip install librosa                    (сетка бита по звуку; без неё бит пропускается)
+#   image/depth.py:      pip install torch transformers          (веса Depth-Anything-V2-Small, Apache-2.0,
+#                        скачиваете сами: huggingface-cli download depth-anything/Depth-Anything-V2-Small-hf)

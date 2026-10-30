@@ -1,0 +1,10 @@
+{
+ "_comment": "Script with placeholders. Every {key} is filled from real-numbers.json by reel_from_numbers.py: the show form goes to voice/lines.json (subtitles), the spoken form to voice/chunks.json (TTS). Never type a number here. Keys: target, total_gb, files, top1_name, top1_gb, top1_pct, video_gb, archives_gb, images_gb, old_gb, old_pct. The starter's ASR is set to Russian; for another language change the lines and language= in voice/trim.py.",
+ "lines": [
+  "Папка {target} весит {total_gb} гигабайт. Куда всё делось?",
+  "Одна папка {top1_name} занимает {top1_pct} процентов.",
+  "Видео: {video_gb} гигабайт. Архивы: {archives_gb}.",
+  "{old_pct} процентов не менялось больше года.",
+  "Это замер, а не догадка. Скрипт в описании."
+ ]
+}

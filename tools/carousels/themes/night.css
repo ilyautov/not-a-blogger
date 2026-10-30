@@ -1,0 +1,15 @@
+/* SPDX-License-Identifier: MIT. Copyright (c) 2026 not-a-blogger contributors. */
+/* Тема night: графитовый фон, янтарный акцент, мятный второй акцент, мягкие пятна света. */
+:root{
+  --font-sans:'Inter','Noto Sans',sans-serif;
+  --font-head:'Inter','Noto Sans',sans-serif;
+  --bg:#15171b; --ink:#f1efe9; --sub:#a9abb0; --eyebrow:#f0b23a; --accent:#f0b23a; --accent2:#6cc7a4;
+  --panel-bg:rgba(255,255,255,0.05); --panel-br:rgba(240,178,58,0.28); --panel-shadow:none;
+  --chip-bg:rgba(240,178,58,0.10); --chip-br:rgba(240,178,58,0.35);
+  --footline:rgba(255,255,255,0.12); --bad:#ff7a6e; --good:#6cc7a4;
+  --scrim-a:rgba(21,23,27,0.88); --scrim-b:rgba(21,23,27,0.5);
+}
+.blob{ position:absolute; width:760px; height:760px; right:-220px; top:-240px;
+  background:radial-gradient(circle at 50% 50%, rgba(240,178,58,0.16), rgba(240,178,58,0) 70%); }
+.blob2{ position:absolute; width:700px; height:700px; left:-240px; bottom:-260px;
+  background:radial-gradient(circle at 50% 50%, rgba(108,199,164,0.14), rgba(108,199,164,0) 70%); }

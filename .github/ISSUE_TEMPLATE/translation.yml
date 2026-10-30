@@ -1,0 +1,34 @@
+name: Translation / Перевод
+description: Translate a textbook chapter or a pitfalls file into your language / Перевести главу учебника или файл граблей
+labels: [translation]
+body:
+  - type: input
+    id: file
+    attributes:
+      label: Source file / Исходный файл
+      description: A file in learn/en/ or gotchas/lang/
+      placeholder: "learn/en/03-voice.md"
+    validations: {required: true}
+  - type: input
+    id: target
+    attributes:
+      label: Target language (ISO 639-1) / Язык перевода
+      description: The maintainer adds the matching lang:<code> label
+      placeholder: "de"
+    validations: {required: true}
+  - type: input
+    id: path
+    attributes: {label: Target path / Куда положить, placeholder: "learn/de/03-voice.md"}
+    validations: {required: true}
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes / Заметки
+      description: Terms you are unsure about, whether you will translate other chapters too
+  - type: checkboxes
+    id: rules
+    attributes:
+      label: Rules / Правила
+      options:
+        - label: Numbers, commands and links stay as in the source / Цифры, команды и ссылки как в оригинале
+          required: true

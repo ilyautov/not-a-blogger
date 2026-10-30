@@ -1,0 +1,42 @@
+name: My video / Мой ролик
+description: Breakdown of your video with metrics, a hit or a flop / Разбор своего ролика с метриками
+labels: [example]
+body:
+  - type: input
+    id: link
+    attributes: {label: Link / Ссылка}
+    validations: {required: true}
+  - type: input
+    id: format
+    attributes: {label: Format and length / Формат и длительность, placeholder: "vertical, 29 s"}
+    validations: {required: true}
+  - type: input
+    id: lang
+    attributes: {label: Video language / Язык ролика}
+    validations: {required: true}
+  - type: input
+    id: hook
+    attributes: {label: First line / Первая фраза}
+    validations: {required: true}
+  - type: textarea
+    id: metrics
+    attributes:
+      label: Metrics / Метрики
+      description: Platform, views, likes, retention, date taken
+    validations: {required: true}
+  - type: textarea
+    id: recipes
+    attributes: {label: Recipes or tools used / Какие рецепты и утилиты использовал}
+  - type: textarea
+    id: lessons
+    attributes: {label: What worked and what didn't / Что сработало и что нет}
+    validations: {required: true}
+  - type: checkboxes
+    id: honest
+    attributes:
+      label: Honesty / Честность
+      options:
+        - label: Numbers are from the platform's analytics, not rounded up / Цифры из аналитики, не округлены вверх
+          required: true
+        - label: No faces of people who did not consent / В кадре нет лиц без согласия
+          required: true

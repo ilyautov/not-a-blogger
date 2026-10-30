@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>3D skit</title>
+<style>
+  /* Bring your own font: drop a woff2 next to this file and add @font-face. System sans is the fallback. */
+  html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:#0b0d14}
+  canvas{display:block}
+  body.ps1 canvas{image-rendering:pixelated}
+  /* subtitles: white, upper third, 1-2 lines, dense shadow instead of a plate */
+  #sub{position:absolute;left:80px;right:80px;top:330px;text-align:center;color:#fff;
+       font:700 60px/1.2 "Helvetica Neue",Arial,sans-serif;letter-spacing:-.005em;text-wrap:balance;
+       text-shadow:0 0 3px rgba(0,0,0,.95),0 2px 4px rgba(0,0,0,.9),0 0 18px rgba(0,0,0,.75),0 0 40px rgba(0,0,0,.5)}
+  #vig{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at 50% 50%,transparent 55%,rgba(0,0,0,.4) 100%)}
+</style>
+<script type="importmap">{"imports":{"three":"./vendor/three/build/three.module.min.js","three/addons/":"./vendor/three/examples/jsm/"}}</script>
+</head>
+<body>
+<div id="vig"></div>
+<div id="sub"></div>
+<script type="module">
+  // ?style=voxel | ps1 | clean   (default: clean)
+  const style = new URLSearchParams(location.search).get('style') || 'clean';
+  if (!['voxel', 'ps1', 'clean'].includes(style)) throw new Error('unknown style ' + style);
+  document.body.classList.add(style);
+  await import(`./styles/${style}.js`);
+</script>
+</body>
+</html>

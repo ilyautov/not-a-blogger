@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!-- SPDX-License-Identifier: MIT. Copyright (c) 2026 not-a-blogger contributors. См. LICENSE в корне репозитория. -->
+<!-- Дек одним файлом: слайды = section.slide, стрелки/пробел/PageUp/PageDown/Home/End, клик = вперёд,
+     номер «N / M», полоса прогресса, #5 в адресе открывает пятый слайд.
+     Печать в PDF: Ctrl/Cmd+P, «Сохранить как PDF», поля «Нет», фон включён. Каждый слайд = страница 16:9.
+     md2deck.py заменяет содержимое между маркерами slides:start / slides:end и блок style#theme. -->
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Дек из Markdown</title>
+<style id="theme">
+  /* Тема: только токены. Шрифты по имени (OFL): Inter или Noto Sans, PT Serif для заголовков. */
+  :root{
+    --bg:#f3eee4; --ink:#22262b; --mut:#626870; --accent:#1d6b78; --accent2:#7b4a7a;
+    --card:#fbf8f2; --bd:#e2dacb;
+    --font-sans:'Inter','Noto Sans',system-ui,sans-serif;
+    --font-head:'PT Serif','Noto Serif',Georgia,serif;
+    --font-mono:'JetBrains Mono','Noto Sans Mono',ui-monospace,monospace;
+  }
+</style>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
+  body{background:var(--bg);color:var(--ink);font-family:var(--font-sans);overflow:hidden}
+  .deck{width:100vw;height:100vh;position:relative}
+  .slide{position:absolute;inset:0;display:none;flex-direction:column;justify-content:center;
+    padding:7vh 8vw;opacity:0;transition:opacity .3s ease}
+  .slide.active{display:flex;opacity:1}
+  .slide.center{align-items:center;text-align:center}
+  .kicker{font-size:1.05vw;letter-spacing:.28em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:2.2vh}
+  h1{font-family:var(--font-head);font-size:5.2vw;line-height:1.05;letter-spacing:-.01em;margin-bottom:3vh}
+  h2{font-family:var(--font-head);font-size:3.4vw;line-height:1.1;margin-bottom:3vh}
+  h3{font-size:1.7vw;margin:2vh 0 1vh}
+  p,li{font-size:1.6vw;line-height:1.5}
+  p+p{margin-top:1.6vh}
+  em{color:var(--accent);font-style:normal;font-weight:700}
+  strong{font-weight:800}
+  a{color:var(--accent)}
+  ul,ol{margin:1vh 0 0 2vw}
+  li{margin:1.1vh 0}
+  li::marker{color:var(--accent)}
+  blockquote{border-left:.35vw solid var(--accent);padding:1vh 1.6vw;font-family:var(--font-head);font-size:2.4vw;line-height:1.35}
+  blockquote p{font-size:inherit;line-height:inherit}
+  code{font-family:var(--font-mono);font-size:.9em;background:var(--card);border:1px solid var(--bd);border-radius:6px;padding:.1em .35em}
+  pre{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:2vh 1.6vw;overflow:auto;margin-top:1vh}
+  pre code{border:0;padding:0;background:none;font-size:1.25vw;line-height:1.5}
+  table{border-collapse:collapse;font-size:1.4vw;margin-top:1vh}
+  th,td{text-align:left;padding:1.2vh 1.2vw;border-bottom:1px solid var(--bd)}
+  th{color:var(--accent);font-size:1.05vw;letter-spacing:.1em;text-transform:uppercase}
+  img{max-width:100%;max-height:60vh;border-radius:12px}
+  .pg{position:fixed;bottom:2.4vh;right:3vw;font-size:1vw;color:var(--mut);z-index:20;font-variant-numeric:tabular-nums}
+  .nav{position:fixed;bottom:2.4vh;left:3vw;display:flex;gap:.8vw;z-index:20}
+  .nav button{background:var(--card);border:1px solid var(--bd);color:var(--ink);width:2.8vw;height:2.8vw;
+    min-width:32px;min-height:32px;border-radius:10px;font-size:1.3vw;cursor:pointer}
+  .nav button:hover,.nav button:focus-visible{border-color:var(--accent);outline:none}
+  .bar{position:fixed;top:0;left:0;height:4px;background:var(--accent);z-index:30;transition:width .3s}
+  @media print{
+    @page{size:1280px 720px;margin:0}
+    html,body{height:auto;overflow:visible;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    .deck{width:auto;height:auto}
+    .slide{position:relative;display:flex!important;opacity:1!important;width:1280px;height:720px;
+      break-after:page;page-break-after:always;transition:none}
+    .slide:last-child{break-after:auto;page-break-after:auto}
+    .kicker{font-size:13px} h1{font-size:66px} h2{font-size:44px} h3{font-size:22px}
+    p,li{font-size:20px} blockquote{font-size:30px} pre code{font-size:16px} table{font-size:18px} th{font-size:13px}
+    .nav,.pg,.bar{display:none}
+  }
+</style>
+</head>
+<body>
+<div class="bar" id="bar"></div>
+<main class="deck" id="deck">
+<!-- slides:start -->
+  <section class="slide center">
+    <div class="kicker">Шаблон</div>
+    <h1>Заголовок дека</h1>
+    <p>Подзаголовок одной строкой. Листайте стрелками.</p>
+  </section>
+  <section class="slide">
+    <h2>Слайд со списком</h2>
+    <ul>
+      <li>Одна мысль на слайд</li>
+      <li>Цифры крупно, <em>акцент</em> на одном слове</li>
+      <li>Печать в PDF: Ctrl или Cmd + P</li>
+    </ul>
+  </section>
+  <section class="slide center">
+    <h2>Финал</h2>
+    <p>Что сделать слушателю после выступления.</p>
+  </section>
+<!-- slides:end -->
+</main>
+<div class="pg" id="pg" aria-live="polite">1 / 1</div>
+<nav class="nav" aria-label="Навигация по слайдам">
+  <button type="button" onclick="go(-1)" aria-label="Предыдущий слайд">‹</button>
+  <button type="button" onclick="go(1)" aria-label="Следующий слайд">›</button>
+</nav>
+<script>
+  const slides=[...document.querySelectorAll('.slide')];
+  let i=Math.max(0,Math.min(slides.length-1,(parseInt(location.hash.slice(1),10)||1)-1));
+  function render(){
+    slides.forEach((s,n)=>s.classList.toggle('active',n===i));
+    document.getElementById('pg').textContent=(i+1)+' / '+slides.length;
+    document.getElementById('bar').style.width=((i+1)/slides.length*100)+'%';
+    history.replaceState(null,'','#'+(i+1));
+  }
+  function go(d){i=Math.max(0,Math.min(slides.length-1,i+d));render();}
+  document.addEventListener('keydown',e=>{
+    if(['ArrowRight','ArrowDown','PageDown',' '].includes(e.key)){e.preventDefault();go(1);}
+    if(['ArrowLeft','ArrowUp','PageUp'].includes(e.key)){e.preventDefault();go(-1);}
+    if(e.key==='Home'){i=0;render();}
+    if(e.key==='End'){i=slides.length-1;render();}
+  });
+  document.addEventListener('click',e=>{if(!e.target.closest('.nav,a,button,pre,code'))go(1);});
+  render();
+</script>
+</body>
+</html>
