@@ -8,7 +8,7 @@ remaining manual steps; it does not change visibility or publish a release.
 About description:
 
 ```text
-A practical course for people and AI agents to make short videos. 142 recipes (73 measured, 69 hypotheses), 12 real video breakdowns, two runnable starters, and checks on the finished file.
+Toolkit for AI agents that make short videos: recipes, prompts, templates and QA tools. Includes a text mini-course for people, two runnable starters and 12 real video breakdowns. 142 recipes: 73 measured, 69 hypotheses.
 ```
 
 Website: <https://aifrontier.tech>

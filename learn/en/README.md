@@ -1,6 +1,11 @@
 [Русская версия](../ru/README.md)
 
-# Textbook: videos with an agent, no blogging required
+<a id="textbook-videos-with-an-agent-no-blogging-required"></a>
+
+# Mini-course: videos with an agent, no blogging required
+
+The text mini-course included with the [not-a-blogger toolkit](../../README.md): twelve chapters with exercises,
+a roadmap and a glossary.
 
 Learn to turn an idea into a short video with an AI agent: choose what happens, approve the script, stage the
 picture, add sound and inspect the finished file. The course explains the decisions to you; [recipes](../../recipes/README.md)

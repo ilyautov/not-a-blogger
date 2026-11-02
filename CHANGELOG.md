@@ -4,8 +4,8 @@ Human-readable release history. The per-recipe ledger is generated separately in
 
 ## v0.2.0 — unreleased candidate
 
-- English-first course entry with a separate Russian version, explicit beginner/technical/experienced routes and the
-  roles of the person and agent. Reading, silent rendering and the full voice/QA path are separated.
+- English-first entry for the agent toolkit, with a separate Russian version and an included text mini-course for
+  people. Explicit beginner/technical/experienced routes separate reading, silent rendering and the full voice/QA path.
 - Overview of the existing eight-style atlas, with the six frame boards/two static studies and source/rights limits preserved.
 - Worker locks now remain held for the worker's lifetime; invalid stillness-sampling values fail before browser work.
 - Bundled Canvas scenes expose a QA mode so camera/effects alone cannot pass as object movement; reports disclose the applied control.

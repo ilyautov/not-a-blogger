@@ -5,8 +5,9 @@ publish a release. No announcement or platform upload follows automatically.
 
 ## What a reader gets
 
-[English entry](../README.md), [separate Russian entry](../README.ru.md), twelve numbered chapters plus a roadmap
-and glossary, 142 agent recipes (**73 measured, 69 hypotheses**), twelve real video breakdowns and two starters.
+An agent toolkit with 142 recipes (**73 measured, 69 hypotheses**), prompts, templates, build and QA tools, two
+starters and twelve real video breakdowns. The included text mini-course for people has twelve numbered chapters
+with exercises, a roadmap and a glossary. [English entry](../README.md), [separate Russian entry](../README.ru.md).
 The eight-style gallery uses the author's existing productions/studies, with [source and rights boundaries](../assets/textbook/style-atlas/CREDITS.md).
 The human approves the script, watches and listens to the finished file, and publishes it.
 
@@ -127,10 +128,13 @@ downloads and `/releases/latest`. Check private vulnerability reporting after op
 
 > I'm not a blogger, I'm an engineer. I need the videos, not the profession.
 >
-> I put my video workshop into a practical course for people and AI agents. Start with a silent 15-second render,
-> then learn scripting, voice, staging, sound and checks on the finished file. There are 142 recipes (73 backed by
-> measurements, 69 hypotheses), 12 real breakdowns including flops, two starters, and an eight-style visual atlas.
-> English first, with a separate Russian course and PDFs. You approve the script and publish the video yourself.
+> I put my video workshop into a toolkit for AI agents: recipes, prompts, templates and tools for building and
+> checking short videos. There are 142 recipes (73 backed by measurements, 69 hypotheses), 12 real breakdowns
+> including flops, two starters, and an eight-style visual atlas. Start with a silent 15-second render.
+>
+> A text mini-course for people is included: 12 chapters with exercises on scripting, voice, staging, sound and
+> checking the result. English first, with a separate Russian version and PDFs in both languages.
+> You approve the script and publish the video yourself.
 >
 > https://github.com/ilyautov/not-a-blogger
 
@@ -138,18 +142,22 @@ downloads and `/releases/latest`. Check private vulnerability reporting after op
 
 > Я не блогер, я технарь. Ролики мне нужны, профессия нет.
 >
-> Собрал свою видеомастерскую в практический курс для человека и ИИ-агента. Начать можно с немого ролика на 15 секунд,
-> потом разобраться со сценарием, голосом, постановкой, звуком и проверкой готового файла. Внутри 142 рецепта
-> (73 с замерами, 69 гипотез), 12 настоящих разборов с провалами, два стартера и атлас восьми визуальных стилей.
-> Основная версия английская, русская отдельно, PDF на двух языках. Сценарий одобряешь ты, ролик публикуешь тоже ты.
+> Собрал свою видеомастерскую в тулкит для ИИ-агентов: рецепты, промпты, шаблоны и инструменты сборки и проверки
+> коротких роликов. Внутри 142 рецепта (73 с замерами, 69 гипотез), 12 настоящих разборов с провалами, два стартера
+> и атлас восьми визуальных стилей. Начать можно с немого ролика на 15 секунд.
+>
+> В комплекте текстовый мини-курс для человека: 12 глав с упражнениями про сценарий, голос, постановку, звук и
+> проверку результата. Основная версия английская, русская отдельно, PDF на двух языках.
+> Сценарий одобряешь ты, ролик публикуешь тоже ты.
 >
 > https://github.com/ilyautov/not-a-blogger
 
 **Draft release summary (EN / RU)**
 
-> v0.2.0: clearer English/Russian course entry, an overview of the existing eight-style atlas, more reliable worker
-> locks and stillness checks, readable mobile slide decks, and updated textbooks. Demo QA remains partial without ASR.
+> v0.2.0: an English/Russian entry for the agent toolkit and included text mini-course, an overview of the existing
+> eight-style atlas, more reliable worker locks and stillness checks, readable mobile slide decks, and updated
+> textbooks. Demo QA remains partial without ASR.
 >
-> v0.2.0: понятный вход в курс на английском и русском, обзор существующего атласа восьми стилей, исправления
-> блокировки сборки и проверки застоя, читаемые слайды на телефоне и обновлённые учебники. Без ASR проверка пробника
-> остаётся частичной.
+> v0.2.0: вход в тулкит для агентов и текстовый мини-курс на английском и русском, обзор существующего атласа восьми
+> стилей, исправления блокировки сборки и проверки застоя, читаемые слайды на телефоне и обновлённые учебники.
+> Без ASR проверка пробника остаётся частичной.

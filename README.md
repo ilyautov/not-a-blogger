@@ -2,14 +2,16 @@
 
 [English](README.md) · [Русская версия](README.ru.md)
 
-**A practical course on making short videos with AI agents.**
+**A toolkit for AI agents that make short videos.**
 
-Turn your own idea into a vertical video for Reels, Shorts or TikTok. You approve the script; a file-based agent
-such as Claude Code, Codex or Cursor follows the recipes and builds the MP4. You watch, listen and publish it yourself.
-Start by reading the course or rendering a silent 15-second demo, then add your own text, voice and staging.
+Recipes, prompts, templates and tools for making Reels, Shorts or TikTok videos with Claude Code, Codex or Cursor.
+You approve the script, watch and listen to the MP4, and publish it yourself.
 
-**[Learn](learn/en/README.md) · [Silent demo](starter-lite/README.md) · [Agent task](#3-hand-a-video-to-your-agent) ·
-[Advanced recipes](recipes/README.md) · [Latest PDF](https://github.com/ilyautov/not-a-blogger/releases/latest)**
+**Also included: a text mini-course for people.** Twelve chapters with exercises on briefing your agent,
+staging the video and checking the result.
+
+**[Agent task](#3-hand-a-video-to-your-agent) · [Recipes](recipes/README.md) · [Silent demo](starter-lite/README.md) ·
+[Mini-course](learn/en/README.md) · [Latest PDF](https://github.com/ilyautov/not-a-blogger/releases/latest)**
 
 [![Code: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE)
 [![Text: CC BY 4.0](https://img.shields.io/badge/text-CC%20BY%204.0-lightgrey.svg)](LICENSE-CONTENT)
@@ -74,7 +76,9 @@ When it's built, show the contact sheet and the check report. Don't publish anyt
 The agent picks how to build it and tells you what to install. Videos with a voice are built in
 [starter/](starter/README.en.md): voice-over, a check of every line and a report.
 
-### 4. Understand how it works
+<a id="4-understand-how-it-works"></a>
+
+### 4. Take the mini-course
 
 Start with the [learning roadmap](learn/en/ROADMAP.md): four stages from the first project to deeper practice, each
 saying what to do and when to move on. The [textbook](learn/en/README.md) itself has twelve chapters and a glossary.
@@ -86,7 +90,7 @@ the hood. Follow the completion checks at your own pace. The textbook as one PDF
 | Folder | What's there |
 |---|---|
 | [`examples/`](examples/README.en.md) | 12 breakdowns of published videos with numbers and dates, flops too |
-| [`learn/`](learn/en/README.md) | a textbook for people: idea, voice, frame, camera, sound, checking, publishing |
+| [`learn/`](learn/en/README.md) | a text mini-course for people: 12 chapters with exercises, a roadmap and a glossary |
 | [`recipes/`](recipes/README.md) | 142 techniques written for the agent: when to use, what to do, how to check |
 | [`starter-lite/`](starter-lite/README.md) | a silent 15-second demo, Node 22+ and ffmpeg, no finished-file QA |
 | [`starter/`](starter/README.en.md) | the full build: lines in, a voiced video and a check report out |
@@ -152,7 +156,7 @@ macOS on Apple Silicon is the local reference environment. [Ubuntu 24.04 CI](htt
 passed both demo paths, the tests and PDF builds. That does not verify the full real-voice/ASR/TTS/GPU workflow on
 Linux. Native Windows is unsupported for the full starter (`fcntl` and Bash); WSL has not been verified. Speech
 recognition defaults to Russian; another language is set with a flag and needs its own listening/ASR validation.
-Recipes are in English; the course is in English and Russian.
+Recipes are in English; the mini-course is in English and Russian.
 
 ## Contributing
 
