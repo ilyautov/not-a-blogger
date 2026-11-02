@@ -14,7 +14,10 @@
 ## 1. Установка
 
 Проверенный профиль — macOS 26.2, Apple Silicon, Python 3.11, Node 24.21. Нужны Node 18+ и ffmpeg/ffprobe.
-Linux не проверен. Windows не поддерживается из-за fcntl в locked.py. Модели LTX и NVIDIA для 2D-сцены не нужны.
+CI на Ubuntu 24.04 с Python 3.11 и Node 22 прошёл пробник fake/no-ASR, тесты и сборку PDF
+([прогон](https://github.com/ilyautov/not-a-blogger/actions/runs/41465997589)). Полный путь с настоящей речью,
+ASR, TTS и GPU на Linux не проверен. Нативная Windows не поддерживается (`fcntl` и Bash); WSL не проверялся.
+Модели LTX и NVIDIA для 2D-сцены не нужны.
 
 Если Homebrew уже установлен, недостающие инструменты можно поставить так:
 
@@ -40,7 +43,7 @@ WARN (пустая assets/fonts, нет faster-whisper) не мешает fake-�
 requirements.txt фиксирует прямые зависимости; requirements-lock-macos-arm64.txt — полное проверенное окружение.
 Для другой ОС используйте requirements.txt и отдельно проверяйте совместимость.
 
-На Linux (не проверен) вместо lock-файла и с системными библиотеками для Chromium:
+На Ubuntu 24.04 CI использует requirements.txt вместо macOS lock-файла и ставит системные библиотеки Chromium:
 
 ```sh
 .venv/bin/python -m pip install -r requirements.txt

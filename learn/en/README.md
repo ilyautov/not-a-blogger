@@ -2,18 +2,24 @@
 
 # Textbook: videos with an agent, no blogging required
 
-This textbook is for humans. The recipes in [recipes/](../../recipes/README.md) are written for the agent: short,
-with parameters and a check. Here we explain the why, using real videos from [examples/](../../examples/README.en.md),
-with the numbers told as a story and the mistakes we learned from. Every section ends with a link to a recipe you
-can hand to your agent.
+Learn to turn an idea into a short video with an AI agent: choose what happens, approve the script, stage the
+picture, add sound and inspect the finished file. The course explains the decisions to you; [recipes](../../recipes/README.md)
+give the agent exact steps and checks. You approve the script, listen and watch the result, and publish it yourself.
 
-Each chapter opens with a real published video, walks through the techniques as "the problem, how we spotted it,
-what we do, where it breaks", and ends with a 15–30 minute exercise and a "Don't" list.
+**Start without installing anything:** read [chapter 00](00-first-video.md), open one [real breakdown](../../examples/README.en.md),
+and write your idea as “who, what happened, how it ended”. Bring that sentence to your agent.
+The [roadmap](ROADMAP.md) gives the stages and their completion checks; its time labels are suggested pacing, not deadlines.
 
-Not sure where to start: the [learning roadmap](ROADMAP.md) lays the textbook out in four stages, from the first
-evening to the first month, with a "done" signal at each. If you read front to back, start with chapter 00: it takes
-you through the whole path in one evening. Chapter 00a explains how it all works under the hood. Read the rest as you
-hit each stage.
+| Your starting point | Next step | What you get |
+|---|---|---|
+| New to video or agents | Chapter 00, then the [silent demo](../../starter-lite/README.md) | A route through the decisions, then a 15-second MP4; Node 22+ and ffmpeg for rendering, no Python or finished-file QA |
+| Comfortable with code | [How it works](00a-how-it-works.md), then the [full starter](../../starter/README.en.md) | A Python 3.11/Node build, a contact sheet and a report; fake/no-ASR first, real voice and model setup separately |
+| Already making videos | Pick a chapter, the [style atlas](04-image-and-frame.md#atlas-eight-ways-to-stage-one-story) or [recipes by symptom](../../recipes/BY-SYMPTOM.md) | One technique to try and a check to decide whether it helped |
+
+The twelve numbered chapters (00, 00a, 01–10), roadmap and glossary work as a reference too. Read optional technical
+depth when you need it. Chapters use real videos, measurements and mistakes, with exercises and links you can hand
+to an agent. Exercise times are estimates; model installation and rendering vary by machine. Examples are not a
+promise of reach, and green QA is permission to review, not approval to publish.
 
 The whole textbook as one PDF is in the [latest release](https://github.com/ilyautov/not-a-blogger/releases/latest).
 To build it yourself: `python3 scripts/build_textbook_pdf.py` (needs the dependencies from

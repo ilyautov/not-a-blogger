@@ -9,11 +9,12 @@ Onest (both SIL OFL) over it; no stock footage, no third-party art.
 |---|---|---|
 | `readme-banner.jpg` | 1774×887 | README.ru.md |
 | `readme-banner-en.jpg` | 1774×887 | README.md |
-| `social-preview.jpg` | 1280×640 | GitHub → Settings → Social preview (uploaded by hand) |
+| `social-preview.jpg` | 1280×640 | ready for GitHub → Settings → Social preview; not installed as of 02.11.2026 |
 | `before-after.jpg`, `before-after-en.jpg` | 1696×638 | README.ru.md, README.md |
 | `pipeline.svg`, `pipeline-en.svg` | 1280×250 | README.ru.md, README.md |
 | `qa-contact-sheet.jpg` | 1200×676 | both READMEs |
-| `examples-grid.jpg` | 1150×670 | both READMEs |
+| `examples-grid.jpg` | 1150×670 | example overview asset |
+| `style-atlas-overview.jpg` | 1440×720 | visual-style gallery in both READMEs |
 
 Before/after and the contact sheet are real frames of two published long-forms, not mock-ups. "Before" is frame
 369.9 s of a 20-minute long-form on the old card layout (grid occupancy 25 % at that frame, 24 % median over the
@@ -36,3 +37,26 @@ historical status dates are in [source-manifest.json](textbook/style-atlas/sourc
 photo material/adaptations in the two studies. These terms are separate from the book's general text license;
 the existing [author-brand exceptions](../docs/BRAND.md) still apply. Examples teach staging, not reuse of the
 mascot or a claim that source-workshop engines are bundled.
+
+## Style-atlas overview
+
+`style-atlas-overview.jpg` is the author's approved technical contact sheet of the eight existing chapter-04
+images, not new generated artwork. All eight source boards are shown in full, fitted into overview cells:
+
+- `textbook/style-atlas/retro-30s.jpg`
+- `textbook/style-atlas/instructional-50s.jpg`
+- `textbook/style-atlas/voxel.jpg`
+- `textbook/style-atlas/ps2-cutscene.jpg`
+- `textbook/style-atlas/film-look.jpg`
+- `textbook/style-atlas/typography-photo.jpg`
+- `textbook/style-atlas/paper-collage.jpg`
+- `textbook/style-atlas/halftone-comic.jpg`
+
+The derivation adds resizing and layout; it does not replace the full source boards. Six are historical
+video frame boards; the last two are static studies. R50 and FILM are generated stylizations; REEL has mixed historical
+status. No overview claim covers animation, audio, retention or publication approval. The
+[chapter](../learn/en/04-image-and-frame.md#atlas-eight-ways-to-stage-one-story),
+[credits](textbook/style-atlas/CREDITS.md) and [manifest](textbook/style-atlas/source-manifest.json) are the full source authority.
+The author's brand stays excluded under [BRAND.md](../docs/BRAND.md). Commons photographs and adaptations in the
+collage/comic retain their credited CC BY-SA 4.0 terms in this overview too; the book's general CC BY 4.0 license
+and the overview layout do not replace them.

@@ -1,56 +1,44 @@
-# GitHub repository settings (to apply by hand)
+# GitHub repository settings
 
-Proposed values for Settings → General and the About box. Nothing here is applied automatically; the maintainer sets
-them when the repository is opened.
+Ledger checked on **2 November 2026**. The repository remains **private**. This file records settings and the
+remaining manual steps; it does not change visibility or publish a release.
 
-## Description (≤ 350 characters)
+## Applied and re-read
 
-```
-An AI agent builds reels, carousels and covers; QA measures the finished file; a person says "ship it". 142 recipes with numbers, 12 breakdowns of published videos including flops, a no-Python starter.
-```
+About description:
 
-## Website
-
-```
-https://aifrontier.tech
+```text
+A practical course for people and AI agents to make short videos. 142 recipes (73 measured, 69 hypotheses), 12 real video breakdowns, two runnable starters, and checks on the finished file.
 ```
 
-## Topics (GitHub allows up to 20; lowercase, hyphens)
+Website: <https://aifrontier.tech>
 
-```
-claude-code
-codex
-ai-agents
-agent-skills
-ai-video
-video-generation
-shorts
-reels
-youtube-shorts
-tiktok
-hyperframes
-tts
-speech-recognition
-whisper
-ffmpeg
-content-creation
-video-qa
-carousels
-russian
+17 topics:
+
+```text
+claude-code codex ai-agents ai-video video-generation shorts reels youtube-shorts tiktok
+hyperframes tts speech-recognition ffmpeg content-creation video-qa carousels education
 ```
 
-## Other
+Existing feature settings retained: **Issues on, Discussions off, Wiki off**. No issues or announcements were seeded.
 
-- Social preview: upload `assets/social-preview.jpg` (1280×640).
-- Features: Issues on, Discussions optional, Wiki off, Projects off.
-- Security: enable "Private vulnerability reporting" (SECURITY.md points to it).
-- After opening: add the stars badge to both READMEs and create 5–10 `good first issue` items from `ISSUES-SEED.md`.
+## Prepared, not applied
 
-Apply with the CLI if preferred (run by the maintainer, not by an agent):
+**Social preview:** [assets/social-preview.jpg](../assets/social-preview.jpg), 1280×640, 218,558 bytes, is ready.
+A custom preview is not installed (`usesCustomOpenGraphImage=false` on the check date). The author chose a ready file
+and manual upload instructions; browser login is not required for this preparation.
 
-```bash
-gh repo edit ilyautov/not-a-blogger \
-  --description "An AI agent builds reels, carousels and covers; QA measures the finished file; a person says \"ship it\". 142 recipes with numbers, 12 breakdowns of published videos including flops, a no-Python starter." \
-  --homepage "https://aifrontier.tech" \
-  --add-topic claude-code,codex,ai-agents,agent-skills,ai-video,video-generation,shorts,reels,youtube-shorts,tiktok,hyperframes,tts,speech-recognition,whisper,ffmpeg,content-creation,video-qa,carousels,russian
-```
+To install it, the maintainer opens the repository → **Settings → General → Social preview → Edit → Upload an image**,
+selects that JPEG and saves. Reopen Settings and check the resulting preview. This is separate from the README banner.
+
+**Private vulnerability reporting:** not confirmed enabled. Its API returned 404 while the repository was private;
+[GitHub documents this feature for public repositories](https://docs.github.com/en/code-security/how-tos/report-and-fix-vulnerabilities/configure-vulnerability-reporting/configure-for-a-repository).
+After the author opens the repository, check **Settings → Security and quality → Advanced Security → Private vulnerability reporting**,
+enable it if desired, and confirm that **Security → Advisories → Report a vulnerability** is available. Until then, use the
+email fallback in [SECURITY.md](../SECURITY.md). Do not describe reporting as enabled before checking it.
+
+## Owner decision still required
+
+The visibility change belongs to the author. Review the source, draft release and checks in
+[REPO-PUBLICATION.md](../docs/REPO-PUBLICATION.md) first. Opening the repository does not authorize posting an
+announcement, publishing a video, enabling optional features or creating starter issues.

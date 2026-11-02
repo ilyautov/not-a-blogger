@@ -24,8 +24,8 @@ Merged contributions go to [CONTRIBUTORS.md](docs/CONTRIBUTORS.md); a recipe's a
 | Tool | `tools/<group>/<name>.py` + test in `tests/` | an evening | "Recipe", marked "tool" |
 | Template | `templates/<name>/` with README | an evening | "Recipe", marked "template" |
 
-Not sure where to start? Pick an issue labelled `good first issue`: each has a verification path and a named person
-who will answer. Labels are described in [TRIAGE.md](docs/TRIAGE.md).
+Not sure where to start? Look for an open issue labelled `good first issue`, or propose a small change using the
+forms above. A label is not a promise that an issue is available. Labels are described in [TRIAGE.md](docs/TRIAGE.md).
 
 ## Recipes vs textbook
 

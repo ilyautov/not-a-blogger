@@ -15,7 +15,8 @@ service, no accounts and no telemetry. Publishing to platforms is deliberately n
 
 ## How to report
 
-Use GitHub's private vulnerability reporting (Security → Report a vulnerability) or write to ilyautov@gmail.com.
+Use GitHub's private vulnerability reporting (Security → Advisories → Report a vulnerability) **if enabled**; otherwise write
+to ilyautov@gmail.com. This email is the fallback while the repository is private or the reporting form is unavailable.
 Please don't open a public issue for a vulnerability. Expect a reply within 7 days. Fixes go to `main`; there are
 no maintained release branches.
 
@@ -32,5 +33,6 @@ not-a-blogger работает локально: скрипты, шаблоны 
 чужие данные; если рецепт велит агенту делать небезопасное (отключать проверки, публиковать без одобрения, собирать
 данные из-под логина).
 
-Пиши через приватный отчёт GitHub (Security → Report a vulnerability) или на ilyautov@gmail.com, не в публичный
-issue. Ответ в течение 7 дней.
+Если включены приватные отчёты GitHub, используй Security → Advisories → Report a vulnerability; иначе пиши на
+ilyautov@gmail.com. Почта работает как запасной путь, пока репозиторий приватный или форма недоступна. Не пиши
+об уязвимости в публичный issue. Ответ в течение 7 дней.

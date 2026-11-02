@@ -17,8 +17,10 @@ reads them fine; translations are welcome as a pull request.
 ## 1. Install
 
 Tested profile: macOS 26.2, Apple Silicon, Python 3.11, Node 24.21. You need Node 18+ and ffmpeg/ffprobe.
-Linux is not tested. Windows is not supported because `locked.py` uses `fcntl`. The 2D scene needs no LTX or NVIDIA
-models.
+Ubuntu 24.04 CI with Python 3.11 and Node 22 passed the fake/no-ASR demo, tests and PDF builds
+([run](https://github.com/ilyautov/not-a-blogger/actions/runs/41465997589)). The full real-voice/ASR/TTS/GPU workflow
+on Linux remains unverified. Native Windows is unsupported (`fcntl` and Bash); WSL has not been verified.
+The 2D scene needs no LTX or NVIDIA models.
 
 With Homebrew installed, the missing tools are:
 
@@ -44,7 +46,7 @@ python3.11, set `PY`. Set `PY` again in every new terminal window. The Onest and
 with their OFL licenses. `requirements.txt` pins direct dependencies; `requirements-lock-macos-arm64.txt` is the
 full tested environment. On another OS use `requirements.txt` and check compatibility yourself.
 
-On Linux (not tested), skip the lock file and let Playwright install Chromium's system libraries:
+On Ubuntu 24.04, CI uses `requirements.txt` instead of the macOS lock file and installs Chromium's system libraries:
 
 ```sh
 .venv/bin/python -m pip install -r requirements.txt
