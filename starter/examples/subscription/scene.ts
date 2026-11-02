@@ -16,7 +16,12 @@ type Story = {duration: number; cues: Cue[]; words: Word[]};
 interface Window {
   ready: boolean; setTime: (t: number) => Promise<void>; shotTimes: number[]; events: Record<string, number>;
   counterAt: (t: number) => {text: string; settled: boolean};
+  setQAMode?: (enabled: boolean) => void;
 }
+
+// Optional still_lint contract: keep object movement, remove camera and postprocessing.
+let qaMode = false;
+window.setQAMode = (enabled: boolean) => {qaMode = enabled;};
 
 const FW = 1080, FH = 1920, FPS = 30;
 // Нейтральная палитра: графит, камень, бумага. Интерфейс и сервис «Медиатека+» вымышлены.
@@ -296,7 +301,7 @@ async function main() {
   // ---------- кадр целиком ----------
   function drawWorld(t: number) {
     c.setTransform(1, 0, 0, 1, 0, 0); c.globalAlpha = 1; c.clearRect(0, 0, FW, FH);
-    const q = camAt(t);
+    const q = qaMode ? {x: FW / 2, y: FH / 2, s: 1, r: 0} : camAt(t);
     c.translate(FW / 2, FH / 2); c.rotate(q.r); c.scale(q.s, q.s); c.translate(-q.x, -q.y);
     const g = c.createLinearGradient(0, -800, 0, FH + 800); g.addColorStop(0, '#d6d0c6'); g.addColorStop(1, '#a9a297');
     c.fillStyle = g; c.fillRect(-1200, -1200, FW + 2400, FH + 2400);                  // стол, виден только при отъезде
@@ -322,6 +327,7 @@ async function main() {
   function render(t: number) {
     drawWorld(t);
     out.setTransform(1, 0, 0, 1, 0, 0); out.globalAlpha = 1; out.fillStyle = '#000'; out.fillRect(0, 0, FW, FH);
+    if (qaMode) {out.drawImage(world, 0, 0); captions(t); return;}
     const lt = t - WHIP, TW = .22;
     if (lt >= 0 && lt < TW) {   // whip: кадр въезжает справа со сдвигом 460 px, хвост заворачивается (без чёрной полосы), четыре «шлейфа»
       const k = 1 - outCubic(lt / TW);

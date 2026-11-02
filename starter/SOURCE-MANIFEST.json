@@ -1,5 +1,5 @@
 {
-  "version": "2026.10.30-r1",
+  "version": "2026.11.02-r1",
   "files": [
     {
       "path": ".agents/skills/camera-moves/SKILL.md",
@@ -63,13 +63,13 @@
     },
     {
       "path": "README.en.md",
-      "bytes": 13768,
-      "sha256": "368635b64447cdd6a70b158ffdbfb66a5ef41317749f5fca28204fc4104ae1b3"
+      "bytes": 14607,
+      "sha256": "2941106eac044793ea5ec85860e6430fccb413875ab854e49a14f3213daf480d"
     },
     {
       "path": "README.md",
-      "bytes": 20125,
-      "sha256": "0ba3b61ab2c24dcfc49421fd74eea19e58ab065b7d14c105921672608fb948c9"
+      "bytes": 21365,
+      "sha256": "721a7c228348b1b37e610d69eab1864c6812cecc2e556fcd42b327f39c8a8ea0"
     },
     {
       "path": "RESOURCES.md",
@@ -113,8 +113,8 @@
     },
     {
       "path": "examples/subscription/scene.ts",
-      "bytes": 28403,
-      "sha256": "35de45f462a5d750726bc17c9609e68d759c100d5a8ebd837371268f450f72ee"
+      "bytes": 28730,
+      "sha256": "fb3dde0ca4fe4caf046386f26a93a11aa7b019190ed2b0225251762bc3c53b88"
     },
     {
       "path": "examples/subscription/voice/chunks.json",
@@ -143,8 +143,8 @@
     },
     {
       "path": "locked.py",
-      "bytes": 1803,
-      "sha256": "d371c63bd993157f4f6c491d631642ab25b5208cd874b8f98a6eb3be0cc9d8ce"
+      "bytes": 2100,
+      "sha256": "b684ed4fe75d63e65180946deb56eb7cce95f7ac19828659a4d7398f739654e7"
     },
     {
       "path": "make.sh",
@@ -188,8 +188,8 @@
     },
     {
       "path": "scene/scene.ts",
-      "bytes": 17407,
-      "sha256": "40e5a1fcebf588101c03cf6c7872301650abef5f3ddcf78c4e47a6d5a96dec17"
+      "bytes": 17707,
+      "sha256": "a3202d686e1217cbdaae257da5c086fd2b532b7ddd24e4ca4ea82be7719f3df8"
     },
     {
       "path": "scene/tsconfig.json",

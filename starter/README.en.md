@@ -198,8 +198,23 @@ TP ≤−1.5 dBTP on the final AAC, static ≤3 s, ASR match ≥0.9 for the fina
 (`takes_asr_ge_0_9` from `voice/asr-N.json`; a floor, not a pass). A take result made stale by editing the line text
 or `line-N.wav` doesn't count: the status stays `preview_partial` until you re-trim with `voice/trim.py N`.
 Where each threshold came from and which were measured: [QA-THRESHOLDS.md](../docs/QA-THRESHOLDS.md).
-The static check is the mean difference of 135×240 grey frames with the camera on: camera motion can hide a dull scene, so `tools/lint/still_lint.py` (camera
-off) is stricter, trust it first. ASR doesn't check stress, intonation or artistic value. Watch and listen to the
+The static check is the mean difference of 135×240 grey frames with the camera on: camera motion can hide a dull scene.
+For a separate check, run from the repository root:
+
+```bash
+python3 tools/lint/still_lint.py starter --step 0.5 --max-still 3
+```
+
+Both bundled Canvas scenes expose the optional `window.setQAMode(enabled: boolean)` contract.
+With `true`, it removes camera movement, whip transitions and grain while retaining object animation and captions;
+normal rendering and `false` retain the authored look. The linter enables it before sampling.
+Without the hook, it resets the CSS transform of a `#world` DOM camera. For a custom camera use
+`--pre-js "window.cam.reset()"` (JS after every `setTime`); `--keep-camera` retains the camera.
+Check `camera_control` in `qa/still-lint.json`: `setQAMode`, `dom-world`, `kept` or `unsupported`.
+The last means camera removal is unverified; review the effect of a custom `--pre-js` separately.
+Step must be finite and > 0; threshold and maximum stillness must be finite and >= 0.
+
+ASR doesn't check stress, intonation or artistic value. Watch and listen to the
 whole finished file. An assistant can check frames and audio tracks separately; that is not the same as watching
 and listening straight through.
 

@@ -6,6 +6,7 @@
 
 Контракт сцены (как в starter/): папка проекта с index.html, который выставляет
   window.ready = true, window.setTime(t) (может вернуть Promise) и, по желанию,
+  window.setQAMode(enabled) — выключает камеру и подвижные постэффекты, но не предметы;
   window.shotTimes = [время начала каждой сцены, ...];
 плюс story.json с полями duration, width, height. Страница открывается через локальный
 HTTP-сервер (fetch из file:// не работает) в headless Chromium (Playwright).
@@ -13,8 +14,9 @@ HTTP-сервер (fetch из file:// не работает) в headless Chromiu
 Что делает: внутри каждой сцены берёт кадры с шагом --step (первые и последние 0,5 с сцены не
 судит: это законный вход и выход), сравнивает соседние уменьшенные кадры. Средняя разница
 яркости ниже --threshold = кадр стоит. Самый длинный застой сцены сравнивается с --max-still.
-Общий наезд камеры маскирует мёртвый кадр, поэтому для DOM-сцен с камерой в #world её
-transform перед снимком сбрасывается (выключить: --keep-camera). Для своей камеры можно
+Общий наезд камеры маскирует мёртвый кадр: линт вызывает setQAMode(true), если он есть,
+иначе сбрасывает transform у DOM-камеры #world. Метод записывается в camera_control;
+без этих контрактов выключение камеры не подтверждено (выключить: --keep-camera). Для своей камеры можно
 передать JS, который выполняется после setTime: --pre-js "window.cam&&window.cam.reset()".
 
 Вход: папка проекта. Выход: <проект>/qa/still-lint.json и при нарушениях контактный лист
@@ -61,6 +63,7 @@ def scene_spans(shot_times, duration):
 
 
 def sample_times(spans, step):
+    validate_number('step', step, positive=True)
     times, index = [], []
     for i, (a, b) in enumerate(spans):
         t, n0 = a + HEAD, len(times)
@@ -85,8 +88,14 @@ def longest_still(greys, times, step, threshold):
     return round(longest, 2), at
 
 
+def validate_number(name, value, positive=False):
+    if not math.isfinite(value) or (value <= 0 if positive else value < 0):
+        bound = '> 0' if positive else '>= 0'
+        raise ValueError(f'{name} must be finite and {bound}')
+
+
 def shoot(project, times, width, height, keep_camera=False, pre_js=None):
-    """Снять кадры в заданные моменты. Возвращает (jpeg-байты, shotTimes страницы)."""
+    """Снять кадры. Возвращает (jpeg-байты, shotTimes, применённое управление камерой)."""
     from playwright.sync_api import sync_playwright
     srv = ThreadingHTTPServer(('127.0.0.1', 0), functools.partial(_Quiet, directory=str(project)))
     threading.Thread(target=srv.serve_forever, daemon=True).start()
@@ -102,22 +111,35 @@ def shoot(project, times, width, height, keep_camera=False, pre_js=None):
             except Exception:
                 raise SystemExit(f'сцена не поднялась (нет window.ready): {errs}')
             shots = pg.evaluate('Array.isArray(window.shotTimes) ? window.shotTimes : []')
+            control = {'method': 'kept', 'pre_js': bool(pre_js)}
+            if not keep_camera:
+                # Await optional asynchronous hooks before the first sampled render.
+                method = pg.evaluate('''async () => {
+                    if (typeof window.setQAMode === 'function') {
+                        await window.setQAMode(true); return 'setQAMode';
+                    }
+                    return document.querySelector('#world') ? 'dom-world' : 'unsupported';
+                }''')
+                control['method'] = method
+                if method == 'unsupported':
+                    control['warning'] = ('Camera removal is unverified: no setQAMode hook or #world DOM camera. '
+                                          'Use --pre-js for a custom camera; its effect requires your review.')
             for t in times:
                 pg.evaluate('t => Promise.resolve(window.setTime(t)).then(() => 0)', t)
                 if pre_js:
                     pg.evaluate(pre_js)
-                if not keep_camera:
+                if control['method'] == 'dom-world':
                     pg.evaluate(RESET_CAMERA)
                 pg.evaluate('new Promise(r => requestAnimationFrame(() => requestAnimationFrame(r)))')
                 frames.append(pg.screenshot(type='jpeg', quality=70))
-                if not keep_camera:
+                if control['method'] == 'dom-world':
                     pg.evaluate(RESTORE_CAMERA)
             b.close()
     finally:
         srv.shutdown(); srv.server_close()
     if errs:
         raise SystemExit(f'ошибки в сцене: {errs}')
-    return frames, shots
+    return frames, shots, control
 
 
 def grey(buf):
@@ -127,15 +149,19 @@ def grey(buf):
 
 
 def run(project, step=0.5, max_still=3.0, threshold=0.35, keep_camera=False, pre_js=None, shot_times=None):
+    # Public API callers get the same checks as CLI users, before file/browser work.
+    validate_number('step', step, positive=True)
+    validate_number('max_still', max_still)
+    validate_number('threshold', threshold)
     project = Path(project).resolve()
     story = json.loads((project / 'story.json').read_text())
     duration = float(story['duration'])
     width, height = int(story.get('width', 1080)), int(story.get('height', 1920))
     if shot_times is None:      # сначала узнать склейки у страницы
-        _, shot_times = shoot(project, [], width, height, keep_camera, pre_js)
+        _, shot_times, _ = shoot(project, [], width, height, keep_camera, pre_js)
     spans = scene_spans(shot_times, duration)
     times, index = sample_times(spans, step)
-    frames, _ = shoot(project, times, width, height, keep_camera, pre_js)
+    frames, _, control = shoot(project, times, width, height, keep_camera, pre_js)
     greys = [grey(f) for f in frames]
     rows, worst = [], {}
     for i, (a, b) in enumerate(spans):
@@ -152,7 +178,7 @@ def run(project, step=0.5, max_still=3.0, threshold=0.35, keep_camera=False, pre
     bad = [r for r in rows if r['verdict'] != 'ok']
     qa = project / 'qa'; qa.mkdir(exist_ok=True)
     result = {'scenes': len(rows), 'bad': len(bad), 'step': step, 'max_still': max_still,
-              'threshold': threshold, 'rows': rows}
+              'threshold': threshold, 'camera_control': control, 'rows': rows}
     (qa / 'still-lint.json').write_text(json.dumps(result, ensure_ascii=False, indent=1) + '\n')
     if bad:
         (qa / 'still').mkdir(exist_ok=True)
@@ -173,10 +199,19 @@ def main(argv=None):
     ap.add_argument('--max-still', type=float, default=3.0, help='допустимый застой, с (3)')
     ap.add_argument('--threshold', type=float, default=0.35,
                     help='средняя разница яркости 0..255 на превью 320 px, ниже которой кадр стоит (0,35)')
-    ap.add_argument('--keep-camera', action='store_true', help='не сбрасывать transform у #world')
+    ap.add_argument('--keep-camera', action='store_true', help='не включать QA mode и не сбрасывать DOM-камеру #world')
     ap.add_argument('--pre-js', help='JS, выполняемый после каждого setTime (например, выключить камеру)')
     a = ap.parse_args(argv)
+    try:
+        validate_number('step', a.step, positive=True)
+        validate_number('max_still', a.max_still)
+        validate_number('threshold', a.threshold)
+    except ValueError as e:
+        ap.error(str(e))
     r = run(a.project, a.step, a.max_still, a.threshold, a.keep_camera, a.pre_js)
+    print(f"camera_control: {r['camera_control']['method']}; pre_js: {r['camera_control']['pre_js']}")
+    if r['camera_control'].get('warning'):
+        print(r['camera_control']['warning'], file=sys.stderr)
     tot = sum(x['still'] for x in r['rows'])
     print(f"сцен {r['scenes']}, с застоем длиннее {a.max_still} с — {r['bad']}, мёртвого времени всего {tot:.1f} с")
     for x in sorted((x for x in r['rows'] if x['verdict'] != 'ok'), key=lambda x: -x['still'])[:20]:

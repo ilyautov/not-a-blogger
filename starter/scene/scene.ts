@@ -9,7 +9,12 @@
 type Cue = {id: number; start: number; end: number; text: string};
 type Word = {line: number; text: string; start: number; end: number};
 type Story = {duration: number; cues: Cue[]; words: Word[]};
-interface Window {ready: boolean; setTime: (t: number) => Promise<void>; shotTimes: number[]; events: Record<string, number>}
+interface Window {ready: boolean; setTime: (t: number) => Promise<void>; shotTimes: number[]; events: Record<string, number>;
+  setQAMode?: (enabled: boolean) => void}
+
+// Optional still_lint contract: remove camera/posteffects, retain actual scene events.
+let qaMode = false;
+window.setQAMode = (enabled: boolean) => {qaMode = enabled;};
 
 const FW = 1080, FH = 1920;
 const LIME = '#d6ff43', RED = '#ff4d42', WHITE = '#ffffff', INK = '#1a2023', GREY = '#8b929b';
@@ -40,7 +45,7 @@ function box(x: number, y: number, w: number, h: number, col: string, r = 24) {c
 function glow(col: string, blur: number) {c.shadowColor = col; c.shadowBlur = blur;}
 function noGlow() {c.shadowBlur = 0; c.shadowColor = 'transparent';}
 function bg(col: string) {c.fillStyle = col; c.fillRect(-600, -600, FW + 1200, FH + 1200);}   // с запасом под камеру
-function cam(cx: number, cy: number, s: number, rot = 0) {c.translate(FW / 2, FH / 2); c.rotate(rot); c.scale(s, s); c.translate(-cx, -cy);}
+function cam(cx: number, cy: number, s: number, rot = 0) {if (qaMode) return; c.translate(FW / 2, FH / 2); c.rotate(rot); c.scale(s, s); c.translate(-cx, -cy);}
 function typed(s: string, t: number, at: number, d: number) {return t < at ? '' : s.slice(0, Math.ceil(clamp((t - at) / d) * s.length));}
 
 async function main() {
@@ -167,6 +172,7 @@ async function main() {
     const sh = shots[i], lt = t - sh.at;
     c.setTransform(1, 0, 0, 1, 0, 0); c.globalAlpha = 1; noGlow(); c.clearRect(0, 0, FW, FH); c.save(); sh.draw(t, lt); c.restore();
     out.setTransform(1, 0, 0, 1, 0, 0); out.globalAlpha = 1; out.fillStyle = '#000'; out.fillRect(0, 0, FW, FH);
+    if (qaMode) {out.drawImage(world, 0, 0); captions(t); return;}
     // ручная камера: сумма синусов с некратными частотами — дрожь живая, но повторяемая
     const hs = 1.04 + .03 * ease(lt / 3) + .012 * Math.sin(t * 1.3);
     const hx = sines(t, [[16, .8, 0], [7, 2.1, 1]]), hy = sines(t, [[13, .7, 2], [5, 1.7, 0]]), hr = sines(t, [[.007, .6, 0]]);

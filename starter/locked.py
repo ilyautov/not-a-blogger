@@ -4,7 +4,7 @@
 Пример: python3 locked.py voice -- python voice/gen_omni.py
         python3 locked.py render -- python tools/render.py
 Каталог файлов блокировки: $LOCK_DIR (по умолчанию /tmp); файлы называются not-a-blogger-<имя>.lock."""
-import fcntl, os, re, stat, subprocess, sys
+import fcntl, os, re, stat, sys
 
 USAGE = 'использование: python3 locked.py <имя> -- <команда...>   (имя: буквы, цифры, _ . -)'
 if len(sys.argv) < 4 or sys.argv[2] != '--':
@@ -23,4 +23,10 @@ with os.fdopen(fd, 'r+') as f:
     if info.st_uid != os.getuid() or not stat.S_ISREG(info.st_mode) or info.st_nlink != 1:
         sys.exit('Небезопасный файл блокировки: проверьте владельца и тип файла')
     fcntl.flock(f, fcntl.LOCK_EX)   # ждём, пока предыдущий держатель не отпустит
-    sys.exit(subprocess.call(cmd))
+    # Replace the wrapper: signals and exit status belong to the actual command.
+    # flock survives exec only if the descriptor is inherited by the worker.
+    os.set_inheritable(f.fileno(), True)
+    try:
+        os.execvp(cmd[0], cmd)
+    except OSError as e:
+        sys.exit(f'Не удалось запустить команду: {e}')
