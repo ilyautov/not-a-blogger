@@ -1,7 +1,8 @@
 # Repository publication checklist
 
-Launch candidate: **v0.2.0**, prepared privately. The author decides when to make the repository public and when to
-publish a release. No announcement or platform upload follows automatically.
+Release workflow for **v0.2.0**, initially prepared privately. The release notes and handoff record the actual
+publication status, exact source commit and CI. Repository visibility and release publication are separate actions
+authorized by the author; no announcement or platform upload follows automatically.
 
 ## What a reader gets
 
@@ -82,9 +83,10 @@ and license checks; see [starter](../starter/README.en.md) and [third-party term
 
 ## Release artifacts and source identity
 
-As of 2 November, **v0.1.1 remains the latest published release**. Its PDFs predate the v0.2.0 entry/reliability
-changes. Keep [v0.1.0](https://github.com/ilyautov/not-a-blogger/releases/tag/v0.1.0) and
-[v0.1.1](https://github.com/ilyautov/not-a-blogger/releases/tag/v0.1.1) intact. A draft does not replace `/releases/latest`.
+Earlier releases [v0.1.0](https://github.com/ilyautov/not-a-blogger/releases/tag/v0.1.0) and
+[v0.1.1](https://github.com/ilyautov/not-a-blogger/releases/tag/v0.1.1) predate the v0.2.0 entry/reliability/skills changes.
+Keep published releases and their assets intact. A draft does not replace `/releases/latest`; verify that endpoint
+after publication. Commands below use v0.2.0 as the example; use the new version for later releases.
 
 Build from the final reviewed source, with the PDF dependencies and system libraries from CI:
 
@@ -92,7 +94,7 @@ Build from the final reviewed source, with the PDF dependencies and system libra
 python3.11 scripts/build_textbook_pdf.py --out dist
 ```
 
-Prepare a **draft v0.2.0** with `not-a-blogger-textbook-en.pdf`, `not-a-blogger-textbook-ru.pdf` and `SHA256SUMS`.
+Before publication, prepare a **draft** with `not-a-blogger-textbook-en.pdf`, `not-a-blogger-textbook-ru.pdf` and `SHA256SUMS`.
 The release notes must record the exact source commit, the PDF build command, CI link and the actual checks performed.
 Inspect affected pages in both languages before calling them reviewed. Do not copy older PDF page counts into the new release.
 
@@ -116,7 +118,7 @@ identified by the full Git commit; PDF hashes identify the actual downloadable a
 ## GitHub opening and manual preview
 
 [REPO-SETTINGS.md](../.github/REPO-SETTINGS.md) records the applied About text, website, 17 topics and feature settings.
-The repository is private. `assets/social-preview.jpg` is ready; a custom preview is **not installed**. The author
+`assets/social-preview.jpg` is ready; a custom preview was **not installed** during preparation. The author
 chose manual upload: **Settings → General → Social preview → Edit → Upload an image**, select the JPEG, save and recheck.
 
 After reviewing the exact commit, draft and evidence, the author can change **Settings → General → Danger Zone →
@@ -155,7 +157,7 @@ downloads and `/releases/latest`. Check private vulnerability reporting after op
 >
 > https://github.com/ilyautov/not-a-blogger
 
-**Draft release summary (EN / RU)**
+**Release summary (EN / RU)**
 
 > v0.2.0: an English/Russian entry for the agent toolkit and included text mini-course, an overview of the existing
 > eight-style atlas, more reliable worker locks and stillness checks, readable mobile slide decks, and updated

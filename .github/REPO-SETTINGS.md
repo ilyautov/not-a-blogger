@@ -1,7 +1,8 @@
 # GitHub repository settings
 
-Ledger checked on **2 November 2026**. The repository remains **private**. This file records settings and the
-remaining manual steps; it does not change visibility or publish a release.
+Settings prepared and checked on **2 November 2026**. This ledger records repository settings and manual steps.
+Current visibility, release status and exact source identity are verified in the release handoff; editing this file
+does not itself change visibility or publish anything.
 
 ## Applied and re-read
 
@@ -31,14 +32,14 @@ and manual upload instructions; browser login is not required for this preparati
 To install it, the maintainer opens the repository → **Settings → General → Social preview → Edit → Upload an image**,
 selects that JPEG and saves. Reopen Settings and check the resulting preview. This is separate from the README banner.
 
-**Private vulnerability reporting:** not confirmed enabled. Its API returned 404 while the repository was private;
+**Private vulnerability reporting:** not confirmed enabled during private preparation. Its API then returned 404;
 [GitHub documents this feature for public repositories](https://docs.github.com/en/code-security/how-tos/report-and-fix-vulnerabilities/configure-vulnerability-reporting/configure-for-a-repository).
-After the author opens the repository, check **Settings → Security and quality → Advanced Security → Private vulnerability reporting**,
+For a public repository, check **Settings → Security and quality → Advanced Security → Private vulnerability reporting**,
 enable it if desired, and confirm that **Security → Advisories → Report a vulnerability** is available. Until then, use the
 email fallback in [SECURITY.md](../SECURITY.md). Do not describe reporting as enabled before checking it.
 
-## Owner decision still required
+## Visibility and release publication
 
-The visibility change belongs to the author. Review the source, draft release and checks in
-[REPO-PUBLICATION.md](../docs/REPO-PUBLICATION.md) first. Opening the repository does not authorize posting an
+Visibility and release publication are separate maintainer actions requiring the author's instruction. Review the
+source, draft release and checks in [REPO-PUBLICATION.md](../docs/REPO-PUBLICATION.md) first. Opening the repository does not authorize posting an
 announcement, publishing a video, enabling optional features or creating starter issues.

@@ -2,7 +2,9 @@
 
 Human-readable release history. The per-recipe ledger is generated separately in [docs/CHANGELOG.md](docs/CHANGELOG.md).
 
-## v0.2.0 — unreleased candidate
+## v0.2.0 — 2026-11-02
+
+[Release](https://github.com/ilyautov/not-a-blogger/releases/tag/v0.2.0)
 
 - Fifteen focused skills plus three coordinators for individual production stages, QA and publisher components,
   with bilingual setup instructions. A new publisher recipe/brief covers durable queues and uncertain outcomes; it is a hypothesis,
@@ -15,8 +17,8 @@ Human-readable release history. The per-recipe ledger is generated separately in
 - Mobile slide decks use readable type, touch-sized controls and scrollable long content; focused table/code arrows scroll content.
 - Publication checklist, truthful GitHub settings ledger, conditional private-security reporting and refreshed bilingual PDF sources.
 
-This is preparation, not a public release or approval of any video. See [publication checks](docs/REPO-PUBLICATION.md)
-for the exact commit, CI and artifact-verification requirements.
+The release notes record the exact source commit, CI and artifact verification. See
+[publication checks](docs/REPO-PUBLICATION.md) for the workflow. A toolkit release does not approve any video for publication.
 
 ## v0.1.1 — 2026-11-02
 
