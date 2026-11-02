@@ -92,6 +92,12 @@
 
 Рецепт для агента: [publishing-no-twin-versions](../../recipes/publishing/publishing-no-twin-versions.md)
 
+## Собери своего публикатора
+
+[Рецепт](../../recipes/publishing/publishing-build-your-publisher.md) и [задание](../../docs/publisher/README.ru.md)
+помогут собрать свой публикатор; есть [скилл](../../.agents/skills/README.ru.md).
+Загрузчика здесь нет, рецепт пока гипотеза. Публикует человек.
+
 ## Грабли заливки: лонг первым, файл до 100 %, черновик во вкладке Shorts
 
 Площадки ведут себя как живые, и у каждой свои ловушки. Вот те, что нам уже стоили времени.

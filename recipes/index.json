@@ -1836,6 +1836,23 @@
     "when": "An agent that wants a \"closer look\" crops in place: `sips -c 600 800 photo.jpg` without `--out` overwrites the original. For a blind test the original is gone and the experiment can't be repeated. An agent hitting the network sandbox starts looking for a bypass."
   },
   {
+    "id": "publishing-build-your-publisher",
+    "title": "Build a separate publisher with a persistent queue and uncertain-outcome recovery",
+    "section": "publishing",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "experience",
+    "tools": [
+      "Playwright",
+      "Node.js",
+      "TypeScript"
+    ],
+    "path": "recipes/publishing/publishing-build-your-publisher.md",
+    "added": "2026-11-02",
+    "updated": "2026-11-02",
+    "when": "You want your agent to build a personal publisher for YouTube, TikTok or Instagram, instead of assembling ad hoc upload scripts for every video. The toolkit currently supplies preparation/checking tools, not an uploader."
+  },
+  {
     "id": "publishing-failed-click-is-draft",
     "title": "Find a stuck Short as a draft in the Shorts tab instead of re-uploading",
     "section": "publishing",

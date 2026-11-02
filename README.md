@@ -10,12 +10,12 @@ You approve the script, watch and listen to the MP4, and publish it yourself.
 **Also included: a text mini-course for people.** Twelve chapters with exercises on briefing your agent,
 staging the video and checking the result.
 
-**[Agent task](#3-hand-a-video-to-your-agent) · [Recipes](recipes/README.md) · [Silent demo](starter-lite/README.md) ·
+**[Skills](.agents/skills/README.md) · [Agent task](#3-hand-a-video-to-your-agent) · [Recipes](recipes/README.md) · [Silent demo](starter-lite/README.md) ·
 [Mini-course](learn/en/README.md) · [Latest PDF](https://github.com/ilyautov/not-a-blogger/releases/latest)**
 
 [![Code: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE)
 [![Text: CC BY 4.0](https://img.shields.io/badge/text-CC%20BY%204.0-lightgrey.svg)](LICENSE-CONTENT)
-[![Recipes](https://img.shields.io/badge/recipes-142-blueviolet)](recipes/README.md)
+[![Recipes](https://img.shields.io/badge/recipes-143-blueviolet)](recipes/README.md)
 [![GitHub stars](https://img.shields.io/github/stars/ilyautov/not-a-blogger?style=social)](https://github.com/ilyautov/not-a-blogger/stargazers)
 [![CI](https://github.com/ilyautov/not-a-blogger/actions/workflows/ci.yml/badge.svg)](https://github.com/ilyautov/not-a-blogger/actions/workflows/ci.yml)
 
@@ -64,6 +64,9 @@ finished-file QA; `npm run check` validates the composition. Setup time depends 
 
 ### 3. Hand a video to your agent
 
+Use the [agent skills](.agents/skills/README.md) for video creation, final-file QA or building your own publisher.
+The setup guide has invocation examples for Codex and local Claude Code; the task below also works without skills.
+
 You need an agent that works with files: Claude Code, Codex or Cursor. Clone the repository, open the folder in the
 agent and paste this task with your topic:
 
@@ -89,9 +92,10 @@ the hood. Follow the completion checks at your own pace. The textbook as one PDF
 
 | Folder | What's there |
 |---|---|
+| [`.agents/skills/`](.agents/skills/README.md) | 3 entry skills: make a video, check the MP4, build your publisher; setup for Codex and local Claude Code |
 | [`examples/`](examples/README.en.md) | 12 breakdowns of published videos with numbers and dates, flops too |
 | [`learn/`](learn/en/README.md) | a text mini-course for people: 12 chapters with exercises, a roadmap and a glossary |
-| [`recipes/`](recipes/README.md) | 142 techniques written for the agent: when to use, what to do, how to check |
+| [`recipes/`](recipes/README.md) | 143 techniques written for the agent: when to use, what to do, how to check |
 | [`starter-lite/`](starter-lite/README.md) | a silent 15-second demo, Node 22+ and ffmpeg, no finished-file QA |
 | [`starter/`](starter/README.en.md) | the full build: lines in, a voiced video and a check report out |
 | [`tools/`](tools/README.md) | utilities: voice and frame checks, carousels, covers, slide decks |
@@ -100,6 +104,9 @@ the hood. Follow the completion checks at your own pace. The textbook as one PDF
 The rest is reference: one-line pitfalls in [gotchas/](gotchas/README.md), prompts in [prompts/](prompts/README.md),
 research findings in [research/](research/README.en.md), check thresholds in [QA-THRESHOLDS.md](docs/QA-THRESHOLDS.md),
 engine and model licenses in [THIRD-PARTY.md](docs/THIRD-PARTY.md).
+
+To build your own upload tool, use the [publisher recipe and implementation brief](docs/publisher/README.md).
+This is a design to implement in a separate project, not an included upload client.
 
 ## Visual styles: stage the same event eight ways
 
@@ -137,7 +144,7 @@ that know-how. The engine here is someone else's and open; the recipes don't dep
 
 - **Flops are shown with numbers.** [A repeat of the keys video](examples/three-keys-repeat/README.en.md) got 3 views
   on YouTube and 0 on TikTok. Every breakdown says what went wrong.
-- **Every technique has a status.** 73 are backed by measurements, 69 are still hypotheses, and the
+- **Every technique has a status.** 73 are backed by measurements, 70 are still hypotheses, and the
   [index](recipes/README.md) says so.
 - **A program checks the finished video, a person ships it.** A green check means "ready to watch", not "ready to
   publish".

@@ -97,6 +97,13 @@ first frame so that it's a different video. If you do upload two versions, recor
 
 Agent recipe: [publishing-no-twin-versions](../../recipes/publishing/publishing-no-twin-versions.md)
 
+## Build your own publisher
+
+For a separate upload tool, give your agent the [publisher build recipe](../../recipes/publishing/publishing-build-your-publisher.md)
+and [implementation brief](../../docs/publisher/README.md), or use the [publisher-builder skill](../../.agents/skills/README.md).
+The queue, account profiles, recovery and acceptance checks are specified there. No upload client is included;
+the new recipe is a hypothesis, and real account tests and publication are separate actions by the person.
+
 ## Upload pitfalls: long first, file to 100%, the draft in the Shorts tab
 
 Platforms behave like living things, and each has its own traps. Here are the ones that have already cost us time.

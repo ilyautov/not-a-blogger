@@ -8,7 +8,7 @@ remaining manual steps; it does not change visibility or publish a release.
 About description:
 
 ```text
-Toolkit for AI agents that make short videos: recipes, prompts, templates and QA tools. Includes a text mini-course for people, two runnable starters and 12 real video breakdowns. 142 recipes: 73 measured, 69 hypotheses.
+Toolkit for AI agents that make short videos: recipes, prompts, templates and QA tools. Includes 3 agent skills, a text mini-course for people, two runnable starters and 12 real video breakdowns. 143 recipes: 73 measured, 70 hypotheses.
 ```
 
 Website: <https://aifrontier.tech>

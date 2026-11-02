@@ -1,9 +1,11 @@
 # Publishing
 
-Manual and verification steps for uploading to YouTube, TikTok and Instagram. No account-login automation here. Format: [recipe template](../../templates/recipe.md).
+Manual and verification steps for uploading to YouTube, TikTok and Instagram, plus a recipe for building a separate
+publisher. No upload client or account-login automation is included here. Format: [recipe template](../../templates/recipe.md).
 
 | Recipe | Status | Lang | Gist |
 |---|---|---|---|
+| [publishing-build-your-publisher](publishing-build-your-publisher.md) | hypothesis | any | Build a separate publisher: per-target queue, manual login, offline tests and recovery before retries. |
 | [publishing-failed-click-is-draft](publishing-failed-click-is-draft.md) | hypothesis | any | Dead "Publish" click or "processing longer" = draft; >180 s vertical is in Videos. |
 | [publishing-instagram-ai-label](publishing-instagram-ai-label.md) | hypothesis | any | Enable the AI label in advanced settings and disclose in the caption. |
 | [publishing-long-before-shorts](publishing-long-before-shorts.md) | hypothesis | any | Shorts go out only after the long video's link is live. |
