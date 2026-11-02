@@ -22,6 +22,11 @@ between neighboring frames finds not a single still stretch longer than 0.5 seco
 This chapter is about how camera and editing bring a frame to life, and about how the same tools can disguise a dead
 one.
 
+Before choosing motion, return to the [eight-style atlas in chapter
+04](04-image-and-frame.md#atlas-eight-ways-to-stage-one-story). Decide what changes inside the scene: a
+paper layer, a character pose, an object or a line of text. Then choose the shot and cut. A static example
+shows composition; check motion on the rendered video.
+
 ## Don't disguise stillness with a slow push-in
 
 **Problem.** A card hangs in the frame, nothing happens inside it, and the agent adds a slow push-in on the whole

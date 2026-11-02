@@ -1,0 +1,358 @@
+{
+  "schema_version": 1,
+  "imported_on": "2026-11-02",
+  "purpose": "Bilingual textbook chapter 04 style-choice atlas",
+  "source_root_convention": "All source paths are relative to the video-pipeline-agent workshop root; source workshop is not bundled.",
+  "verification_boundary": "Image integrity and provenance only. No new render, continuous video review, listening, retention measurement, artistic acceptance or publication verification.",
+  "assets": [
+    {
+      "file": "retro-30s.jpg",
+      "source_project": "video-pipeline-agent",
+      "source_relative_path": "styles/R30/still.jpg",
+      "original_sha256": "07aa38acfb905074746e9e357ff4975bcb36208bf1931ce135dd299134eebc00",
+      "published_sha256": "07aa38acfb905074746e9e357ff4975bcb36208bf1931ce135dd299134eebc00",
+      "original_dimensions": {
+        "width": 1088,
+        "height": 960
+      },
+      "published_dimensions": {
+        "width": 1088,
+        "height": 960
+      },
+      "media_kind": "curated_catalog_frame_board",
+      "origin_kind": "procedural_canvas_cartoon",
+      "source_video_timestamp_seconds": null,
+      "timestamp_note": "Selected source-frame timestamps are not recorded; no timestamp inferred from HUD text.",
+      "historical_status": {
+        "as_of": "2026-10-23",
+        "status": "approved_unpublished",
+        "evidence_source_relative_path": "styles/R30/STYLE.md"
+      },
+      "related_video_paths": [
+        "hyperframes-3d-styles/RETRO/output/RETRO-30s.mp4"
+      ],
+      "transformation": {
+        "operation": "byte_identical_copy"
+      },
+      "image_rights": {
+        "scope": "Teaching illustration, not reusable author-brand assets. See CREDITS.md and docs/BRAND.md.",
+        "author_brand_excluded_from_repository_license": true,
+        "commons_material_license": null,
+        "credits_file": "CREDITS.md"
+      }
+    },
+    {
+      "file": "instructional-50s.jpg",
+      "source_project": "video-pipeline-agent",
+      "source_relative_path": "styles/R50/still.jpg",
+      "original_sha256": "17f4e79fe6eec4417a4294840af81952e2839bd15757643b11d3a78c4f43a7d8",
+      "published_sha256": "17f4e79fe6eec4417a4294840af81952e2839bd15757643b11d3a78c4f43a7d8",
+      "original_dimensions": {
+        "width": 1088,
+        "height": 960
+      },
+      "published_dimensions": {
+        "width": 1088,
+        "height": 960
+      },
+      "media_kind": "curated_catalog_frame_board",
+      "origin_kind": "generated_clerk_and_robot_film_stylization",
+      "source_video_timestamp_seconds": null,
+      "timestamp_note": "Selected source-frame timestamps are not recorded; no timestamp inferred from HUD text.",
+      "historical_status": {
+        "as_of": "2026-10-23",
+        "status": "approved_unpublished",
+        "evidence_source_relative_path": "styles/R50/STYLE.md"
+      },
+      "related_video_paths": [
+        "hyperframes-3d-styles/RETRO/output/RETRO-50s.mp4"
+      ],
+      "transformation": {
+        "operation": "byte_identical_copy"
+      },
+      "image_rights": {
+        "scope": "Teaching illustration, not reusable author-brand assets. See CREDITS.md and docs/BRAND.md.",
+        "author_brand_excluded_from_repository_license": true,
+        "commons_material_license": null,
+        "credits_file": "CREDITS.md"
+      },
+      "content_note": "Selected clerk/robot scenes are generated stylization, not 1950s archive footage; separate archive inserts exist in the full video."
+    },
+    {
+      "file": "voxel.jpg",
+      "source_project": "video-pipeline-agent",
+      "source_relative_path": "styles/VOX/still.jpg",
+      "original_sha256": "a32ff592adcf1024478c6556d44ea0043ad769e0efc97a658789116eeebb209d",
+      "published_sha256": "a32ff592adcf1024478c6556d44ea0043ad769e0efc97a658789116eeebb209d",
+      "original_dimensions": {
+        "width": 1088,
+        "height": 960
+      },
+      "published_dimensions": {
+        "width": 1088,
+        "height": 960
+      },
+      "media_kind": "curated_catalog_frame_board",
+      "origin_kind": "author_rendered_threejs_voxel_scene_external_format_inspiration",
+      "source_video_timestamp_seconds": null,
+      "timestamp_note": "Selected source-frame timestamps are not recorded; no timestamp inferred from HUD text.",
+      "historical_status": {
+        "as_of": "2026-10-23",
+        "status": "published",
+        "evidence_source_relative_path": "styles/VOX/STYLE.md"
+      },
+      "related_video_paths": [
+        "hyperframes-c01-baza/output/final.mp4",
+        "hyperframes-c02-rils/output/final.mp4"
+      ],
+      "transformation": {
+        "operation": "byte_identical_copy"
+      },
+      "image_rights": {
+        "scope": "Teaching illustration, not reusable author-brand assets. See CREDITS.md and docs/BRAND.md.",
+        "author_brand_excluded_from_repository_license": true,
+        "commons_material_license": null,
+        "credits_file": "CREDITS.md"
+      },
+      "content_note": "Author production based on studied manohin_nocode voxel-skit format, not a claim of inventing that visual language. Catalog covers two related episodes; exact episode of each selected frame is not recorded."
+    },
+    {
+      "file": "ps2-cutscene.jpg",
+      "source_project": "video-pipeline-agent",
+      "source_relative_path": "styles/SA3/still.jpg",
+      "original_sha256": "2c2772103d1a34ac3f0077a13b83a5de83476582858dffe0474f3f4998100235",
+      "published_sha256": "2c2772103d1a34ac3f0077a13b83a5de83476582858dffe0474f3f4998100235",
+      "original_dimensions": {
+        "width": 1088,
+        "height": 960
+      },
+      "published_dimensions": {
+        "width": 1088,
+        "height": 960
+      },
+      "media_kind": "curated_catalog_frame_board",
+      "origin_kind": "author_rendered_threejs_low_poly_scene_ps2_era_inspiration",
+      "source_video_timestamp_seconds": null,
+      "timestamp_note": "Selected source-frame timestamps are not recorded; no timestamp inferred from HUD text.",
+      "historical_status": {
+        "as_of": "2026-10-23",
+        "status": "approved_with_slow_opening_note_unpublished",
+        "evidence_source_relative_path": "styles/SA3/STYLE.md"
+      },
+      "related_video_paths": [
+        "hyperframes-3d-styles/SA2/engine/output/baza.mp4"
+      ],
+      "transformation": {
+        "operation": "byte_identical_copy"
+      },
+      "image_rights": {
+        "scope": "Teaching illustration, not reusable author-brand assets. See CREDITS.md and docs/BRAND.md.",
+        "author_brand_excluded_from_repository_license": true,
+        "commons_material_license": null,
+        "credits_file": "CREDITS.md"
+      }
+    },
+    {
+      "file": "film-look.jpg",
+      "source_project": "video-pipeline-agent",
+      "source_relative_path": "styles/FILM/still.jpg",
+      "original_sha256": "6a5c9797e484a6016b40c8a3b82ccc10122f1b3555668fd01e30866e5b3fa566",
+      "published_sha256": "6a5c9797e484a6016b40c8a3b82ccc10122f1b3555668fd01e30866e5b3fa566",
+      "original_dimensions": {
+        "width": 1088,
+        "height": 960
+      },
+      "published_dimensions": {
+        "width": 1088,
+        "height": 960
+      },
+      "media_kind": "curated_catalog_frame_board",
+      "origin_kind": "generated_film_look_fiction",
+      "source_video_timestamp_seconds": null,
+      "timestamp_note": "Selected source-frame timestamps are not recorded; no timestamp inferred from HUD text.",
+      "historical_status": {
+        "as_of": "2026-10-23",
+        "status": "approved_unpublished",
+        "evidence_source_relative_path": "styles/FILM/STYLE.md"
+      },
+      "related_video_paths": [
+        "hyperframes-3d-styles/H2/output/film.mp4"
+      ],
+      "transformation": {
+        "operation": "byte_identical_copy"
+      },
+      "image_rights": {
+        "scope": "Teaching illustration, not reusable author-brand assets. See CREDITS.md and docs/BRAND.md.",
+        "author_brand_excluded_from_repository_license": true,
+        "commons_material_license": null,
+        "credits_file": "CREDITS.md"
+      }
+    },
+    {
+      "file": "typography-photo.jpg",
+      "source_project": "video-pipeline-agent",
+      "source_relative_path": "styles/REEL/still.jpg",
+      "original_sha256": "970442ddb6dc1a82a04705bab045477ff9175e6d961c4f917906fb7509d1b0e8",
+      "published_sha256": "970442ddb6dc1a82a04705bab045477ff9175e6d961c4f917906fb7509d1b0e8",
+      "original_dimensions": {
+        "width": 960,
+        "height": 1088
+      },
+      "published_dimensions": {
+        "width": 960,
+        "height": 1088
+      },
+      "media_kind": "curated_catalog_frame_board",
+      "origin_kind": "author_typography_over_generated_photo_style_backdrops",
+      "source_video_timestamp_seconds": null,
+      "timestamp_note": "Selected source-frame timestamps are not recorded; no timestamp inferred from HUD text.",
+      "historical_status": {
+        "as_of": "2026-10-23",
+        "status": "mixed_published_and_probe_without_author_verdict",
+        "evidence_source_relative_path": "styles/REEL/STYLE.md",
+        "components": [
+          {
+            "position": "top",
+            "production": "hyperframes-agentlies",
+            "status": "published",
+            "date": "2026-09-28"
+          },
+          {
+            "position": "bottom",
+            "production": "hyperframes-reelprobe",
+            "status": "no_author_verdict_recorded",
+            "as_of": "2026-10-23"
+          }
+        ]
+      },
+      "related_video_paths": [
+        "hyperframes-agentlies/output/final.mp4",
+        "hyperframes-reelprobe/output/final.mp4"
+      ],
+      "transformation": {
+        "operation": "byte_identical_copy"
+      },
+      "image_rights": {
+        "scope": "Teaching illustration, not reusable author-brand assets. See CREDITS.md and docs/BRAND.md.",
+        "author_brand_excluded_from_repository_license": true,
+        "commons_material_license": null,
+        "credits_file": "CREDITS.md"
+      }
+    },
+    {
+      "file": "paper-collage.jpg",
+      "source_project": "video-pipeline-agent",
+      "source_relative_path": "research-2026-10-19-styles/frames/2-collage.png",
+      "original_sha256": "d74cdfe6a709a34555163bbaae6590713bbd1ec3243ebbba86d027e20c9ac39b",
+      "published_sha256": "65643140700f71ca0a271e4cf591969bf446fba24914f3e57a6e0f982279bff7",
+      "original_dimensions": {
+        "width": 1080,
+        "height": 1920
+      },
+      "published_dimensions": {
+        "width": 1080,
+        "height": 1920
+      },
+      "media_kind": "static_research_study",
+      "origin_kind": "static_html_composition_with_commons_photo_cutouts_and_author_character",
+      "source_video_timestamp_seconds": null,
+      "timestamp_note": "Not applicable: static study.",
+      "historical_status": {
+        "as_of": "2026-10-19",
+        "status": "static_study_no_animation_or_publication_verified",
+        "evidence_source_relative_path": "research-2026-10-19-styles/frames/credits.md"
+      },
+      "related_video_paths": [],
+      "transformation": {
+        "operation": "png_to_jpeg",
+        "program": "ffmpeg",
+        "arguments": [
+          "-frames:v",
+          "1",
+          "-q:v",
+          "2",
+          "-pix_fmt",
+          "yuvj444p"
+        ],
+        "cropped": false,
+        "resized": false
+      },
+      "image_rights": {
+        "scope": "Teaching illustration, not reusable author-brand assets. See CREDITS.md and docs/BRAND.md.",
+        "author_brand_excluded_from_repository_license": true,
+        "commons_material_license": "CC BY-SA 4.0",
+        "credits_file": "CREDITS.md"
+      },
+      "photographic_material": [
+        {
+          "author": "Kjaskren",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Starship_delivery_robot.jpg",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "modifications": "cutout, label overlay, scale and composition"
+        },
+        {
+          "author": "Beyond My Ken",
+          "source_url": "https://commons.wikimedia.org/wiki/File:2013_Philadelphia_City_Hall_from_N._Broad_Street_north_of_Race_Street.jpg",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "modifications": "crop, torn-edge mask, color adjustment and layering"
+        }
+      ]
+    },
+    {
+      "file": "halftone-comic.jpg",
+      "source_project": "video-pipeline-agent",
+      "source_relative_path": "research-2026-10-19-styles/frames/4-comic.png",
+      "original_sha256": "48e0ab3dc4aeca595ed541c4b134cbbdafa4de71ec1e7cea37c72d724957fa1a",
+      "published_sha256": "f823ef072e242f08b12895278665841c29d54d643d9d2c21dfce5819e25137a3",
+      "original_dimensions": {
+        "width": 1080,
+        "height": 1920
+      },
+      "published_dimensions": {
+        "width": 1080,
+        "height": 1920
+      },
+      "media_kind": "static_research_study",
+      "origin_kind": "static_html_composition_with_adapted_commons_photo_and_author_character",
+      "source_video_timestamp_seconds": null,
+      "timestamp_note": "Not applicable: static study.",
+      "historical_status": {
+        "as_of": "2026-10-19",
+        "status": "static_study_no_animation_or_publication_verified",
+        "evidence_source_relative_path": "research-2026-10-19-styles/frames/credits.md"
+      },
+      "related_video_paths": [],
+      "transformation": {
+        "operation": "png_to_jpeg",
+        "program": "ffmpeg",
+        "arguments": [
+          "-frames:v",
+          "1",
+          "-q:v",
+          "2",
+          "-pix_fmt",
+          "yuvj444p"
+        ],
+        "cropped": false,
+        "resized": false
+      },
+      "image_rights": {
+        "scope": "Teaching illustration, not reusable author-brand assets. See CREDITS.md and docs/BRAND.md.",
+        "author_brand_excluded_from_repository_license": true,
+        "commons_material_license": "CC BY-SA 4.0",
+        "credits_file": "CREDITS.md"
+      },
+      "photographic_material": [
+        {
+          "author": "Kjaskren",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Starship_delivery_robot.jpg",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "modifications": "crop, posterization, halftone and label overlay"
+        }
+      ]
+    }
+  ]
+}

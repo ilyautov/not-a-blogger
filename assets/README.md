@@ -26,3 +26,13 @@ per numbered chapter. Same mascot and status as above (see [BRAND.md](../docs/BR
 the Russian and English PDFs share them. Provenance: generated with an image model (codex-cli `image_generation`),
 `ch00`, `ch01`, `ch03`, `ch05`, `ch06`, `ch07` on 23.10.2026 and the rest on 29.10.2026; prompts in
 [textbook/PROMPTS.md](textbook/PROMPTS.md). They are story illustrations, not screenshots of the pipeline.
+
+`textbook/style-atlas/`: eight teaching images for chapter 04 in both languages. Six JPEGs are byte-identical
+copies of curated frame boards from the author's workshop catalog (23.10.2026); two are JPEG conversions of static
+collage/comic studies (19.10.2026), without cropping or resizing. The latter do not establish animation. Generated
+1950s/film scenes are stylizations, not documentary archive. Sources, original/published SHA256, dimensions and
+historical status dates are in [source-manifest.json](textbook/style-atlas/source-manifest.json).
+[Atlas CREDITS.md](textbook/style-atlas/CREDITS.md) preserves the Commons photographers and CC BY-SA 4.0 terms for
+photo material/adaptations in the two studies. These terms are separate from the book's general text license;
+the existing [author-brand exceptions](../docs/BRAND.md) still apply. Examples teach staging, not reuse of the
+mascot or a claim that source-workshop engines are bundled.

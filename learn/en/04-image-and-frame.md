@@ -235,6 +235,159 @@ consent. Don't name private individuals from the news.
 
 Agent recipe: [face-no-real-person](../../recipes/face/face-no-real-person.md)
 
+## Atlas: eight ways to stage one story
+
+These examples come from the author's own workshop. The first six images are curated frame boards from video
+productions; the last two are **static studies** dated 19 October 2026. Boards show a visual language; they do
+not prove motion, sound, retention or the quality of a whole video. Statuses below are historical catalog
+records as of 23 October 2026, not permission to publish. Exact source-frame timestamps were not recorded.
+[Sources and rights](../../assets/textbook/style-atlas/CREDITS.md),
+[file manifest](../../assets/textbook/style-atlas/source-manifest.json).
+
+Choose a style for an event: who acts, what changes, and which detail the viewer should notice. Color and grain
+come afterwards. Borrow the staging principle and invent your own characters and design: the author's mascot
+and brand are not licensed for reuse.
+
+### 1. Retro 1930s: an object becomes an actor
+
+<div markdown="1" style="break-inside: avoid">
+
+![Retro 1930s: two database cabinets, then the ghost of the destroyed one](../../assets/textbook/style-atlas/retro-30s.jpg)
+
+*Canvas cartoon; approved, unpublished in the catalog as of 23 October 2026.*
+
+</div>
+
+A database gets hands, eyes and a soul. An abstract loss becomes a visible gag: an intact object turns into a
+pile of debris. Silhouettes and physical exaggeration establish the era; scratches add texture.
+**Try it:** draw three frames in which your object hears bad news and changes shape.
+**Check:** without a caption, the viewer can tell which object suffered and what happened to it.
+
+### 2. Instructional 1950s: a calm lesson about a disaster
+
+<div markdown="1" style="break-inside: avoid">
+
+![1950s stylization: a generated clerk and tin robot in a computer room](../../assets/textbook/style-atlas/instructional-50s.jpg)
+
+*Generative video stylization; approved, unpublished in the catalog as of 23 October 2026.*
+
+</div>
+
+The clerk, reels, paper stacks and tidy robot turn a modern failure into a workplace lesson. This board shows
+**generated scenes**, not footage shot in the 1950s. The source video also contains separate archival inserts;
+those do not make this pair documentary material.
+**Try it:** stage one mistake as “do this – get that”, with an object and a consequence.
+**Check:** two sketches explain the rule; label fiction and genuine archive separately if archive is needed.
+
+### 3. Voxels: emotion in large blocks
+
+<div markdown="1" style="break-inside: avoid">
+
+![Voxel skit: a cubic robot on a keyboard and a close-up of its companion](../../assets/textbook/style-atlas/voxel.jpg)
+
+*The author's 3D production based on a studied external format; published in the catalog as of 23 October 2026.*
+
+</div>
+
+A keyboard becomes the floor; a pixel drop carries a whole reaction. Simple geometry leaves few details, so
+gaze and pose need to read clearly. A face close-up and a wide view of the space serve different purposes.
+**Try it:** build your own block character and show “confident” and “realized the mistake” in the same setting.
+**Check:** both emotions read in a small preview without text; the character remains recognizable in both poses.
+
+### 4. PS2-era cutscene: the world answers a line
+
+<div markdown="1" style="break-inside: avoid">
+
+![PS2-era cutscene: a conversation at a table and a boombox robot below a panic meter](../../assets/textbook/style-atlas/ps2-cutscene.jpg)
+
+*The author's low-poly 3D scene; approved with a slow-opening note, unpublished as of 23 October 2026.*
+
+</div>
+
+Flat textures, angular models and sunset light establish a game era. A “panic” meter makes the interface react
+to the protagonist's mistake. It serves the story when an event changes it; permanent decorative HUD gets in the way.
+**Try it:** stage a conversation in one location and invent one meter that changes after an action.
+**Check:** the before/after pair shows what the protagonist did and why the meter changed. No assets from a commercial game are needed.
+
+### 5. Film look: light connects the characters
+
+<div markdown="1" style="break-inside: avoid">
+
+![Film stylization: a person and a helmeted gorilla at a workbench](../../assets/textbook/style-atlas/film-look.jpg)
+
+*Generative video stylization; approved, unpublished in the catalog as of 23 October 2026.*
+
+</div>
+
+A lamp, shadows, worn materials and a close camera build a confession scene. Adding grain to unrelated images
+will not do the same job: both speakers need to share one lighting setup. This is fiction, not documentary footage.
+**Try it:** describe two reverse shots lit by one lamp: its position, the lit cheek, and the foreground object.
+**Check:** light direction and props match between shots; a changed face or costume is not passed off as an edit.
+
+### 6. Typography and photo: a number gets weight and a place
+
+<div markdown="1" style="break-inside: avoid">
+
+![Type over a photographic backdrop: a large number in a hangar, then contrasting words](../../assets/textbook/style-atlas/typography-photo.jpg)
+
+*Top: an analysis published on 28 September 2026; bottom: a separate probe without an author verdict as of 23 October 2026.*
+
+</div>
+
+The number leads, the space supplies a metaphor, and a short line explains the relationship. The second example
+uses the same hierarchy for an emphasized word. Background texture must leave the letters readable.
+**Try it:** take one verified fact, highlight one number or word, and choose a backdrop that explains its meaning.
+**Check:** the main point reads first in a preview, then the explanation; record the fact's source. Do not transplant these numbers into your topic.
+
+### 7. Paper collage: let the materials show
+
+<div markdown="1" style="break-inside: avoid">
+
+![Static collage: torn newspaper, a city photo, character and robot cutouts](../../assets/textbook/style-atlas/paper-collage.jpg)
+
+*Static study, 19 October 2026; animation of this frame is not established here.*
+
+</div>
+
+Torn edges, tape, differently scaled cutouts and shadows reveal how the story is assembled. The city photo gives
+a place, the silhouette a participant, the newspaper context. The robot photo is illustrative, not from the reported event.
+**Try it:** arrange your event in three paper layers and propose which should appear first.
+**Check:** every layer has a role and the reading order is clear. Photos: [Kjaskren – robot](https://commons.wikimedia.org/wiki/File:Starship_delivery_robot.jpg),
+[Beyond My Ken – city](https://commons.wikimedia.org/wiki/File:2013_Philadelphia_City_Hall_from_N._Broad_Street_north_of_Race_Street.jpg),
+[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Cutouts, crop, masks and color were changed;
+[full credits](../../assets/textbook/style-atlas/CREDITS.md#commons-photographs).
+
+### 8. Halftone comic: situation and reaction in two panels
+
+<div markdown="1" style="break-inside: avoid">
+
+![Static comic: robot and silhouette in the upper panel, a reaction close-up below](../../assets/textbook/style-atlas/halftone-comic.jpg)
+
+*Static study, 19 October 2026; a reading order, not proof of video editing pace.*
+
+</div>
+
+The first panel shows the conflict; the second enlarges the reaction. A slanted border and rays guide the eye;
+halftone dots tie photo and drawing together. A sound word in the image does not mean it has an audio track.
+**Try it:** split your event into “it happened” and “they reacted”, with one focal point per panel.
+**Check:** the order reads without arrows; dots leave the face and text legible. Robot photo: [Kjaskren](https://commons.wikimedia.org/wiki/File:Starship_delivery_robot.jpg),
+[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/); crop, posterization, halftone and label were changed.
+[Full credits](../../assets/textbook/style-atlas/CREDITS.md#commons-photographs).
+
+### Practice: one event, two styles
+
+Take a simple fictional event: “the assistant sent an empty report; the author opened the file”. Choose two
+styles from the atlas and sketch three states for each: before the action, the action, the consequence. Paper
+and a pencil are enough. Explain what changes in material, pose, lighting, shot size and reveal order beyond
+color. Keep the event and outcome the same.
+
+Give the agent a concrete brief: “Use my three sketches and these two atlas examples. Propose two storyboards
+for this event; name the acting object, its change, and the camera shot. Check: in each storyboard, without a
+voice, I can tell who sent the report and that it is empty. Show the frame descriptions first.” The author
+chooses the staging before assembly. Technical authors can also ask for a list of layers and object states;
+experienced authors can build a short test and check the rendered video. Additional engines from the source
+workshop are not bundled here. Motion proposed in a sketch stays a plan until a render has been checked.
+
 ## Exercise
 
 20–30 minutes.
