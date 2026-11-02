@@ -1,16 +1,12 @@
-# not-a-blogger: a practical video course for people and AI agents
+# not-a-blogger
 
 [English](README.md) · [Русская версия](README.ru.md)
 
-Make a vertical video for Reels, Shorts or TikTok from your own idea: a script you approve, a frame that shows something happening, sound,
-and a finished MP4 you can inspect. You learn the decisions; a file-based AI agent such as Claude Code, Codex or
-Cursor follows the recipes and builds it. You review the result and publish it yourself.
+**A practical video course for people and AI agents.**
 
-Start by reading, or render a silent 15-second demo. Then add your own text, voice and visual direction.
-Beginners get a guided route; technical authors can inspect the build; experienced makers can go straight to a
-specific recipe.
-
-> I'm not a blogger, I'm an engineer. I need the videos, not the profession.
+Turn your own idea into a vertical video for Reels, Shorts or TikTok. You approve the script; a file-based agent
+such as Claude Code, Codex or Cursor follows the recipes and builds the MP4. You watch, listen and publish it yourself.
+Start by reading the course or rendering a silent 15-second demo, then add your own text, voice and staging.
 
 **[Learn](learn/en/README.md) · [Silent demo](starter-lite/README.md) · [Agent task](#3-hand-a-video-to-your-agent) ·
 [Advanced recipes](recipes/README.md) · [Latest PDF](https://github.com/ilyautov/not-a-blogger/releases/latest)**
@@ -26,6 +22,8 @@ specific recipe.
     <img src="assets/readme-banner-en.jpg" alt="not-a-blogger: videos without the blogger profession. AI Frontier, open source" width="720">
   </a>
 </p>
+
+> I'm not a blogger, I'm an engineer. I need the videos, not the profession.
 
 ## What it makes
 
