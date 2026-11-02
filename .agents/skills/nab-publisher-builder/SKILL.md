@@ -1,33 +1,28 @@
 ---
 name: nab-publisher-builder
-description: Use when building or specifying a personal video publisher with queues and browser adapters from not-a-blogger; not for sending an existing upload or logging into accounts.
+description: Use when coordinating a complete personal publisher implementation or selecting its next module from not-a-blogger; use focused publisher skills for individual components, never live account operation.
 ---
 
-# Build a separate publisher
+# Coordinate a separate publisher build
 
-Locate the not-a-blogger checkout and read its [publication contract](../../../AGENTS.md),
+Locate the not-a-blogger checkout and read [AGENTS.md](../../../AGENTS.md), the
 [publisher recipe](../../../recipes/publishing/publishing-build-your-publisher.md) and
 [build brief](../../../docs/publisher/README.md) ([Russian](../../../docs/publisher/README.ru.md)).
-No upload client or publisher CLI is shipped in this kit. Build in the person's chosen separate project; do not
-pretend commands from the proposed interface already exist. Use an existing suitable stack, otherwise Node/TypeScript
-with Playwright. Start with the requested first platform/account, not a claim of support for every platform.
+No publisher CLI or upload client is shipped here. Build in the person's separate project, using its existing
+suitable stack or Node/TypeScript with Playwright. Proposed commands remain proposed until implemented.
 
-Preserve these implementation contracts:
+Select one component; do not load or implement everything for a narrow request:
 
-- Durable state per file hash/platform/account, metadata digest and intended visibility. Approval binds those exact
-  values; reject a changed file or metadata before a side effect. A path or a general "looks good" is not that identity.
-- Offline planning/dry-run is read-only and opens no browser. Atomic queue writes, exclusive job/profile ownership
-  and stale-worker protection are part of recovery, not just success-path behavior.
-- A crash or timeout after submit, or `uploading` found after restart, means `needs_review`. Inspect existing
-  drafts/posts before retrying; missing saved ID does not prove failure. Preserve completed targets independently.
-- Manual login in a dedicated profile; keep the login/upload browser channel consistent. Do not copy sessions,
-  request passwords, use the everyday browser profile or commit authentication state.
+| Module | Skill |
+|---|---|
+| Offline plan, durable queue, approval and ownership | [nab-publisher-queue](../nab-publisher-queue/SKILL.md) |
+| One platform's preflight/upload/inspect/verify | [nab-publisher-adapter](../nab-publisher-adapter/SKILL.md) |
+| Uncertain outcome, reconciliation and recovery | [nab-publisher-recovery](../nab-publisher-recovery/SKILL.md) |
 
-Build the queue/fake adapter and the brief's offline acceptance cases first. Add real adapters individually, inspect
-current official platform/Playwright documentation, and document each adapter's limits. Keep unavailable adapters
-unavailable. A mock pass is not evidence of a live upload; an upload click or moderation is not verified publication.
+For a complete build, establish the shared queue/state contract and fake-service tests first; add requested adapters
+one at a time. Approval binds file SHA256, metadata, platform, account and visibility. A crash/timeout after submit
+is uncertain and must be reconciled before retry, not blindly replayed. Completed targets remain independent.
 
-Deliver code or, when only a specification was requested, the implementation brief: actual project paths, commands
-that exist, test results, uncertain-outcome handling and commands for the person's controlled account test. Label
-proposed commands as proposed. The person performs login and real sending separately. This skill never accesses
-accounts, uploads or publishes as part of development and does not override the toolkit's publication rules.
+Deliver code or the requested specification, actual commands/tests and untested integrations. The person performs
+manual login and a separate controlled account test. Mock passes do not prove live uploads. This build skill never
+accesses accounts, copies sessions, uploads or publishes and does not override the toolkit's publication policy.

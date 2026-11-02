@@ -64,7 +64,8 @@ finished-file QA; `npm run check` validates the composition. Setup time depends 
 
 ### 3. Hand a video to your agent
 
-Use the [agent skills](.agents/skills/README.md) for video creation, final-file QA or building your own publisher.
+Pick a focused [agent skill](.agents/skills/README.md) for script, assets, voice, captions, render, QA or a publisher
+component. Three coordinators handle complete workflows; a narrow task need not restart the whole build.
 The setup guide has invocation examples for Codex and local Claude Code; the task below also works without skills.
 
 You need an agent that works with files: Claude Code, Codex or Cursor. Clone the repository, open the folder in the
@@ -92,7 +93,7 @@ the hood. Follow the completion checks at your own pace. The textbook as one PDF
 
 | Folder | What's there |
 |---|---|
-| [`.agents/skills/`](.agents/skills/README.md) | 3 entry skills: make a video, check the MP4, build your publisher; setup for Codex and local Claude Code |
+| [`.agents/skills/`](.agents/skills/README.md) | 18 skills: 15 focused tasks and 3 workflow coordinators; setup for Codex and local Claude Code |
 | [`examples/`](examples/README.en.md) | 12 breakdowns of published videos with numbers and dates, flops too |
 | [`learn/`](learn/en/README.md) | a text mini-course for people: 12 chapters with exercises, a roadmap and a glossary |
 | [`recipes/`](recipes/README.md) | 143 techniques written for the agent: when to use, what to do, how to check |

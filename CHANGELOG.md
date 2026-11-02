@@ -4,8 +4,8 @@ Human-readable release history. The per-recipe ledger is generated separately in
 
 ## v0.2.0 — unreleased candidate
 
-- Three repo-scoped entry skills for video creation, final-file QA and building a personal publisher, with bilingual
-  setup instructions. A new publisher recipe/brief covers durable queues and uncertain outcomes; it is a hypothesis,
+- Fifteen focused skills plus three coordinators for individual production stages, QA and publisher components,
+  with bilingual setup instructions. A new publisher recipe/brief covers durable queues and uncertain outcomes; it is a hypothesis,
   not a shipped uploader. There are now 143 recipes: 73 measured and 70 hypotheses.
 - English-first entry for the agent toolkit, with a separate Russian version and an included text mini-course for
   people. Explicit beginner/technical/experienced routes separate reading, silent rendering and the full voice/QA path.

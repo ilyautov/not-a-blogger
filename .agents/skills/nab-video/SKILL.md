@@ -1,31 +1,32 @@
 ---
 name: nab-video
-description: Use when making or revising a short video in the not-a-blogger toolkit, from a first silent demo to a voiced reel with a review handoff.
+description: Use when coordinating a complete short video or choosing its next production stage in not-a-blogger; use a focused skill for a single-stage request.
 ---
 
-# Make a video with not-a-blogger
+# Coordinate a video
 
-Work in a not-a-blogger checkout. Read its [AGENTS.md](../../../AGENTS.md) and the existing brief first. Paths below
-are relative to that checkout, not to a global skill installation. If the checkout is unavailable, request its location.
+Read [AGENTS.md](../../../AGENTS.md) and the existing brief in a not-a-blogger checkout. If the checkout is
+unavailable, request its location. Preserve the person's scope, approved inputs and existing authorization.
 
-Choose the build from the person's actual setup:
+For a first Node/ffmpeg-only demonstration choose [starter-lite](../../../starter-lite/README.md): 15 seconds,
+silent, no finished-file QA. For voiced production use the [full starter](../../../starter/README.en.md) and its
+local instructions. Choose a [template](../../../templates/README.md) when the requested format calls for it.
 
-- Node 22+ and ffmpeg, first look at the engine: [starter-lite](../../../starter-lite/README.md), a silent 15-second
-  demo. It has no voice or finished-file QA. Describe that output before starting; don't promise a voiced custom reel.
-- Python/Node and a voiced build: [full starter](../../../starter/README.en.md). Use its existing
-  [reel-starter skill](../../../starter/.agents/skills/reel-starter/SKILL.md), first task and local instructions.
-- A specified format: choose a [template](../../../templates/README.md); read its README before changing it.
+Load only the skill for the current task; the [directory](../../../.agents/skills/README.md) lists inputs and outputs:
 
-For a new script, use the person's topic, language and intended payoff. A supplied script that is already approved
-does not need a second approval. Otherwise show the exact lines, visible action per line and first/last frame before
-synthesis or render. For staging, use the bundled [direction map](../../../starter/.agents/skills/reels-direction/SKILL.md);
-for camera, load [camera moves](../../../starter/.agents/skills/camera-moves/SKILL.md) only when needed. The
-[style atlas](../../../learn/en/04-image-and-frame.md) is a source of treatments, not eight ready animation engines.
+| Task | Skill |
+|---|---|
+| Spoken script/hook | [nab-script](../nab-script/SKILL.md) |
+| Visible action/framing | [nab-shot-plan](../nab-shot-plan/SKILL.md) |
+| Still images/backgrounds | [nab-assets](../nab-assets/SKILL.md) |
+| Animation/camera/cuts | [nab-motion](../nab-motion/SKILL.md) |
+| Spoken takes | [nab-voice](../nab-voice/SKILL.md) |
+| Music/SFX/mix | [nab-sound](../nab-sound/SKILL.md) |
+| Subtitles/overlays | [nab-captions](../nab-captions/SKILL.md) |
+| MP4 assembly | [nab-render](../nab-render/SKILL.md) |
+| Whole-file review | [nab-video-qa](../nab-video-qa/SKILL.md) |
+| Publication materials | [nab-publish-prep](../nab-publish-prep/SKILL.md) |
 
-Find techniques in [recipes by symptom](../../../recipes/BY-SYMPTOM.md). Preserve topic-specific action rather than
-renaming the demo's headlines. Read voice/language rules before synthesis; use the person's own or permitted voice.
-
-After assembly follow the chosen build's checks and [delivery contract](../../../starter/DELIVERY.md). Hand over the
-exact file/hash, contact sheet, measured results and omitted checks. A silent or fake/no-ASR render remains a partial
-demonstration. Never infer listening, continuous viewing, artistic acceptance or publication from automated checks.
-Prepare metadata for the person; do not upload or publish.
+A narrow request does not restart this entire route. Reuse approved artifacts; changed spoken lines need approval
+before production. Do not load every skill or require separate agents. A fake/no-ASR or silent demo retains its
+partial scope. Deliver the exact file/hash and check limitations; the person reviews and publishes.
