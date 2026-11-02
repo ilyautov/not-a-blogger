@@ -2,7 +2,7 @@
 
 [English](README.md) · [Русская версия](README.ru.md)
 
-**A practical video course for people and AI agents.**
+**A practical course on making short videos with AI agents.**
 
 Turn your own idea into a vertical video for Reels, Shorts or TikTok. You approve the script; a file-based agent
 such as Claude Code, Codex or Cursor follows the recipes and builds the MP4. You watch, listen and publish it yourself.
