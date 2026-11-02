@@ -2,6 +2,7 @@
 # Copyright (c) 2026 not-a-blogger contributors. См. LICENSE в корне репозитория.
 """tools/slides: дек из Markdown на шаблоне deck.html."""
 from conftest import TOOLS, load
+import pytest
 
 md2deck = load('slides', 'md2deck')
 
@@ -100,3 +101,57 @@ def test_mini_markdown_long_and_tilde_fences():
     html_ = md2deck.mini_markdown('````\n```\ninner\n```\n````\n\n~~~\nt\n~~~\nпосле')
     assert html_.count('<pre><code>') == 2
     assert '```\ninner\n```' in html_ and '<p>после</p>' in html_
+
+
+@pytest.mark.parametrize('slide,block,descendant', [(2, 'table', '#cell'), (3, 'pre', 'code')])
+def test_focused_overflow_arrows_scroll_content_without_changing_slide(tmp_path, slide, block, descendant):
+    pw = pytest.importorskip('playwright.sync_api')
+    template = (TOOLS / 'slides' / 'deck.html').read_text(encoding='utf-8')
+    start, end = '<!-- slides:start -->', '<!-- slides:end -->'
+    content = '''<section class="slide"><h1>Start</h1></section>
+    <section class="slide"><h2>Wide table</h2><table tabindex="0">
+    <tr><th>First column</th><th>Second column</th><th>Third column</th><th>Fourth column</th></tr>
+    <tr><td><span id="cell" tabindex="0">First value</span></td><td>Second value</td>
+    <td>Third value</td><td>Fourth value</td></tr></table></section>
+    <section class="slide"><h2>Wide command</h2><pre tabindex="0"><code tabindex="0">''' + (
+        'python3 tools/lint/still_lint.py starter --step 0.5 --max-still 3 --threshold 0.35'
+    ) + '</code></pre></section>'
+    path = tmp_path / 'deck.html'
+    path.write_text(template.split(start)[0] + start + content + end + template.split(end)[1], encoding='utf-8')
+    with pw.sync_playwright() as engine:
+        try:
+            browser = engine.chromium.launch(headless=True)
+        except pw.Error as e:
+            if "Executable doesn't exist" in str(e):
+                pytest.skip('Chromium missing; run playwright install chromium')
+            raise
+        try:
+            page = browser.new_page(viewport={'width': 390, 'height': 844})
+            page.set_default_timeout(3000)
+            page.goto(path.as_uri() + f'#{slide}')
+            area = page.locator(block)
+            assert area.evaluate('el => el.scrollWidth > el.clientWidth')
+            # Both the scroll region itself and a focused descendant own their arrows.
+            for target in (area, page.locator(descendant)):
+                target.focus()
+                area.evaluate('el => el.scrollLeft = 0')
+                page.keyboard.press('ArrowRight')
+                assert page.evaluate('location.hash') == f'#{slide}'
+                page.wait_for_function('selector => document.querySelector(selector).scrollLeft > 0', arg=block)
+                page.keyboard.press('ArrowLeft')
+                page.wait_for_function('selector => document.querySelector(selector).scrollLeft === 0', arg=block)
+                assert page.evaluate('location.hash') == f'#{slide}'
+                # Reaching either edge must not unexpectedly navigate the deck.
+                page.keyboard.press('ArrowLeft')
+                assert page.evaluate('location.hash') == f'#{slide}'
+                area.evaluate('el => el.scrollLeft = el.scrollWidth')
+                page.keyboard.press('ArrowRight')
+                assert page.evaluate('location.hash') == f'#{slide}'
+            page.locator('.nav button').first.click()
+            assert page.evaluate('location.hash') == f'#{slide - 1}'
+            page.keyboard.press('ArrowRight')  # focus is now on a navigation button, outside overflow content
+            assert page.evaluate('location.hash') == f'#{slide}'
+            page.keyboard.press('ArrowLeft')
+            assert page.evaluate('location.hash') == f'#{slide - 1}'
+        finally:
+            browser.close()

@@ -130,6 +130,11 @@
   function go(d){i=Math.max(0,Math.min(slides.length-1,i+d));render();}
   document.addEventListener('keydown',e=>{
     const s=slides[i];
+    const content=e.target instanceof Element?e.target.closest('table,pre'):null;
+    // A focused horizontal scroll region owns its arrows, including at either edge.
+    if(['ArrowRight','ArrowLeft'].includes(e.key)&&content&&content.scrollWidth>content.clientWidth){
+      e.preventDefault();content.scrollBy(e.key==='ArrowRight'?48:-48,0);return;
+    }
     // On a long slide, vertical keys scroll its content before changing slides.
     if(['ArrowDown','PageDown',' '].includes(e.key)&&s.scrollTop+s.clientHeight<s.scrollHeight-1){
       e.preventDefault();s.scrollBy(0,e.key==='ArrowDown'?48:s.clientHeight*.85);return;
