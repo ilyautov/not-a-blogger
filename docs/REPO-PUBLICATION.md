@@ -6,7 +6,7 @@ authorized by the author; no announcement or platform upload follows automatical
 
 ## What a reader gets
 
-An agent toolkit with 143 recipes (**73 measured, 70 hypotheses**), prompts, templates, build and QA tools, two
+An agent toolkit with 146 recipes (**73 measured, 73 hypotheses**), prompts, templates, build and QA tools, two
 starters and twelve real video breakdowns. The included text mini-course for people has twelve numbered chapters
 with exercises, a roadmap and a glossary. [English entry](../README.md), [separate Russian entry](../README.ru.md).
 Eighteen [repo-scoped skills](../.agents/skills/README.md) cover fifteen focused tasks and three workflow coordinators
@@ -134,7 +134,7 @@ downloads and `/releases/latest`. Check private vulnerability reporting after op
 > I'm not a blogger, I'm an engineer. I need the videos, not the profession.
 >
 > I put my video workshop into a toolkit for AI agents: recipes, prompts, templates and tools for building and
-> checking short videos. There are 143 recipes (73 backed by measurements, 70 hypotheses), 12 real breakdowns
+> checking short videos. There are 146 recipes (73 backed by measurements, 73 hypotheses), 12 real breakdowns
 > including flops, 18 agent skills, two starters, and an eight-style visual atlas. Start with a silent 15-second render.
 >
 > A text mini-course for people is included: 12 chapters with exercises on scripting, voice, staging, sound and
@@ -148,7 +148,7 @@ downloads and `/releases/latest`. Check private vulnerability reporting after op
 > Я не блогер, я технарь. Ролики мне нужны, профессия нет.
 >
 > Собрал свою видеомастерскую в тулкит для ИИ-агентов: рецепты, промпты, шаблоны и инструменты сборки и проверки
-> коротких роликов. Внутри 143 рецепта (73 с замерами, 70 гипотез), 12 настоящих разборов с провалами, 18 скиллов, два стартера
+> коротких роликов. Внутри 146 рецептов (73 с замерами, 73 гипотезы), 12 настоящих разборов с провалами, 18 скиллов, два стартера
 > и атлас восьми визуальных стилей. Начать можно с немого ролика на 15 секунд.
 >
 > В комплекте текстовый мини-курс для человека: 12 глав с упражнениями про сценарий, голос, постановку, звук и

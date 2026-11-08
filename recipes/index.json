@@ -1042,6 +1042,22 @@
     "when": "Preview and render diverge: particles elsewhere, different shake, elements appear in wrong places on seek. Frame-by-frame rendering seeks the timeline; randomness and wall-clock time break it."
   },
   {
+    "id": "assembly-frames-before-draft-render",
+    "title": "Check a frame sheet before a draft render; on short videos a draft saves almost no time",
+    "section": "assembly",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "measurement",
+    "tools": [
+      "HyperFrames",
+      "ffmpeg"
+    ],
+    "path": "recipes/assembly/assembly-frames-before-draft-render.md",
+    "added": "2026-11-08",
+    "updated": "2026-11-08",
+    "when": "You want a fast look at the layout before the final render, and the usual advice says \"render a draft first: lower quality, lower fps, a short fragment\"."
+  },
+  {
     "id": "assembly-gsap-tween-lifetime",
     "title": "Never let a tween outlive its scene",
     "section": "assembly",
@@ -1299,6 +1315,21 @@
     "added": "2026-10-26",
     "updated": "2026-10-26",
     "when": "The build has word-level timestamps (from TTS alignment or ASR) and a timeline of overlays (plates, phone mock-ups, windows, captions), and nobody checks whether a plate shows up when its word is spoken, whether a shot lasts too long, or whether a plate covers the captions. Frame review catches these only by luck."
+  },
+  {
+    "id": "vertical-platform-ui-zones",
+    "title": "Keep captions and the call to action out of the platform UI zones in vertical video",
+    "section": "vertical",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "experience",
+    "tools": [
+      "ffmpeg"
+    ],
+    "path": "recipes/vertical/vertical-platform-ui-zones.md",
+    "added": "2026-11-08",
+    "updated": "2026-11-08",
+    "when": "In the Reels, Shorts or TikTok player, captions, numbers or the call to action end up under the like and share column, the author line, the description or the progress bar. In the editor the frame looked fine."
   },
   {
     "id": "vertical-relayout-not-crop",
@@ -2271,5 +2302,20 @@
     "added": "2026-10-23",
     "updated": "2026-10-23",
     "when": "Brand stickers (mascot, badges, stamps) placed in the scene move with the camera: a push-in enlarges them, a pan takes them off screen. A cut-out PNG without an outline looks pasted on, not like a sticker."
+  },
+  {
+    "id": "brand-style-file-from-approved-video",
+    "title": "Write STYLE.md from the video the person approved, and keep the style, not the scenes",
+    "section": "brand",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "viewer-feedback",
+    "tools": [
+      "CSS"
+    ],
+    "path": "recipes/brand/brand-style-file-from-approved-video.md",
+    "added": "2026-11-08",
+    "updated": "2026-11-08",
+    "when": "A series starts: one video was approved and the next ones should look like the same show. Without a written style the agent copies the previous project folder, and with it the old palette, old scenes and old mistakes."
   }
 ]

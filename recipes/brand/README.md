@@ -9,3 +9,4 @@ Brand color, palette as tokens, stickers and mascot in videos and cards. Format:
 | [brand-palette-in-root](brand-palette-in-root.md) | proven | any | All tokens in one `:root`; scripts read them via getComputedStyle. |
 | [brand-stickers-outside-camera](brand-stickers-outside-camera.md) | hypothesis | any | Sticker layer outside the camera, four-shadow white outline. |
 | [brand-3d-mascot-alpha-clips](brand-3d-mascot-alpha-clips.md) | hypothesis | any | Species traits first (silhouette test), pose per block, alpha clips ProRes 4444 + VP9. |
+| [brand-style-file-from-approved-video](brand-style-file-from-approved-video.md) | hypothesis | any | STYLE.md only after approval: palette, type, captions, motion, sound; new scenes every episode. |
