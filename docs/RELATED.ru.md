@@ -14,27 +14,27 @@ English version: [RELATED.md](RELATED.md). Лицензии сверены 08.11
 
 ## Фильмы и стили
 
-| Проект | Что это | Когда брать | Лицензия |
-|---|---|---|---|
-| [sarpstar/cinecode](https://github.com/sarpstar/cinecode) | Навык Claude Code для фильмов кодом: быстрый режим (один HTML) и поэтапный (план, сценарий, стиль, аниматик, черновик) | нужен короткий фильм, реклама или клип с поэтапной сборкой | MIT |
-| [lemomo-ai/lemo-opuscar](https://github.com/lemomo-ai/lemo-opuscar) | Плагин Claude Code с каталогом киностилей в коде; у каждого стиля инструкция и пример фильма | сюжет есть, нужен внешний вид | MIT |
-| [Vincentwei1021/mg-styles-15](https://github.com/Vincentwei1021/mg-styles-15) | 15 примеров моушн-дизайна, у каждого промпт и исходники | нужен ориентир для заставки или промо продукта | MIT |
-| [JohnHeibel/ClaudeAnimationBase](https://github.com/JohnHeibel/ClaudeAnimationBase) | Стартер рисованной анимации на p5.js и p5.brush: персонаж и набор сыгранных эмоций | нужен рисованный герой с одним простым действием | MIT |
+| Проект | Автор | Что это | Когда брать | Лицензия |
+|---|---|---|---|---|
+| [sarpstar/cinecode](https://github.com/sarpstar/cinecode) | sarpstar, режиссёр | Навык Claude Code для фильмов кодом: быстрый режим (один HTML) и поэтапный (план, сценарий, стиль, аниматик, черновик) | нужен короткий фильм, реклама или клип с поэтапной сборкой | MIT |
+| [lemomo-ai/lemo-opuscar](https://github.com/lemomo-ai/lemo-opuscar) | Lemomo, инди-разработчик | Плагин Claude Code с каталогом киностилей в коде; у каждого стиля инструкция и пример фильма | сюжет есть, нужен внешний вид | MIT |
+| [Vincentwei1021/mg-styles-15](https://github.com/Vincentwei1021/mg-styles-15) | Yihao (Vincentwei1021) | 15 примеров моушн-дизайна, у каждого промпт и исходники | нужен ориентир для заставки или промо продукта | MIT |
+| [JohnHeibel/ClaudeAnimationBase](https://github.com/JohnHeibel/ClaudeAnimationBase) | John Heibel, UC Berkeley | Стартер рисованной анимации на p5.js и p5.brush: персонаж и набор сыгранных эмоций | нужен рисованный герой с одним простым действием | MIT |
 
 ## Клипы на музыку
 
-| Проект | Что это | Когда брать | Лицензия |
-|---|---|---|---|
-| [mexicat/pdoom-video](https://github.com/mexicat/pdoom-video) | Лирик-видео кодом; `docs/ENGINE.md` и `docs/TREATMENT.md` описывают движок и замысел | нужны слова в такт песне | MIT (на саму песню не распространяется) |
-| [JohnHeibel/PDoomVideo](https://github.com/JohnHeibel/PDoomVideo) | Мультклип на ту же песню, разбит на главы, есть раскадровка и правила анимации | хочешь посмотреть, как устроен длинный проект | файла лицензии нет: только читать, код не копировать |
+| Проект | Автор | Что это | Когда брать | Лицензия |
+|---|---|---|---|---|
+| [mexicat/pdoom-video](https://github.com/mexicat/pdoom-video) | mexicat | Лирик-видео кодом; `docs/ENGINE.md` и `docs/TREATMENT.md` описывают движок и замысел | нужны слова в такт песне | MIT (на саму песню не распространяется) |
+| [JohnHeibel/PDoomVideo](https://github.com/JohnHeibel/PDoomVideo) | John Heibel, UC Berkeley | Мультклип на ту же песню, разбит на главы, есть раскадровка и правила анимации | хочешь посмотреть, как устроен длинный проект | файла лицензии нет: только читать, код не копировать |
 
 ## Подборки промптов и примеров
 
-| Проект | Что это | Лицензия |
-|---|---|---|
-| [yihui-dev/awesome-opus5-5-videos](https://github.com/yihui-dev/awesome-opus5-5-videos) | Ролики на Claude Opus 5.5 и промпты к ним, у части есть ремейки | MIT |
-| [athemeroy/awesome-claude-5-5-videos](https://github.com/athemeroy/awesome-claude-5-5-videos) | Процессы и демо со ссылками на источники, отчёты о тестах отдельно | CC-BY-4.0 |
-| [joeseesun/opus-video-prompts](https://github.com/joeseesun/opus-video-prompts) | Промпты и кейсы видео кодом, на китайском и английском | файла лицензии нет: только читать |
+| Проект | Автор | Что это | Лицензия |
+|---|---|---|---|
+| [yihui-dev/awesome-opus5-5-videos](https://github.com/yihui-dev/awesome-opus5-5-videos) | Yihui, независимый разработчик | Ролики на Claude Opus 5.5 и промпты к ним, у части есть ремейки | MIT |
+| [athemeroy/awesome-claude-5-5-videos](https://github.com/athemeroy/awesome-claude-5-5-videos) | athemeroy (Oddly Useful) | Процессы и демо со ссылками на источники, отчёты о тестах отдельно | CC-BY-4.0 |
+| [joeseesun/opus-video-prompts](https://github.com/joeseesun/opus-video-prompts) | joeseesun (向阳乔木), менеджер продуктов | Промпты и кейсы видео кодом, на китайском и английском | файла лицензии нет: только читать |
 
 Цены и время рендера в чужих кейсах описывают чужую машину, не твою. Промпт, который дал кому-то ролик, почти никогда
 не повторит результат без правок: бери структуру, а историю пиши свою
@@ -42,5 +42,5 @@ English version: [RELATED.md](RELATED.md). Лицензии сверены 08.11
 
 ## Добавить проект
 
-PR с одной строкой: ссылка, одна фраза «что это», когда брать, лицензия. Сюда попадают только проекты с открытым кодом
+PR с одной строкой: ссылка, автор, одна фраза «что это», когда брать, лицензия. Сюда попадают только проекты с открытым кодом
 и указанной лицензией (или явной пометкой, что её нет).
