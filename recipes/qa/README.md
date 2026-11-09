@@ -16,3 +16,5 @@ Every number a check fails on (loudness, true peak, stillness, ASR floor, frame 
 | [Word-timestamp sync check](qa-word-sync-check.md) | hypothesis | any | Plate within ±0.3 s of its noun, a cut every 3 s, captions uncovered; 3–25 failures per finished video. |
 | [Treat the motion metric as a hint, not a gate](qa-motion-metric-is-a-hint.md) | proven | any | 18 videos with human verdicts: neither fast_ratio nor active_ratio separates approved from rejected; one alarm only. |
 | [Gate the voice before showing](qa-voice-gate.md) | proven | any | TP ≥ −2.5 dBTP, LRA ≥ 2.5, gap σ ≥ 0.1 s, ≤ 6.3 syll/s, F0 ≤ 250 Hz; diagnostic, not a verdict. |
+| [Picture checks on the mp4 as warnings](qa-picture-checks-warn-only.md) | hypothesis | any | Hook, flashes, repeats, action minus camera: on 20 videos with verdicts none separated approved from rejected; warn only. |
+| [AI jury as an edit generator, not a gate](qa-ai-jury-edits-not-gate.md) | hypothesis | any | Fresh agent, 7 timestamped questions, ≤ 3 edits (one for "wow"); score never becomes approval. |

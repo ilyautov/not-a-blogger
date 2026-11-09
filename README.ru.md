@@ -15,7 +15,7 @@
 
 [![Код: MIT](https://img.shields.io/badge/код-MIT-blue.svg)](LICENSE)
 [![Тексты: CC BY 4.0](https://img.shields.io/badge/тексты-CC%20BY%204.0-lightgrey.svg)](LICENSE-CONTENT)
-[![Рецепты](https://img.shields.io/badge/рецептов-146-blueviolet)](recipes/README.md)
+[![Рецепты](https://img.shields.io/badge/рецептов-153-blueviolet)](recipes/README.md)
 [![GitHub stars](https://img.shields.io/github/stars/ilyautov/not-a-blogger?style=social)](https://github.com/ilyautov/not-a-blogger/stargazers)
 [![CI](https://github.com/ilyautov/not-a-blogger/actions/workflows/ci.yml/badge.svg)](https://github.com/ilyautov/not-a-blogger/actions/workflows/ci.yml)
 
@@ -96,7 +96,7 @@ npm run render
 | [`.agents/skills/`](.agents/skills/README.ru.md) | 18 скиллов: 15 отдельных задач и 3 для всего процесса; подключение к Codex и локальному Claude Code |
 | [`examples/`](examples/README.md) | 12 разборов опубликованных роликов с цифрами и датами, провалы тоже |
 | [`learn/`](learn/ru/README.md) | текстовый мини-курс для человека: 12 глав с упражнениями, маршрут и словарь |
-| [`recipes/`](recipes/README.md) | 146 приёмов, записанных для агента: когда применять, что делать, как проверить |
+| [`recipes/`](recipes/README.md) | 153 приёма, записанных для агента: когда применять, что делать, как проверить |
 | [`starter-lite/`](starter-lite/README.ru.md) | немой пробник на 15 секунд, Node 22+ и ffmpeg, без QA готового файла |
 | [`starter/`](starter/README.md) | полная сборка: реплики на входе, ролик с голосом и отчёт проверки на выходе |
 | [`tools/`](tools/README.md) | утилиты: проверка голоса и кадра, карусели, обложки, презентации |
@@ -145,7 +145,7 @@ npm run render
 
 - **Провалы показаны с цифрами.** [Повтор ролика про клавиши](examples/three-keys-repeat/README.md) набрал 3
   просмотра на YouTube и 0 в TikTok. В каждом разборе сказано, что пошло не так.
-- **У каждого приёма статус.** 73 подтверждены замерами, 73 пока гипотезы, и это написано прямо в
+- **У каждого приёма статус.** 73 подтверждены замерами, 80 пока гипотезы, и это написано прямо в
   [индексе](recipes/README.md).
 - **Готовый ролик проверяет программа, а выпускает человек.** Зелёная проверка значит «можно смотреть», а не «можно
   публиковать».

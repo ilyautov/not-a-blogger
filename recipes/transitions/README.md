@@ -11,3 +11,4 @@ Frame grammar, cuts, transitions. Recipes follow the [template](../../templates/
 | [Skit cut rhythm](transitions-skit-cut-rhythm.md) | hypothesis | any | Cut every 1.6–2.3 s, close-up reactions, role labels. |
 | [Smash cut opening](transitions-smash-cut.md) | hypothesis | any | Silence → impact, frame-accurate, in the first second. |
 | [Whip pan with blur](transitions-whip-pan.md) | hypothesis | any | 0.3 s accelerating exit, 0.3 s entry, blur ≤ 8% width. |
+| [One shape, no cuts](transitions-one-shape-no-cuts.md) | hypothesis | any | One element morphs (~0.8 s, same curve as the camera), the cursor drives, the camera frames the state; loop seam checked. |

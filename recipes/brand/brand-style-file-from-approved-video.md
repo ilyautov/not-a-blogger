@@ -8,7 +8,7 @@ evidence: viewer-feedback
 tools: [CSS]
 learn: ../../learn/en/10-working-with-agent.md
 added: 2026-11-08
-updated: 2026-11-08
+updated: 2026-11-09
 contributors: [not-a-blogger]
 ---
 
@@ -17,7 +17,8 @@ A series starts: one video was approved and the next ones should look like the s
 agent copies the previous project folder, and with it the old palette, old scenes and old mistakes.
 
 ## Do
-1. Only after the person approved a video, write `STYLE.md` next to the series. Link the approved mp4 and its SHA256.
+1. Only after the person approved a video, copy [templates/STYLE.md](../../templates/STYLE.md) next to the series and
+   fill it in. Link the approved mp4 and its SHA256.
 2. Write down what repeats in every episode:
    - palette as CSS tokens (see [palette in :root](brand-palette-in-root.md));
    - fonts with their licenses;
@@ -25,7 +26,9 @@ agent copies the previous project folder, and with it the old palette, old scene
    - motion: durations, easing, camera scale limits;
    - captions: words per line, colors, outline;
    - sound: music source, SFX on cuts, loudness target;
-   - what the series never does.
+   - what the series never does;
+   - camera moves with what each one means, the style's native moves, and a variation reserve: options for
+     structure, opening, hero frame, camera, music and ending that the reference did not use.
 3. Add the person's own words about what they liked and what they rejected, with dates.
 4. Keep scene layouts, jokes and hooks out of `STYLE.md`. Each episode gets a new story and new staging inside the same
    style.
@@ -60,3 +63,4 @@ the same palette, type and caption position with different scenes.
 ## Related
 - [Keep the palette in :root](brand-palette-in-root.md)
 - [Don't repeat your own hit](../idea/idea-no-repeat-own-hit.md)
+- [≥ 4 of 6 parameters differ from the reference](../idea/idea-four-of-six-differ.md)

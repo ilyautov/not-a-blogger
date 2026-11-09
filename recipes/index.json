@@ -107,6 +107,19 @@
     "when": "You picked someone else's hit as a reference and plan to make your version \"next week\", or you want to copy its exact storyline."
   },
   {
+    "id": "idea-four-of-six-differ",
+    "title": "When a video follows a reference, make at least 4 of 6 parameters differ from it",
+    "section": "idea",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "viewer-feedback",
+    "tools": [],
+    "path": "recipes/idea/idea-four-of-six-differ.md",
+    "added": "2026-11-09",
+    "updated": "2026-11-09",
+    "when": "The next video is built on a successful example: your own hit, someone else's reference, the previous episode of a series. The easy path keeps the structure, the camera and the ending and changes only the topic."
+  },
+  {
     "id": "idea-guess-over-howto",
     "title": "Frame the topic as a guessing game or exposé, leave the how-to as the tail",
     "section": "idea",
@@ -161,6 +174,22 @@
     "added": "2026-10-23",
     "updated": "2026-10-27",
     "when": "The draft reel packs a whole experiment: methodology, accuracy tables, several blocks of numbers with caveats. An honest breakdown wants to be told in full (how you tested, how many tasks, error margin); in a reel this becomes a lecture, and strong gags drown between tables."
+  },
+  {
+    "id": "idea-prediction-test",
+    "title": "Let a fresh agent predict the five obvious videos on the topic, then drop candidates that overlap them or your past",
+    "section": "idea",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "viewer-feedback",
+    "tools": [
+      "Python",
+      "Claude Code"
+    ],
+    "path": "recipes/idea/idea-prediction-test.md",
+    "added": "2026-11-09",
+    "updated": "2026-11-09",
+    "when": "The person gave a topic and you are about to pitch ideas. Your first ideas are the ones anyone would have, and you do not see that you already made a similar video two months ago."
   },
   {
     "id": "idea-remake-rhythm-not-words",
@@ -757,6 +786,21 @@
     "when": "Sound and picture are cut at the same point; every cut feels like a break."
   },
   {
+    "id": "transitions-one-shape-no-cuts",
+    "title": "Build an interface loop or how-to as one shape that morphs, with no cuts and a cursor that drives the story",
+    "section": "transitions",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "experience",
+    "tools": [
+      "GSAP"
+    ],
+    "path": "recipes/transitions/transitions-one-shape-no-cuts.md",
+    "added": "2026-11-09",
+    "updated": "2026-11-09",
+    "when": "A product loop, a how-to or a pure motion piece turns into a slideshow: a new card on every beat, a cut between every state. Not for skits with characters, where cuts stay."
+  },
+  {
     "id": "transitions-one-zone-no-chrome",
     "title": "Keep one zone in frame, no titles and no chrome",
     "section": "transitions",
@@ -915,6 +959,23 @@
     "added": "2026-10-23",
     "updated": "2026-10-28",
     "when": "The SFX synth has fourteen kinds but videos use the same three; tonal effects clash with the music key."
+  },
+  {
+    "id": "sound-track-feature-map",
+    "title": "Map the track's beats, hits and envelopes for accents, and treat cuts on the beat as optional",
+    "section": "sound",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "measurement",
+    "tools": [
+      "Python",
+      "librosa",
+      "ffmpeg"
+    ],
+    "path": "recipes/sound/sound-track-feature-map.md",
+    "added": "2026-11-09",
+    "updated": "2026-11-09",
+    "when": "You want the picture to react to the music (a background pulse on the kick, an interface click on the snare, a caption landing on a downbeat), or an editor told you that every cut must land on the beat."
   },
   {
     "id": "captions-blink-color-not-opacity",
@@ -1088,6 +1149,21 @@
     "when": "Every element moves with one ease, on one axis, in the same 0.55 s. Viewers call it \"angular and primitive\"."
   },
   {
+    "id": "assembly-motion-vocabulary-numbers",
+    "title": "Describe drawn and Swiss motion moves in frames and percent, not in adjectives",
+    "section": "assembly",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "experience",
+    "tools": [
+      "GSAP"
+    ],
+    "path": "recipes/assembly/assembly-motion-vocabulary-numbers.md",
+    "added": "2026-11-09",
+    "updated": "2026-11-09",
+    "when": "A brief or a prompt says \"bouncy\", \"snappy\", \"hand-drawn feel\", and the agent animates everything with one fade and one ease. You want a drawn or Swiss motion-design look and need moves the agent can execute exactly."
+  },
+  {
     "id": "assembly-no-empty-scene-start",
     "title": "Bring the scene block in at the cut and light up rows on their words",
     "section": "assembly",
@@ -1151,6 +1227,22 @@
     "added": "2026-10-23",
     "updated": "2026-10-23",
     "when": "Scene events are timed by offset (\"2.3 s after line start\"). Any voice edit shifts everything; elements land on the wrong word."
+  },
+  {
+    "id": "qa-ai-jury-edits-not-gate",
+    "title": "Use an AI jury to generate up to three edits before showing the video, never as a gate",
+    "section": "qa",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "experience",
+    "tools": [
+      "Claude Code",
+      "Codex CLI"
+    ],
+    "path": "recipes/qa/qa-ai-jury-edits-not-gate.md",
+    "added": "2026-11-09",
+    "updated": "2026-11-09",
+    "when": "The video passed technical QA and is about to go to the person. You want one more look that is not yours, but a \"score ≥ 7 = ship\" rule would let a model approve art."
   },
   {
     "id": "qa-asr-per-take",
@@ -1248,6 +1340,23 @@
     "added": "2026-10-27",
     "updated": "2026-10-27",
     "when": "You are tempted to gate publishing on a motion number: \"fast_ratio below X = slop, above X = fine\". A viewer said a video \"has no motion design\", and the metric looks like the obvious automatic check."
+  },
+  {
+    "id": "qa-picture-checks-warn-only",
+    "title": "Run hook, flash, repeat and action checks on the mp4 as warnings, after calibrating them on your own verdicts",
+    "section": "qa",
+    "lang": "any",
+    "status": "hypothesis",
+    "evidence": "measurement",
+    "tools": [
+      "ffmpeg",
+      "Python",
+      "numpy"
+    ],
+    "path": "recipes/qa/qa-picture-checks-warn-only.md",
+    "added": "2026-11-09",
+    "updated": "2026-11-09",
+    "when": "You want automatic checks against \"static\" and \"monotonous\" videos on the finished file: does the picture move in the first 2 s, are there one-frame flashes, does a composition come back later, does anything act inside a scene apart from the camera. Other kits ship these as pass/fail gates."
   },
   {
     "id": "qa-preflight-ffmpeg",
@@ -2315,7 +2424,7 @@
     ],
     "path": "recipes/brand/brand-style-file-from-approved-video.md",
     "added": "2026-11-08",
-    "updated": "2026-11-08",
+    "updated": "2026-11-09",
     "when": "A series starts: one video was approved and the next ones should look like the same show. Without a written style the agent copies the previous project folder, and with it the old palette, old scenes and old mistakes."
   }
 ]

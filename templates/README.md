@@ -12,7 +12,9 @@ replace and the gotchas met while building the original videos.
 | [`experiment/`](experiment/README.md) | test a piece of advice: hypothesis, conditions, N clean `claude -p` runs, raw `runs/*.json`, `results.md` table | Claude Code CLI | full series against a fake CLI |
 | [`real-tool-reel/`](real-tool-reel/README.md) | pattern for "a real tool works on camera": a safe macOS example tool (dry run by default) and a shoot checklist | macOS for `--live` only | logic + dry run |
 
-`recipe.md` here is the template for new recipes in `../recipes/`, not a project skeleton.
+`recipe.md` here is the template for new recipes in `../recipes/`, not a project skeleton. `STYLE.md` is the
+template for a series style file, filled in after the person approves a video
+([recipe](../recipes/brand/brand-style-file-from-approved-video.md)).
 
 Licenses of everything inside this folder: [THIRD-PARTY.md](THIRD-PARTY.md). Generated files (timelines, audio,
 renders, measurements, runs) are ignored by `.gitignore`; rebuild them instead of committing.

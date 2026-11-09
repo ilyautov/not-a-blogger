@@ -18,6 +18,8 @@ If a rejected version existed, only the accepted one is here; what did not work 
 | script | [antislop-brief.md](script/antislop-brief.md) | brief block "why past videos were called slop" | proven on 5 videos |
 | script | [fact-check.md](script/fact-check.md) | check every claim and number against a source | proven on 5+ videos |
 | script | [meaning-check.md](script/meaning-check.md) | meaning check on the script and on frames of the final mp4 | proven on 5 videos |
+| script | [prediction-test.md](script/prediction-test.md) | five obvious videos from the topic only, before you pick an idea | hypothesis |
+| script | [overlap-check.md](script/overlap-check.md) | candidates against the obvious five and your past videos: CLEAR / SHARES / OVERLAP | hypothesis |
 | image | [backdrop-preamble.md](image/backdrop-preamble.md) | text-free backdrop with room for a title; code adds the text | proven on 2 videos |
 | image | [image-agent-wrapper.md](image/image-agent-wrapper.md) | wrapper: a CLI agent makes exactly one image | proven on 2 videos |
 | video-gen | [character-passport.md](video-gen/character-passport.md) | archetype character passport reused in every shot | proven on 1 probe |
@@ -29,6 +31,7 @@ If a rejected version existed, only the accepted one is here; what did not work 
 | agent | [not-template-long.md](agent/not-template-long.md) | definition of a "non-template long video" for an agent | hypothesis |
 | agent | [vertical-relayout-review.md](agent/vertical-relayout-review.md) | vertical by relayout, not crop; frame review before render | proven on 2 long videos and 8 shorts |
 | agent | [reel-teardown-card.md](agent/reel-teardown-card.md) | second-by-second teardown of someone else's reel for a remake without plagiarism | hypothesis |
+| agent | [ai-jury-edits.md](agent/ai-jury-edits.md) | AI jury: seven timestamped questions and at most three edits; not a gate | hypothesis |
 | voice | [reference-recording-text.md](voice/reference-recording-text.md) | text and instructions for recording your own voice reference (lang: ru) | proven on 1 series |
 | voice | [tts-script-rules.md](voice/tts-script-rules.md) | line-writing rules for a Russian TTS voice clone, full and short form (lang: ru) | proven on dozens of videos |
 | voice | [omnivoice-clone-snippet.md](voice/omnivoice-clone-snippet.md) | clone your own voice from 7 s: recording + exact transcript | proven on 1 video |

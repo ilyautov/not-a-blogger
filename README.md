@@ -15,7 +15,7 @@ staging the video and checking the result.
 
 [![Code: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE)
 [![Text: CC BY 4.0](https://img.shields.io/badge/text-CC%20BY%204.0-lightgrey.svg)](LICENSE-CONTENT)
-[![Recipes](https://img.shields.io/badge/recipes-146-blueviolet)](recipes/README.md)
+[![Recipes](https://img.shields.io/badge/recipes-153-blueviolet)](recipes/README.md)
 [![GitHub stars](https://img.shields.io/github/stars/ilyautov/not-a-blogger?style=social)](https://github.com/ilyautov/not-a-blogger/stargazers)
 [![CI](https://github.com/ilyautov/not-a-blogger/actions/workflows/ci.yml/badge.svg)](https://github.com/ilyautov/not-a-blogger/actions/workflows/ci.yml)
 
@@ -96,7 +96,7 @@ the hood. Follow the completion checks at your own pace. The textbook as one PDF
 | [`.agents/skills/`](.agents/skills/README.md) | 18 skills: 15 focused tasks and 3 workflow coordinators; setup for Codex and local Claude Code |
 | [`examples/`](examples/README.en.md) | 12 breakdowns of published videos with numbers and dates, flops too |
 | [`learn/`](learn/en/README.md) | a text mini-course for people: 12 chapters with exercises, a roadmap and a glossary |
-| [`recipes/`](recipes/README.md) | 146 techniques written for the agent: when to use, what to do, how to check |
+| [`recipes/`](recipes/README.md) | 153 techniques written for the agent: when to use, what to do, how to check |
 | [`starter-lite/`](starter-lite/README.md) | a silent 15-second demo, Node 22+ and ffmpeg, no finished-file QA |
 | [`starter/`](starter/README.en.md) | the full build: lines in, a voiced video and a check report out |
 | [`tools/`](tools/README.md) | utilities: voice and frame checks, carousels, covers, slide decks |
@@ -145,7 +145,7 @@ that know-how. The engine here is someone else's and open; the recipes don't dep
 
 - **Flops are shown with numbers.** [A repeat of the keys video](examples/three-keys-repeat/README.en.md) got 3 views
   on YouTube and 0 on TikTok. Every breakdown says what went wrong.
-- **Every technique has a status.** 73 are backed by measurements, 73 are still hypotheses, and the
+- **Every technique has a status.** 73 are backed by measurements, 80 are still hypotheses, and the
   [index](recipes/README.md) says so.
 - **A program checks the finished video, a person ships it.** A green check means "ready to watch", not "ready to
   publish".
